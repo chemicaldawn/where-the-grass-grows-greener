@@ -1,0 +1,66 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+}
+
+p, a, h1, h3, h4, h5 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+
+    margin: 0;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h1 + h2 {
+    margin-left: 1rem;
+}
+
+header {
+    display: inline-flex;
+
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #e0e0e0;
+    
+    padding: 1.25rem;
+}
+
+#content {
+    flex-grow: 1;
+}
+
+#map, #sidebar {
+    display: inline-flex;
+    vertical-align: top;
+}
+
+#map {
+    height: 100%;
+    width: 70%;
+}
+
+#sidebar {
+    padding: 0.5rem;
+}
