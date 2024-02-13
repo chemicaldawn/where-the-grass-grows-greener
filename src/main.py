@@ -1,8 +1,5 @@
-# [START gae_python38_app]
-# [START gae_python3_app]
-
 from flask import Flask
-from flask import render_template
+from flask import render_template, send_file, escape
 
 import cfg.config as cfg
 import ee
@@ -22,9 +19,12 @@ def main():
         token=mapid['token'],
         maps_key=cfg.MAPS_CREDENTIALS)
 
+# Allows all files in the "static" directory to be accessed by the client. 
+# DO NOT put sensitive files (such as key files) inside the "static" directory.
+
+@app.route("/static/<path>", methods=['GET'])
+def map_styling(path):
+    return send_file("static/" + escape(path))
 
 if __name__ == "__main__":
     app.run(host="127.0.0.1", port=8080, debug=True)
-
-# [END gae_python3_app]
-# [END gae_python38_app]
