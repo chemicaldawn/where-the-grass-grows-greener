@@ -1,0 +1,11 @@
+<script src="{{url_for('static', filename='lib/ee_api.js')}}"></script>
+<script src="{{url_for('static', filename='map/map.js')}}"></script>
+
+<script>
+    function on_map_load() {
+        initialize_layers('{{ layers }}');
+        initialize_map();
+    };
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key={{maps_key}}&callback=on_map_load" async="true" defer></script>

@@ -1,6 +1,8 @@
 const EE_MAP_PATH = 'https://earthengine.googleapis.com/v1alpha';
 
 var map = null
+var click_marker = null
+
 var map_layers = {
 
 }
@@ -36,7 +38,7 @@ function initialize_map() {
 
   // load the map styling and initialize the map
   // an external map styling file is used to keep the code looking clean
-  get_json("/static/map/map-styling.json").then(json => {
+  get_json("/static/map/map_styling.json").then(json => {
 
     map = new google.maps.Map(document.getElementById('map'), {
       
@@ -52,6 +54,10 @@ function initialize_map() {
       zoomControlOptions: {
         position: google.maps.ControlPosition.RIGHT_TOP,
       },
+
+      // sets the cursor type to the crosshair
+      draggableCursor:'crosshair',
+      draggingCursor:'crosshair',
   
       // sets the style to the json stylesheet we just fetched
       styles: json,
@@ -59,14 +65,35 @@ function initialize_map() {
       // sets the base map type to the default Google Maps road map
       mapTypeId: "roadmap"
     });
+
+    initialize_event_listeners();
   })
 };
 
-function toggle_layer() {
-  if(map.overlayMapTypes.length > 0) {
-    map.overlayMapTypes.pop();
+function initialize_event_listeners() {
+  google.maps.event.addListener(map, 'click', function(event) {
+
+    if(click_marker) {
+      click_marker.setMap(null);
+    }
+  
+    click_marker = new google.maps.Marker({
+      position: event.latLng,
+      map: map
+    });
+  
+    click_marker.setMap(map);
+  });
+} 
+
+function set_layer(name = null) {
+  map.overlayMapTypes.pop();
+
+  if(name != null && name != "None") {
+    map.overlayMapTypes.push(map_layers[name]);
   }
-  else {
-    map.overlayMapTypes.push(map_layers["Canopy"]);
-  }
+}
+
+function clear_layer() {
+  set_layer(null);
 }

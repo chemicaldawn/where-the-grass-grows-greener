@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+      {% include "imports/base_imports.html"%}
+      {% include "imports/map_imports.html"%}
+
+      <link rel="stylesheet" href="{{url_for('static', filename='style/legacy_map_view.css')}}">
+
+      <script>
+        function populate_dropdown() {
+          dropdown = document.getElementById("dropdown");
+
+          for (const [name,values] of Object.entries(map_layers)) {
+            var option = document.createElement('option');
+            option.text = option.value = name;
+            dropdown.appendChild(option);
+          }
+        }
+
+        function on_dropdown_change(option) {
+          set_layer(option.value);
+        }
+      </script>
+
+    </head>
+    <body onload="populate_dropdown()">
+        <header id="header">
+          <h1>Where the Grass Grows Greener</h1>
+          <h2>Legacy View</h2>
+        </header>
+        <div id="content">
+          <section id="map"></section>
+          <section id="sidebar">
+            <h3>The Impacts of Urban Greening on Housing Prices and Neighborhood Stability</h3>
+            <p>This webtool shows trends in urban greenery and land surface temperature in the San Francisco Bay Area between 1990 and 2020. It also illustrates spatial relationships with socioeconomic indicators such as housing prices and displacement risk. Note that the vector layers include only census tracts or zip codes that are located in areas designated as 'urban'.</p>
+            <p>This is a re-implementation of the legacy webtool for anyone who wants to use the tool in its original format.</p>
+            <h4>Original tool created by Eric Romero and Julia Greenberg</h3>
+            <hr>
+            <h4>Choose display layer:</h4>
+            <select name="Map Layer" id="dropdown" onchange="on_dropdown_change(this)">
+              <option value="None">None</option> 
+            </select>
+          </section>
+        </div>
+    </body>
+</html>
