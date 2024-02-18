@@ -14,5 +14,3 @@ runtime_config:
 handlers:
 - url: /.*
   script: auto
-
-entrypoint: gunicorn -b :$PORT earth-engine-testing:app
