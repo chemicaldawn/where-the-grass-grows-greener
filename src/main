@@ -1,2 +1,2 @@
-import style from "users/dawnschumacher/nasa-eej:src/ui/map-style.json");
+import style from "users/dawnschumacher/nasa-eej:src/ui/map-style.json";
 print(style);
