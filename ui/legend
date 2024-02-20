@@ -1,5 +1,5 @@
 function draw_legend() {
   
-}
+};
 
 exports.draw_legend = draw_legend;
