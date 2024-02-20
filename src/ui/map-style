@@ -174,3 +174,5 @@ const style = [
       ]
   }
 ]
+
+exports(style)
