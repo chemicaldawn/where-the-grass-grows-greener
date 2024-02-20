@@ -1,2 +1,1 @@
-import style from "users/dawnschumacher/nasa-eej:src/ui/map-style.json";
-print(style);
+var test = require("users/dawnschumacher/nasa-eej:src/ui/map-style.json");
