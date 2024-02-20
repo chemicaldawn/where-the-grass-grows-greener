@@ -175,4 +175,4 @@ var style = [
   }
 ]
 
-exports(style)
+exports.style = style
