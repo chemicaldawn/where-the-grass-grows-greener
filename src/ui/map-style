@@ -1,4 +1,4 @@
-var style = [  
+export const style = [  
   {
       "featureType": "water",
       "elementType": "geometry",
