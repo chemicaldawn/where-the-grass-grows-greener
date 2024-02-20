@@ -1,4 +1,4 @@
-[  
+var style = [  
   {
       "featureType": "water",
       "elementType": "geometry",
