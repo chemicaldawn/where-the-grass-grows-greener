@@ -1,0 +1,1 @@
+var GreenSpaceClassified = ee.Image('projects/nasa-eej/assets/EEJGreenSpaceClassificationR2');
