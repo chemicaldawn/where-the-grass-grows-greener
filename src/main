@@ -1,2 +1,7 @@
 var test = require("users/dawnschumacher/nasa-eej:src/ui/map-style");
 print(test.style);
+
+// Add custom map object
+ui.root.clear();
+var map = ui.Map();
+ui.root.add(map);
