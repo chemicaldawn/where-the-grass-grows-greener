@@ -1,2 +1,1 @@
-var GreenSpaceClassified = ee.Image('projects/nasa-eej/assets/EEJGreenSpaceClassificationR2');
-Map.addLayer(GreenSpaceClassified);
+var test = require("users/dawnschumacher/nasa-eej/src/ui/map-style.json");
