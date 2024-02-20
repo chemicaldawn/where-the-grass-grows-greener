@@ -1,1 +1,2 @@
 var GreenSpaceClassified = ee.Image('projects/nasa-eej/assets/EEJGreenSpaceClassificationR2');
+map.addLayer(GreenSpaceClassified);
