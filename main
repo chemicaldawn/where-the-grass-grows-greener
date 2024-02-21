@@ -1,4 +1,4 @@
-var test = require("users/dawnschumacher/nasa-eej:src/ui/map-style");
+var map = require("users/dawnschumacher/nasa-eej:src/ui/map");
 print(test.style);
 
 // Add custom, manipulable Map object
