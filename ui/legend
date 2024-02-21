@@ -4,7 +4,6 @@ function get_legend() {
   
   // Create the base for the legend.
   var legend = ui.Panel({
-    layout: ui.Panel.Layout.flow('horizontal'),
     style: {
         width: '30%'
     }
@@ -19,6 +18,7 @@ function get_legend() {
 function get_navbar() {
   
   var navbar = ui.Panel({
+    layout: ui.Panel.Layout.flow('horizontal'),
     style: style.navbar
   });
   
