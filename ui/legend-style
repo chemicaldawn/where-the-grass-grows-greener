@@ -8,6 +8,6 @@ exports.navbar = {
 }
 
 exports.navbar_button = {
-  width: '10%',
+  width: '33.3%',
   margin: 0
 }
