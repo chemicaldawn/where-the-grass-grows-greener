@@ -1,3 +1,7 @@
 exports.legend = {
   width: '30%'
 }
+
+exports.navbar_button = {
+  
+}
