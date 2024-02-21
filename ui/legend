@@ -32,7 +32,8 @@ function get_navbar() {
       label: "Univariate Data",
       style: {}
     })
-  ).add(
+  )
+  navbar.add(
     ui.Button({
       label: "Bivariate Data",
       style: {}
