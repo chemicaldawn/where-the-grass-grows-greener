@@ -4,6 +4,7 @@ function draw() {
   
 }
 
+// init function, run on first load.
 function init() {
   
   // Replaces the base map with a cleaner, custom map.
