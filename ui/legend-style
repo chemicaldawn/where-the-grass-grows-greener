@@ -3,6 +3,7 @@ exports.legend = {
 }
 
 exports.navbar = {
+  width: '100%',
   backgroundColor: 'pink'
 }
 
