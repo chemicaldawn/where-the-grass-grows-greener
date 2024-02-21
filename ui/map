@@ -24,7 +24,7 @@ function get_map() {
   // Centers the map on the San Francisco bay.
   map.setCenter(-122.355537, 37.828, 9);
   
-  return ui.Map();
+  return map;
 }
 
 exports.get_map = get_map
