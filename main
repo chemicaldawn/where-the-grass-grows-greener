@@ -1,15 +1,15 @@
 var mapmodule = require("users/dawnschumacher/nasa-eej:ui/map");
 
+function draw() {
+  
+}
+
 function init() {
   
   // Replaces the base map with a cleaner, custom map.
   ui.root.clear();
   var map = mapmodule.get_map();
   ui.root.add(map); 
-}
-
-function draw() {
-  
 }
 
 init();
