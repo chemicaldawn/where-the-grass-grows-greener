@@ -11,6 +11,4 @@ function init() {
   ui.root.clear();
   var map = mapmodule.get_map();
   ui.root.add(map); 
-  
-  draw();
 }
