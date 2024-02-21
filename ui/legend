@@ -24,20 +24,17 @@ function get_navbar() {
   // Add the navbar buttons to the navigation panel.
   navbar.add(
     ui.Button({
-      label: "About",
-      style: {}
+      label: "About"
     })
   )
   navbar.add(
     ui.Button({
-      label: "Univariate Data",
-      style: {}
+      label: "Univariate Data"
     })
   )
   navbar.add(
     ui.Button({
-      label: "Bivariate Data",
-      style: {}
+      label: "Bivariate Data"
     })
   )
   
