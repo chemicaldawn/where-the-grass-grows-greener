@@ -28,14 +28,14 @@ function get_navbar() {
     )
   )
   navbar.add(
-    ui.Button({
-      label: "Univariate Data"
-    })
+    ui.Button(
+      "about"
+    )
   )
   navbar.add(
-    ui.Button({
-      label: "Bivariate Data"
-    })
+    ui.Button(
+      "about"
+    )
   )
   
   return navbar;
