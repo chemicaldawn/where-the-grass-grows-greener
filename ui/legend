@@ -1,6 +1,6 @@
 var style =
 
-function draw_legend() {
+function get_legend() {
   var legend = ui.Panel({
     style: {
         width: '30%'
@@ -8,4 +8,4 @@ function draw_legend() {
   });
 }
 
-exports.draw_legend = draw_legend;
+exports.get_legend = get_legend;
