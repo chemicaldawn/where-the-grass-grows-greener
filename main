@@ -1,11 +1,8 @@
 var mapmodule = require("users/dawnschumacher/nasa-eej:ui/map");
-var legend = require("users/dawnschumacher/nasa-eej:ui/legend");
+var legendmodule = require("users/dawnschumacher/nasa-eej:ui/legend");
 
-function draw() {
-  
-  
-  
-}
+var map = mapmodule.get_map();
+var legend = legendmodule.get_legend();
 
 // init function, run on first load.
 function init() {
@@ -17,5 +14,3 @@ function init() {
   
   draw();
 }
-
-init();
