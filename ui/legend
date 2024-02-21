@@ -17,9 +17,7 @@ function get_legend() {
 
 function get_navbar() {
   
-  var navbar = ui.Panel({
-    
-  })
+  var navbar = ui.Panel()
   
   // Add the navbar buttons to the navigation panel.
   navbar.add(
