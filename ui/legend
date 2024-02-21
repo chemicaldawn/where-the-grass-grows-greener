@@ -10,7 +10,7 @@ function get_legend() {
   });
   
   // Add the top navigation bar.
-  legend = legend.add(get_navbar());
+  legend.add(get_navbar());
   
   return legend;
 }
