@@ -1,11 +1,42 @@
-exports.legend = {
-  width: '30%'
+var style = require("users/dawnschumacher/nasa-eej:ui/map-style");
+
+function get_legend() {
+  
+  // Create the base for the legend.
+  var legend = ui.Panel({
+    style: {
+        width: '30%'
+    }
+  });
+  
+  // Add the top navigation bar.
+  legend.add(get_navbar());
+  
+  return legend;
 }
 
-exports.navbar = {
+function get_navbar() {
   
+  var navbar = ui.Panel()
+  
+  // Add the navbar buttons to the navigation panel.
+  navbar.add(
+    ui.Button({
+      label: "About"
+    })
+  );
+  navbar.add(
+    ui.Button({
+      label: "Univariate Data"
+    })
+  );
+  navbar.add(
+    ui.Button({
+      label: "Bivariate Data"
+    })
+  );
+  
+  return navbar;
 }
 
-exports.navbar_button = {
-  
-}
+exports.get_legend = get_legend;
