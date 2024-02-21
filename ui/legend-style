@@ -7,5 +7,5 @@ exports.navbar = {
 }
 
 exports.navbar_button = {
-  
+  margin: 0
 }
