@@ -39,6 +39,8 @@ function get_navbar() {
       style: {}
     })
   )
+  
+  return navbar;
 }
 
 exports.get_legend = get_legend;
