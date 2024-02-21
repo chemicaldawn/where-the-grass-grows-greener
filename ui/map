@@ -1,4 +1,8 @@
+var mapstyle = require();
+
 function get_map() {
+  var map = ui.Map();
+  
   return ui.Map();
 }
 
