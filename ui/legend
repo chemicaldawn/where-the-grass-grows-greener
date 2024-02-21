@@ -23,9 +23,9 @@ function get_navbar() {
   
   // Add the navbar buttons to the navigation panel.
   navbar.add(
-    ui.Button({
-      label: "About"
-    })
+    ui.Button(
+      "about"
+    )
   )
   navbar.add(
     ui.Button({
