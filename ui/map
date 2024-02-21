@@ -8,7 +8,7 @@ function get_map() {
       Base: basemapStyle
   });
   
-  // Modifies the map controls
+  // Modifies the map controls, disabling unnessecary ones to improve readability.
   map.setControlVisibility({
       all: false,
       layerList: false,
