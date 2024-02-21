@@ -5,7 +5,7 @@ function get_map() {
 
   // Sets the map's visual style, creating a grayscale map.
   map.setOptions('Base', {
-      Base: basemapStyle
+      Base: style
   });
   
   // Modifies the map controls, disabling unnessecary ones to improve readability.
