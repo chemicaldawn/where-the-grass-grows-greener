@@ -3,7 +3,7 @@ exports.legend = {
 }
 
 exports.navbar = {
-  backgroundColor: "pink"
+  backgroundColor: 'pink'
 }
 
 exports.navbar_button = {
