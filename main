@@ -1,4 +1,4 @@
-var mapmodule = require("users/dawnschumacher/nasa-eej:src/ui/map");
+var mapmodule = require("users/dawnschumacher/nasa-eej:ui/map");
 
 // Add custom, manipulable Map object
 function init() {
