@@ -1,42 +1,11 @@
-var style = require("users/dawnschumacher/nasa-eej:ui/map-style");
-
-function get_legend() {
-  
-  // Create the base for the legend.
-  var legend = ui.Panel({
-    style: {
-        width: '30%'
-    }
-  });
-  
-  // Add the top navigation bar.
-  legend.add(get_navbar());
-  
-  return legend;
+exports.legend = {
+  width: '30%'
 }
 
-function get_navbar() {
+exports.navbar = {
   
-  var navbar = ui.Panel()
-  
-  // Add the navbar buttons to the navigation panel.
-  navbar.add(
-    ui.Button(
-      "about"
-    )
-  )
-  navbar.add(
-    ui.Button(
-      "about"
-    )
-  )
-  navbar.add(
-    ui.Button(
-      "about"
-    )
-  )
-  
-  return navbar;
 }
 
-exports.get_legend = get_legend;
+exports.navbar_button = {
+  
+}
