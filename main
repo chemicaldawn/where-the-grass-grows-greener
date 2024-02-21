@@ -3,6 +3,8 @@ var legend = require("users/dawnschumacher/nasa-eej:ui/legend");
 
 function draw() {
   
+  
+  
 }
 
 // init function, run on first load.
