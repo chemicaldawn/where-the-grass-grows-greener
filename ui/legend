@@ -19,12 +19,15 @@ function get_navbar() {
   
   var navbar = ui.Panel({
     
-  }).add(
+  })
+  
+  navbar.add(
     ui.Button({
       label: "About",
       style: {}
     })
-  ).add(
+  )
+  navbar.add(
     ui.Button({
       label: "Univariate Data",
       style: {}
