@@ -6,6 +6,8 @@ function get_legend() {
         width: '30%'
     }
   });
+  
+  return legend;
 }
 
 exports.get_legend = get_legend;
