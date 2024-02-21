@@ -2,6 +2,23 @@ var style = require("users/dawnschumacher/nasa-eej:ui/map-style").style;
 
 function get_map() {
   var map = ui.Map();
+
+  map.setOptions('Base', {
+      Base: basemapStyle
+  });
+  
+  map.setControlVisibility({
+      all: false,
+      layerList: false,
+      zoomControl: true,
+      scaleControl: true,
+      mapTypeControl: false,
+      fullscreenControl: false
+  });
+  
+  map.style().set('cursor', 'crosshair');
+  
+  map.setCenter(-122.355537, 37.828, 9);
   
   return ui.Map();
 }
