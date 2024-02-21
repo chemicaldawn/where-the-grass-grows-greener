@@ -8,13 +8,14 @@ function get_map() {
       Base: basemapStyle
   });
   
+  // Modifies the map controls
   map.setControlVisibility({
       all: false,
       layerList: false,
       zoomControl: true,
       scaleControl: true,
       mapTypeControl: false,
-      fullscreenControl: false
+      fullscreenControl: true
   });
   
   map.style().set('cursor', 'crosshair');
