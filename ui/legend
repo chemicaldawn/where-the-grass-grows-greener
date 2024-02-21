@@ -4,6 +4,7 @@ function get_legend() {
   
   // Create the base for the legend.
   var legend = ui.Panel({
+    layout: ui.Panel.Layout.flow('vertical'),
     style: {
         width: '30%'
     }
