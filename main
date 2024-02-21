@@ -1,7 +1,14 @@
-var map = require("users/dawnschumacher/nasa-eej:src/ui/map");
-print(test.style);
+var map-module = require("users/dawnschumacher/nasa-eej:src/ui/map");
 
 // Add custom, manipulable Map object
-ui.root.clear();
-var map = ui.Map();
-ui.root.add(map);
+function init() {
+  ui.root.clear();
+  var map = map-module.get_map();
+  ui.root.add(map); 
+}
+
+function draw() {
+  
+}
+
+init();
