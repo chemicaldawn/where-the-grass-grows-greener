@@ -17,6 +17,14 @@ function get_legend() {
 
 function get_navbar() {
   
+  var navbar = ui.Panel({
+    
+  }).add(
+    ui.Button({
+      label: "About",
+      style: {}
+    })
+  )
 }
 
 exports.get_legend = get_legend;
