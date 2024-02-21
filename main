@@ -1,4 +1,5 @@
 var mapmodule = require("users/dawnschumacher/nasa-eej:ui/map");
+var legend = require("users/dawnschumacher/nasa-eej:ui/legend");
 
 function draw() {
   
