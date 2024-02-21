@@ -1,5 +1,5 @@
 function get_map() {
-  
+  return ui.Map();
 }
 
 exports.get_map = get_map
