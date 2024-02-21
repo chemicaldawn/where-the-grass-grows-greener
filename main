@@ -16,4 +16,3 @@ function init() {
 }
 
 init();
-draw();
