@@ -3,6 +3,7 @@ var style = require("users/dawnschumacher/nasa-eej:ui/map-style").style;
 function get_map() {
   var map = ui.Map();
 
+  // Sets the map's visual style, creating a grayscale map.
   map.setOptions('Base', {
       Base: basemapStyle
   });
