@@ -16,6 +16,6 @@ exports.h2 = {
 
 exports.p = {
   fontSize: "14px",
-  fontWeight: "300",
+  fontWeight: "400",
   margin: "2px 0px 0px 0px"
 }
