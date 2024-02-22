@@ -39,6 +39,8 @@ for (var section in sections) {
   button_row.add(button);
 }
 
+change_section(1);
+
 navbar.add(button_row);
 navbar.add(nav_highlight);
 
