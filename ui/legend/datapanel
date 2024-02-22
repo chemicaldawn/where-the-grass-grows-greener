@@ -10,7 +10,7 @@ datapanel.add(
 datapanel.add(about);
 
 function change_section(section_index) {
-  datapanel.clear();
+  datapanel.add(about)
 }
 
 exports.object = datapanel;
