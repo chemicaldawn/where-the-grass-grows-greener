@@ -1,16 +1,10 @@
 var datapanel = ui.Panel();
 var about = ui.Panel();
 
-datapanel.add(
-  ui.Label({
-    value: "Bruh"
-  })
-)
-
-datapanel.add(about);
-
 function change_section(section_index) {
   datapanel.clear();
+  
+  
 }
 
 exports.object = datapanel;
