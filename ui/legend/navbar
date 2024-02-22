@@ -39,9 +39,6 @@ var bivariate_button = ui.Button({
   label: "Bivariate Data",
   style: style.navbar_button
 });
-bivariate_button.onClick(function() {
-  change_section(2)
-});
 
 // Add the navbar buttons to the navigation panel.
 button_row.add(about_button);
