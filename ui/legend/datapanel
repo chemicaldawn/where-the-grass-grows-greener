@@ -3,7 +3,7 @@ var about = ui.Panel();
 
 datapanel.add(
   ui.Label({
-    value: "Test"
+    value: "Bruh"
   })
 )
 
