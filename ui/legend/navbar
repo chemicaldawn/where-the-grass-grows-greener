@@ -37,7 +37,7 @@ navbar.add(button_row);
 navbar.add(nav_highlight);
 
 function change_section(section) {
-  
+  var multiplier = sections.indexOf(section);
 }
   
 exports.object = navbar
