@@ -3,7 +3,7 @@ exports.panel = {
 }
 
 exports.hr = {
-  margin: "24px 0px 24px 0px",
+  margin: "24px 0px 12px 0px",
   backgroundColor: "gray",
   height: "1px"
 }
@@ -30,5 +30,5 @@ exports.footer = {
   color: "gray",
   fontSize: "14px",
   fontWeight: "400",
-  margin: "0px 0px 16px 0px"
+  margin: "0px 0px 12px 0px"
 }
