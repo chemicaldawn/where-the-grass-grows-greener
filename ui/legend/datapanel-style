@@ -4,7 +4,8 @@ exports.panel = {
 
 exports.hr = {
   padding: "16px",
-  background-color: "gray"
+  background-color: "gray",
+  height: "2px"
 }
 
 exports.h1 = {
