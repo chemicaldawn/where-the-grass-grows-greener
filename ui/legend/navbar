@@ -27,7 +27,7 @@ var nav_highlight = ui.Panel({
 for (var section in sections) {
   button_row.add(
     ui.Button({
-      label: section,
+      label: sections[section],
       style: style.navbar_button
     })
   );
@@ -38,9 +38,8 @@ navbar.add(nav_highlight);
 
 // Changes the visible section by stretching or shrinking the margin of the blue highlight
 // UI panel.
-function change_section(section) {
-  var multiplier = sections.indexOf(section);
-  nav_highlight.style().margin = "0px 0px " + (33.3 * multipiler) + "px 0px";
+function change_section(section_index) {
+  nav_highlight.style().margin = "0px 0px " + (33.3 * section_index) + "px 0px";
 }
   
 exports.object = navbar
