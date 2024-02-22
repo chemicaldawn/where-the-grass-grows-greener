@@ -47,7 +47,9 @@ navbar.add(nav_highlight);
 // UI panel.
 function change_section(section_index) {
   print(section_index)
-  nav_highlight.style().padding = "0px 0px 0px " + (33.3 * section_index).toString() + "px";
+  nav_highlight.style().set({
+    padding: "0px 0px 0px " + (33.3 * section_index).toString() + "px";
+  })
 }
   
 exports.object = navbar
