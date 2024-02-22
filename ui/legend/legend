@@ -6,11 +6,16 @@ var style = require("users/dawnschumacher/nasa-eej:ui/legend/legend-style");
 var legend = ui.Panel({
   style: style.legend
 });
-  
-// Add the top navigation bar.
-legend.add(navbar.object);
 
-// Add the dynamic Data Panel.
-legend.add(datapanel.object);
+function construct() {
+  // Add the top navigation bar.
+  legend.add(navbar.object);
+  
+  // Add the dynamic Data Panel.
+  legend.add(datapanel.object); 
+}
+
+construct();
 
 exports.object = legend;
+exports.construct = construct;
