@@ -20,6 +20,7 @@ datapanel.add(about);
 function change_section(section_index) {
   datapanel.clear();
   
+  // Add the corresponding UI elements depending on which tab is pressed.
   switch(section_index) {
     case 0:
       datapanel.add(about);
