@@ -9,5 +9,5 @@ about.add(
 
 datapanel.add(about);
 
-exports.datapanel = datapanel;
+exports.object = datapanel;
 exports.about = about;
