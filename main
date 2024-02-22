@@ -1,18 +1,15 @@
-var mapmodule = require("users/dawnschumacher/nasa-eej:ui/map");
-var legendmodule = require("users/dawnschumacher/nasa-eej:ui/legend");
-
-var map = mapmodule.get_map();
-var legend = legendmodule.get_legend();
+var map = require("users/dawnschumacher/nasa-eej:ui/map");
+var legend = require("users/dawnschumacher/nasa-eej:ui/legend");
 
 // init function, run on first load.
 function init() {
   
   // Replaces the base map with a cleaner, custom map.
   ui.root.clear();
-  ui.root.add(map); 
+  ui.root.add(map.object); 
   
   // Adds the legend sidebar.
-  ui.root.insert(1, legend);
+  ui.root.insert(1, legend.object);
 }
 
 init();
