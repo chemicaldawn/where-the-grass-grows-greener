@@ -33,4 +33,5 @@ function construct() {
 }
 
 exports.object = legend;
+exports.init = init;
 exports.construct = construct;
