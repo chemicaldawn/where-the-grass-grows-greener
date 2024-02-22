@@ -4,10 +4,13 @@ var datapanel = require("users/dawnschumacher/nasa-eej:ui/legend/datapanel");
 var style = require("users/dawnschumacher/nasa-eej:ui/legend/legend-style");
 
 var legend = ui.Panel({
-    style: style.legend
-  });
+  style: style.legend
+});
   
 // Add the top navigation bar.
 legend.add(navbar.object);
+
+// Add the dynamic Data Panel.
+legend.add(datapanel.object);
 
 exports.object = legend;
