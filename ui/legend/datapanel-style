@@ -25,3 +25,10 @@ exports.p = {
   fontWeight: "400",
   margin: "16px 0px 0px 0px"
 }
+
+exports.footer = {
+  color: "gray",
+  fontSize: "14px",
+  fontWeight: "400",
+  margin: "4px 0px 0px 0px"
+}
