@@ -1,3 +1,5 @@
+var datapanel = ui.Panel();
 var about = ui.Panel();
 
+exports.datapanel = datapanel;
 exports.about = about;
