@@ -5,7 +5,7 @@ exports.panel = {
 exports.hr = {
   margin: "24px 0px 24px 0px",
   backgroundColor: "gray",
-  height: "2px"
+  height: "1px"
 }
 
 exports.h1 = {
