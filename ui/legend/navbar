@@ -25,13 +25,17 @@ var nav_highlight = ui.Panel({
   
 // Add the navbar buttons to the navigation panel.
 for (var section in sections) {
-  button_row.add(
-    ui.Button({
-      label: sections[section],
-      style: style.navbar_button
-    })
-    .onClick(change_section)
-  );
+  
+  var button = ui.Button({
+    label: sections[section],
+    style: style.navbar_button
+  })
+  
+  button.onClick(function() {
+    change_section(section)
+  })
+  
+  button_row.add(button);
 }
 
 navbar.add(button_row);
