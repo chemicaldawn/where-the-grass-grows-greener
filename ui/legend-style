@@ -9,9 +9,9 @@ exports.navbar = {
 
 exports.navbar_button = {
   width: '33.3%',
-  color: '1px solid gray',
+  color: 'black',
   
-  border: '0px',
+  border: '1px solid gray',
   
   margin: 0
 }
