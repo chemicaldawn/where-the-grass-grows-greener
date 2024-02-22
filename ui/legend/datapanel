@@ -6,6 +6,9 @@ about.add(ui.Label({
   value: "Where the Grass Grows Greener"
 }));
 
+// Initialize datapanel with About section
+datapanel.add(about);
+
 function change_section(section_index) {
   datapanel.clear();
   
