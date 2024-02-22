@@ -35,5 +35,9 @@ for (var section in sections) {
 
 navbar.add(button_row);
 navbar.add(nav_highlight);
+
+function change_section(section) {
+  
+}
   
 exports.object = navbar
