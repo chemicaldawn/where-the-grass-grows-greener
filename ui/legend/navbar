@@ -25,10 +25,28 @@ var about_button = ui.Button({
 about_button.onClick(function() {
   change_section(0)
 });
-  
-  button_row.add(button);
-}
 
+var univariate_button = ui.Button({
+  label: "Univariate Data",
+  style: style.navbar_button
+});
+about_button.onClick(function() {
+  change_section(1)
+});
+
+var bivariate_button = ui.Button({
+  label: "Bivariate Data",
+  style: style.navbar_button
+});
+about_button.onClick(function() {
+  change_section(2)
+});
+  
+button_row.add(button);
+button_row.add(univariate_button);
+button_row.add(bivariate_button);
+
+// Construct the final navbar object.
 navbar.add(button_row);
 navbar.add(nav_highlight);
 
