@@ -49,7 +49,7 @@ function change_section(section_index) {
   print(section_index);
   
   nav_highlight.style().set({
-    padding: "0% 0% 0% " + (33.3 * section_index).toString() + "%"
+    margin: "0% 0% 0% " + (33.3 * section_index).toString() + "%"
   })
 }
   
