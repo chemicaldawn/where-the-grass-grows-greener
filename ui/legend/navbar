@@ -30,7 +30,7 @@ for (var section in sections) {
       label: sections[section],
       style: style.navbar_button
     })
-    .onClick(() => {
+    .onClick(function() {
       change_section(section);
     })
   );
