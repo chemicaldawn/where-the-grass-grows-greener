@@ -29,7 +29,7 @@ for (var section in sections) {
   var button = ui.Button({
     label: sections[section],
     style: style.navbar_button
-  })
+  });
   
   button.onClick(function() {
     change_section(section)
