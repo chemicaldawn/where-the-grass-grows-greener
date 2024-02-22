@@ -22,7 +22,7 @@ var about_button = ui.Button({
   label: "About",
   style: style.navbar_button
 });
-about_button.onClick(function() {
+.onClick(function() {
   change_section(0)
 });
 
@@ -42,7 +42,7 @@ about_button.onClick(function() {
   change_section(2)
 });
   
-button_row.add(button);
+button_row.add(about_button);
 button_row.add(univariate_button);
 button_row.add(bivariate_button);
 
