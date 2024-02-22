@@ -36,5 +36,6 @@ function update() {
 }
 
 exports.object = legend;
+
 exports.init = init;
-exports.construct = construct;
+exports.update = update;
