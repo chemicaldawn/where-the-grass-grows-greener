@@ -11,5 +11,7 @@ exports.navbar_button = {
   width: '33.3%',
   color: 'black',
   
+  border: '0px',
+  
   margin: 0
 }
