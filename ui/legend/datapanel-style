@@ -5,7 +5,7 @@ exports.h1 = {
 }
 
 exports.h2 = {
-  fontSize: "12px",
+  fontSize: "14px",
   fontWeight: "700",
   margin: "2px 0px 0px 8px"
 }
