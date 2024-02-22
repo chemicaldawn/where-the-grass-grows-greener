@@ -33,7 +33,7 @@ for (var section in sections) {
   
   button.onClick(function() {
     change_section(section)
-  })
+  });
   
   button_row.add(button);
 }
