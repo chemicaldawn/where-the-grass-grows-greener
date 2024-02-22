@@ -4,13 +4,13 @@ exports.panel = {
 
 exports.h1 = {
   fontSize: "26px",
-  fontWeight: "300",
+  fontWeight: "700",
   margin: "0px"
 }
 
 exports.h2 = {
   fontSize: "14px",
-  fontWeight: "700",
+  fontWeight: "300",
   margin: "2px 0px 2px 0px"
 }
 
