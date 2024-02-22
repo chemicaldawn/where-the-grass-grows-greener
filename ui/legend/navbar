@@ -1,3 +1,4 @@
+var legend = require("users/dawnschumacher/nasa-eej:ui/legend/legend");
 var datapanel = require("users/dawnschumacher/nasa-eej:ui/legend/datapanel");
 var style = require("users/dawnschumacher/nasa-eej:ui/legend/navbar-style");
 
