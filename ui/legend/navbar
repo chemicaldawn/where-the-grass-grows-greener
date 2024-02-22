@@ -32,6 +32,7 @@ for (var section in sections) {
   });
   
   button.onClick(function() {
+    print("nuts")
     change_section(section)
   });
   
