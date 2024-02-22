@@ -2,6 +2,11 @@ exports.panel = {
   padding: "16px"
 }
 
+exports.hr = {
+  padding: "16px",
+  background-color: "gray"
+}
+
 exports.h1 = {
   fontSize: "26px",
   fontWeight: "600",
