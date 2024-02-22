@@ -61,8 +61,8 @@ function change_section(section_index) {
     margin: "0% 0% 0% " + (33.3 * section_index).toString() + "%"
   })
   
+  datapanel.object = datapanel.object.clear();
   print(datapanel.object.widgets())
-  datapanel.object.clear();
 }
   
 exports.object = navbar
