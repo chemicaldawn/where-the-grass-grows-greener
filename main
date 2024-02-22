@@ -10,7 +10,6 @@ function init() {
   
   // Adds the legend sidebar.
   ui.root.insert(1, legend.object);
-  legend.object.clear();
 }
 
 function draw() {
