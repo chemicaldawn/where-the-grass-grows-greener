@@ -1,5 +1,7 @@
 var style = require("users/dawnschumacher/nasa-eej:ui/navbar-style");
 
+var sections = ["About", "Univariate Data", "Bivariate Data"]
+
 // Create the base navbar panel.
 var navbar = ui.Panel({
   layout: ui.Panel.Layout.flow('vertical'),
