@@ -1,1 +1,3 @@
-print("balls")
+var about = ui.Panel();
+
+exports.about = about;
