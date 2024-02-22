@@ -21,11 +21,6 @@ about.add(ui.Label({
   style: style.p
 }));
 
-about.add(ui.Label({
-  value: "This webtool shows trends in urban greenery and land surface temperature in the San Francisco Bay Area between 1990 and 2020. It also illustrates spatial relationships with socioeconomic indicators such as housing prices and displacement risk. Note that the vector layers include only census tracts or zip codes that are located in areas designated as 'urban'.",
-  style: style.p
-}));
-
 // Initialize datapanel with About section
 datapanel.add(about);
 
