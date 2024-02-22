@@ -1,3 +1,5 @@
+var style = require("users/dawnschumacher/nasa-eej:ui/legend/datapanel-style");
+
 var about = ui.Panel();
 
 about.add(ui.Label({
