@@ -65,8 +65,4 @@ function get_navbar() {
   return navbar;
 }
 
-function get_data_panel() {
-  
-}
-
 exports.get_legend = get_legend;
