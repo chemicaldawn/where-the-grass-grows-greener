@@ -26,6 +26,14 @@ function get_navbar() {
     layout: ui.Panel.Layout.flow('horizontal'),
   })
   
+  var nav_highlight = ui.Panel({
+    style: {
+      backgroundColor: 'pink',
+      height: '3px',
+      width: '100%'
+    }
+  })
+  
   // Add the navbar buttons to the navigation panel.
   button_row.add(
     ui.Button({
