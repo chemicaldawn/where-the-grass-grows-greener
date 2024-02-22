@@ -7,6 +7,8 @@ var legend = ui.Panel({
   style: style.legend
 });
 
+function change_
+
 function construct() {
   // Add the top navigation bar.
   legend.add(navbar.object);
