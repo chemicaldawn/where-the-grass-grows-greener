@@ -1,6 +1,7 @@
 exports.h1 = {
   fontSize: "28px",
   fontWeight: "300"
+  padding: "8px"
 }
 
 exports.h2 = {
