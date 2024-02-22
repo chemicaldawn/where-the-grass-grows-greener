@@ -15,6 +15,7 @@ function init() {
 
 function draw() {
   legend.object.clear();
+  legend.construct();
 }
 
 init();
