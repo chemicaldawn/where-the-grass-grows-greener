@@ -1,4 +1,4 @@
-var style = require("users/dawnschumacher/nasa-eej:ui/navbar-style");
+var style = require("users/dawnschumacher/nasa-eej:ui/legend/navbar-style");
 
 var sections = ["About", "Univariate Data", "Bivariate Data"]
 
