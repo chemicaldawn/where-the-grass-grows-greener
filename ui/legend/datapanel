@@ -19,6 +19,5 @@ function change_section(section_index) {
 }
 
 exports.object = datapanel;
-exports.about = about;
 
 exports.change_section = change_section;
