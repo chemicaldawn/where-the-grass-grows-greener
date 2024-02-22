@@ -46,9 +46,9 @@ navbar.add(nav_highlight);
 function change_section(section_index) {
   print(section_index);
   
-  nav_highlight.style().set({
-    margin: "0% 0% 0% " + (33.3 * section_index).toString() + "%"
-  })
+  nav_highlight.style().set(
+    { margin: "0% 0% 0% " + (33.3 * section_index).toString() + "%" }
+  )
 }
   
 exports.object = navbar
