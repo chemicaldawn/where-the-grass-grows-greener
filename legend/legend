@@ -1,0 +1,62 @@
+var style = require("users/dawnschumacher/nasa-eej:ui/legend-style");
+
+var legend = ui.Panel({
+    style: {
+        width: '30%'
+    }
+  });
+  
+// Add the top navigation bar.
+legend.add(get_navbar());
+
+function get_navbar() {
+  
+  // Create the base navbar panel.
+  var navbar = ui.Panel({
+    layout: ui.Panel.Layout.flow('vertical'),
+    style: style.navbar
+  });
+  
+  // Create the containing panel for the row of buttons at the top, ensuring they are
+  // displayed in a horizontal row.
+  var button_row = ui.Panel({
+    layout: ui.Panel.Layout.flow('horizontal'),
+  })
+  
+  // Create the blue highlight bar that changes position.
+  var nav_highlight = ui.Panel({
+    style: {
+      backgroundColor: 'blue',
+      height: '3px',
+      width: '33.3%'
+    }
+  })
+  
+  // Add the navbar buttons to the navigation panel.
+  button_row.add(
+    ui.Button({
+      label: "About",
+      style: style.navbar_button
+    })
+  );
+  button_row.add(
+    ui.Button({
+      label: "Univariate Data",
+      style: style.navbar_button
+    })
+  );
+  button_row.add(
+    ui.Button({
+      label: "Bivariate Data",
+      style: style.navbar_button
+    })
+  );
+  
+  
+  navbar.add(button_row);
+  navbar.add(nav_highlight);
+  
+  return navbar;
+}
+
+exports.object = legend;
