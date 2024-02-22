@@ -1,6 +1,11 @@
 exports.h1 = {
-  fontSize: "48px",
+  fontSize: "24px",
+  fontFamily: "Roboto",
   fontWeight: "bold"
+}
+
+exports.h2 = {
+  
 }
 
 exports.p = {
