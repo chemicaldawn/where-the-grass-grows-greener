@@ -1,14 +1,3 @@
 exports.legend = {
   width: '30%'
 }
-
-exports.navbar = {
-  width: '100%'
-}
-
-exports.navbar_button = {
-  width: '33.3%',
-  color: 'black',
-  
-  margin: 0
-}
