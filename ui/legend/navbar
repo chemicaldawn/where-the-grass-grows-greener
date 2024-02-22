@@ -1,4 +1,3 @@
-var legend = require("users/dawnschumacher/nasa-eej:ui/legend/legend");
 var datapanel = require("users/dawnschumacher/nasa-eej:ui/legend/datapanel");
 var style = require("users/dawnschumacher/nasa-eej:ui/legend/navbar-style");
 
@@ -64,8 +63,6 @@ function change_section(section_index) {
   
   // Calls the datapanel side of the change_section function.
   datapanel.change_section(section_index);
-  // Calls to the legend to rebuild the UI panel, finalizing changes.
-  legend.construct();
 }
   
 exports.object = navbar
