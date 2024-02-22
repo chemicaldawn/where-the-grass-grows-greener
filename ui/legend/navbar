@@ -23,16 +23,10 @@ var about_button = ui.Button({
   label: "About",
   style: style.navbar_button
 })
-about_button.onClick(function() {
-  change_section(0)
-});
 
 var univariate_button = ui.Button({
   label: "Univariate Data",
   style: style.navbar_button
-});
-univariate_button.onClick(function() {
-  change_section(1)
 });
 
 var bivariate_button = ui.Button({
@@ -51,7 +45,7 @@ navbar.add(nav_highlight);
 
 // Changes the visible section by stretching or shrinking the margin of the blue highlight
 // UI panel.
-function change_section(section_index) {
+function change_highlight(section_index) {
   print(section_index);
   
   nav_highlight.style().set({
@@ -60,6 +54,8 @@ function change_section(section_index) {
 }
   
 exports.object = navbar;
+
+exports.change_highlight = change_highlight;
 
 exports.about_button = about_button;
 exports.univariate_button = univariate_button;
