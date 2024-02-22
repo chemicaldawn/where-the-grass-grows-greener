@@ -20,7 +20,10 @@ datapanel.add(about);
 function change_section(section_index) {
   datapanel.clear();
   
-  
+  switch(section_index) {
+    case 0:
+      datapanel.add(about);
+  }
 }
 
 exports.object = datapanel;
