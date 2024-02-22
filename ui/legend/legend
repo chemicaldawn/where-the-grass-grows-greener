@@ -1,5 +1,5 @@
 var navbar = require("users/dawnschumacher/nasa-eej:ui/navbar");
-var datapanel = require("users/dawnschumacher/nasa-eej:ui/navbar");
+var datapanel = require("users/dawnschumacher/nasa-eej:ui/datapanel");
 
 var style = require("users/dawnschumacher/nasa-eej:ui/legend-style");
 
