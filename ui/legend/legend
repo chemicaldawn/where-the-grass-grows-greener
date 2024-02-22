@@ -7,6 +7,19 @@ var legend = ui.Panel({
   style: style.legend
 });
 
+function init() {
+  
+  navbar.about_button.onClick(function() {
+    change_section(0)
+  });
+  navbar.univariate_button.onClick(function() {
+    change_section(1)
+  });
+  navbar.bivariate_button.onClick(function() {
+    change_section(2)
+  });
+}
+
 function change_section(section_index) {
   
 }
