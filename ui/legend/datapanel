@@ -21,6 +21,10 @@ about.add(ui.Label({
   style: style.p
 }));
 
+about.add(ui.Panel({
+  style: style.hr
+}));
+
 // Initialize datapanel with About section
 datapanel.add(about);
 
