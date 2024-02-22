@@ -1,7 +1,5 @@
 var style = require("users/dawnschumacher/nasa-eej:ui/legend/navbar-style");
 
-var sections = ["About", "Univariate Data", "Bivariate Data"]
-
 // Create the base navbar panel.
 var navbar = ui.Panel({
   layout: ui.Panel.Layout.flow('vertical'),
@@ -20,12 +18,10 @@ var nav_highlight = ui.Panel({
 })
   
 // Add the navbar buttons to the navigation panel.
-for (var section in sections) {
-  
-  var button = ui.Button({
-    label: sections[section],
-    style: style.navbar_button
-  });
+var about_button = ui.Button({
+  label: "About",
+  style: style.navbar_button
+});
   
   button.onClick(function() {
     change_section(section)
@@ -42,9 +38,9 @@ navbar.add(nav_highlight);
 function change_section(section_index) {
   print(section_index);
   
-  nav_highlight.style().set(
-    { margin: "0% 0% 0% " + (33.3 * section_index).toString() + "%" }
-  )
+  nav_highlight.style().set({
+    margin: "0% 0% 0% " + (33.3 * section_index).toString() + "%"
+  })
 }
   
 exports.object = navbar
