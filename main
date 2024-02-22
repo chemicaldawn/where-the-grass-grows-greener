@@ -13,4 +13,4 @@ function init() {
 }
 
 init();
-ui.widgets()[1].clear();
+ui.root.widgets()[1].clear();
