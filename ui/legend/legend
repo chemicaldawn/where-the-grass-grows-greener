@@ -24,7 +24,10 @@ function change_section(section_index) {
   navbar.change_highlight(section_index);
 }
 
-function construct() {
+function update() {
+  
+  legend.clear();
+  
   // Add the top navigation bar.
   legend.add(navbar.object);
   
