@@ -22,10 +22,9 @@ var about_button = ui.Button({
   label: "About",
   style: style.navbar_button
 });
-  
-  button.onClick(function() {
-    change_section(section)
-  });
+about_button.onClick(function() {
+  change_section(0)
+});
   
   button_row.add(button);
 }
