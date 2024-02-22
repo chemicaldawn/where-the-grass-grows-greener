@@ -30,7 +30,7 @@ function get_navbar() {
     style: {
       backgroundColor: 'blue',
       height: '3px',
-      width: '100%'
+      width: '33.3%'
     }
   })
   
