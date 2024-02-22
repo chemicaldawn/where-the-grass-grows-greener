@@ -27,12 +27,12 @@ about.add(ui.Panel({
 
 about.add(ui.Label({
   value: "Created by Eric Romero, Julia Greenberg, and Dawn Schumacher",
-  style: style.h2
+  style: style.footer
 }));
 
 about.add(ui.Label({
   value: "Funding from the NASA Equity and Environmental Justice program, Data Integration Project, grant no. 80NSSC22K1699",
-  style: style.h2
+  style: style.footer
 }));
 
 // Initialize datapanel with About section
