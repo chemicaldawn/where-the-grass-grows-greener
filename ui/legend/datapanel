@@ -1,3 +1,7 @@
+var about = require("users/dawnschumacher/nasa-eej:ui/legend/panels/about");
+var univariate_data = require("users/dawnschumacher/nasa-eej:ui/legend/panels/univariate-data");
+var bivariate_data = require("users/dawnschumacher/nasa-eej:ui/legend/panels/bivariate-data");
+
 var style = require("users/dawnschumacher/nasa-eej:ui/legend/datapanel-style");
 
 var datapanel = ui.Panel({
