@@ -64,6 +64,8 @@ function change_section(section_index) {
   
   // Calls the datapanel side of the change_section function.
   datapanel.change_section(section_index);
+  // Calls to the legend to rebuild the UI panel, finalizing changes.
+  legend.construct();
 }
   
 exports.object = navbar
