@@ -15,5 +15,6 @@ exports.h2 = {
 }
 
 exports.p = {
-  
+  fontSize: "14px",
+  fontWeight: "300"
 }
