@@ -16,11 +16,7 @@ var button_row = ui.Panel({
   
 // Create the blue highlight bar that changes position.
 var nav_highlight = ui.Panel({
-  style: {
-    backgroundColor: 'blue',
-    height: '3px',
-    width: '33.3%'
-  }
+  style: style.nav_highlight
 })
   
 // Add the navbar buttons to the navigation panel.
