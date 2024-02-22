@@ -27,34 +27,28 @@ function get_navbar() {
   })
   
   // Add the navbar buttons to the navigation panel.
-  navbar.add(
+  button_row.add(
     ui.Button({
       label: "About",
       style: style.navbar_button
     })
   );
-  navbar.add(
+  button_row.add(
     ui.Button({
       label: "Univariate Data",
       style: style.navbar_button
     })
   );
-  navbar.add(
+  button_row.add(
     ui.Button({
       label: "Bivariate Data",
       style: style.navbar_button
     })
   );
   
-  navbar.add(
-    ui.Panel({
-      style: {
-        backgroundColor: 'pink',
-        height: '3px',
-        width: '100%'
-      }
-    })
-  )
+  
+  navbar.add(button_row);
+  navbar.add(nav_highlight);
   
   return navbar;
 }
