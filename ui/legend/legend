@@ -15,7 +15,5 @@ function construct() {
   legend.add(datapanel.object); 
 }
 
-construct();
-
 exports.object = legend;
 exports.construct = construct;
