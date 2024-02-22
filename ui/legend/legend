@@ -4,9 +4,7 @@ var datapanel = require("users/dawnschumacher/nasa-eej:ui/datapanel");
 var style = require("users/dawnschumacher/nasa-eej:ui/legend-style");
 
 var legend = ui.Panel({
-    style: {
-        width: '30%'
-    }
+    style: style.legend
   });
   
 // Add the top navigation bar.
