@@ -3,7 +3,7 @@ exports.panel = {
 }
 
 exports.hr = {
-  margin: "16px",
+  margin: "24px 16px 24px 16px",
   backgroundColor: "gray",
   height: "2px"
 }
