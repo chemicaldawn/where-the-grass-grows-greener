@@ -42,6 +42,16 @@ function get_navbar() {
     })
   );
   
+  navbar.add(
+    ui.Panel({
+      style: {
+        backgroundColor: 'pink',
+        height: '3px',
+        width: '100%'
+      }
+    })
+  )
+  
   return navbar;
 }
 
