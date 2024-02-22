@@ -28,7 +28,7 @@ function get_navbar() {
   
   var nav_highlight = ui.Panel({
     style: {
-      backgroundColor: 'pink',
+      backgroundColor: 'blue',
       height: '3px',
       width: '100%'
     }
