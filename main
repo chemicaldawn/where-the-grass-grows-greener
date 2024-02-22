@@ -13,4 +13,8 @@ function init() {
   legend.object.clear();
 }
 
+function draw() {
+  legend.object.clear();
+}
+
 init();
