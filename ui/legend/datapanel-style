@@ -1,5 +1,5 @@
 exports.h1 = {
-  fontSize: "24px",
+  fontSize: "28px",
   fontWeight: "300"
 }
 
