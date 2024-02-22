@@ -1,19 +1,15 @@
+var navbar = require("users/dawnschumacher/nasa-eej:ui/navbar");
+
 var style = require("users/dawnschumacher/nasa-eej:ui/legend-style");
 
-function get_legend() {
-  
-  // Create the base for the legend.
-  var legend = ui.Panel({
+var legend = ui.Panel({
     style: {
         width: '30%'
     }
   });
   
-  // Add the top navigation bar.
-  legend.add(get_navbar());
-  
-  return legend;
-}
+// Add the top navigation bar.
+legend.add(get_navbar());
 
 function get_navbar() {
   
@@ -65,4 +61,4 @@ function get_navbar() {
   return navbar;
 }
 
-exports.get_legend = get_legend;
+exports.object = legend;
