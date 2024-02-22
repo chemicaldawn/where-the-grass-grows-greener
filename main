@@ -6,10 +6,10 @@ function init() {
   
   // Replaces the base map with a cleaner, custom map.
   ui.root.clear();
-  ui.root.add(map.object); 
   
-  // Adds the legend sidebar.
-  ui.root.insert(1, legend.object);
+  var spacer = ui.SplitPanel(
+    map.object, legend.object
+  ) 
   
   // Makes sure the buttons function as intended.
   legend.init();
