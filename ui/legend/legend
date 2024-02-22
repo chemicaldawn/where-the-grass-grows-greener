@@ -7,7 +7,9 @@ var legend = ui.Panel({
   style: style.legend
 });
 
-function change_
+function change_section(section_index) {
+  
+}
 
 function construct() {
   // Add the top navigation bar.
