@@ -11,7 +11,6 @@ datapanel.add(about);
 
 function change_section(section_index) {
   datapanel.clear();
-  exports.object = datapanel;
 }
 
 exports.object = datapanel;
