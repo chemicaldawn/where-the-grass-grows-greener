@@ -1,7 +1,7 @@
 var datapanel = ui.Panel();
 var about = ui.Panel();
 
-about.add(
+datapanel.add(
   ui.Label({
     value: "Test"
   })
@@ -10,7 +10,7 @@ about.add(
 datapanel.add(about);
 
 function change_section(section_index) {
-  datapanel.clear();
+  datapanel.add()
 }
 
 exports.object = datapanel;
