@@ -38,7 +38,6 @@ navbar.add(nav_highlight);
 
 function change_section(section) {
   var multiplier = sections.indexOf(section);
-  
   nav_highlight.style().margin = "0px 0px " + (33.3 * multipiler) + "px 0px";
 }
   
