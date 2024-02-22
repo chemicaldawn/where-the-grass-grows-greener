@@ -18,6 +18,8 @@ function change_section(section_index) {
   }
 }
 
+change_section(0);
+
 exports.object = datapanel;
 
 exports.change_section = change_section;
