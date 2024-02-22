@@ -11,6 +11,3 @@ function init() {
   // Adds the legend sidebar.
   ui.root.insert(1, legend.object);
 }
-
-init();
-ui.root.widgets()[1].clear();
