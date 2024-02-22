@@ -5,7 +5,8 @@ var about = ui.Panel();
 
 // About Section
 about.add(ui.Label({
-  value: "Where the Grass Grows Greener"
+  value: "Where the Grass Grows Greener",
+  style: style.h1
 }));
 
 // Initialize datapanel with About section
