@@ -1,9 +1,7 @@
 var datapanel = ui.Panel();
 var about = ui.Panel();
 
-function init() {
-  change_section(0);
-}
+
 
 function change_section(section_index) {
   datapanel.clear();
@@ -14,5 +12,4 @@ function change_section(section_index) {
 exports.object = datapanel;
 exports.about = about;
 
-exports.init = init;
 exports.change_section = change_section;
