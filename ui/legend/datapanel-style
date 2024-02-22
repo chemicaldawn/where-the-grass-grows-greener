@@ -11,10 +11,11 @@ exports.h1 = {
 exports.h2 = {
   fontSize: "14px",
   fontWeight: "700",
-  margin: "2px 0px 0px 0px"
+  margin: "2px 0px 12px 0px"
 }
 
 exports.p = {
   fontSize: "14px",
-  fontWeight: "300"
+  fontWeight: "300",
+  margin: "2px 0px 0px 0px"
 }
