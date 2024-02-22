@@ -8,8 +8,8 @@ var navbar = ui.Panel({
   style: style.navbar
 });
   
-  // Create the containing panel for the row of buttons at the top, ensuring they are
-  // displayed in a horizontal row.
+// Create the containing panel for the row of buttons at the top, ensuring they are
+// displayed in a horizontal row.
 var button_row = ui.Panel({
   layout: ui.Panel.Layout.flow('horizontal'),
 })
