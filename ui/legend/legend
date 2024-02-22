@@ -22,6 +22,8 @@ function init() {
 
 function change_section(section_index) {
   navbar.change_highlight(section_index);
+  
+  update();
 }
 
 function update() {
