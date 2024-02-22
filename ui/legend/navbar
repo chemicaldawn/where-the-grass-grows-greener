@@ -21,8 +21,8 @@ var nav_highlight = ui.Panel({
 var about_button = ui.Button({
   label: "About",
   style: style.navbar_button
-});
-.onClick(function() {
+})
+about_button.onClick(function() {
   change_section(0)
 });
 
@@ -30,7 +30,7 @@ var univariate_button = ui.Button({
   label: "Univariate Data",
   style: style.navbar_button
 });
-about_button.onClick(function() {
+univariate_button.onClick(function() {
   change_section(1)
 });
 
@@ -38,7 +38,7 @@ var bivariate_button = ui.Button({
   label: "Bivariate Data",
   style: style.navbar_button
 });
-about_button.onClick(function() {
+bivariate_button.onClick(function() {
   change_section(2)
 });
   
