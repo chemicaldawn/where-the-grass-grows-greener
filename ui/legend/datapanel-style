@@ -1,6 +1,5 @@
 exports.h1 = {
   fontSize: "24px",
-  fontFamily: "Roboto",
   fontWeight: "400"
 }
 
