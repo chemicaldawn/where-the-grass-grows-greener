@@ -6,7 +6,8 @@ var raster_layerbox = ui.Panel({
   style: style.layerbox
 });
 raster_layerbox.add(ui.Label({
-  value: "Background Layer"
+  value: "Background Layer",
+  style: style.layerlabel
 }));
 
 var raster_select = ui.Select(
