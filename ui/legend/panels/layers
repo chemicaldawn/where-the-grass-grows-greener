@@ -2,20 +2,12 @@ var style = require("users/dawnschumacher/nasa-eej:ui/legend/datapanel-style");
 
 var layers = ui.Panel();
 
-function create_layerbox(name) {
-  
-  var layerbox = ui.Panel({
-    style: style.layerbox
-  });
-  
-  layerbox.add(ui.Label({
-    value: name
-  }));
-  
-  return layerbox
-}
-
-var raster_layerbox = create_layerbox("Background Layer")
+var raster_layerbox = ui.Panel({
+  style: style.layerbox
+});
+raster_layerbox.add(ui.Label({
+  value: "Background Layer"
+}));
 
 layers.add(raster_layerbox);
 
