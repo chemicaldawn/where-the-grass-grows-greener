@@ -11,6 +11,8 @@ function create_layerbox(name) {
   layerbox.add(ui.Label({
     value: name
   }));
+  
+  return layerbox
 }
 
 var raster_layerbox = create_layerbox("Background Layer")
