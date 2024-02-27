@@ -9,6 +9,12 @@ raster_layerbox.add(ui.Label({
   value: "Background Layer"
 }));
 
+var raster_select = ui.Select(
+  ["None","Green Space Classification"],
+  "Select a layer...",
+  "None");
+raster_layerbox.add(raster_select);
+
 layers.add(raster_layerbox);
 
 exports.object = layers
