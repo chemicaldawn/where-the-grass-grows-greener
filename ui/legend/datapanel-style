@@ -26,8 +26,12 @@ exports.p = {
   margin: "16px 0px 0px 0px"
 }
 
+exports.layerlabel = {
+  backgroundColor: "#cce2ed"
+}
+
 exports.layerbox = {
-  backgroundColor: "#b4dcf0"
+  backgroundColor: exports.layerlabel.backgroundColor
 }
 
 exports.footer = {
