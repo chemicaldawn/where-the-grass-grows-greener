@@ -16,3 +16,5 @@ function create_layerbox(name) {
 var raster_layerbox = create_layerbox("Background Layer")
 
 layers.add(raster_layerbox);
+
+exports.object = layers
