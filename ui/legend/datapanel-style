@@ -27,7 +27,7 @@ exports.p = {
 }
 
 exports.layerbox = {
-  background-color: "#b4dcf0"
+  backgroundColor: "#b4dcf0"
 }
 
 exports.footer = {
