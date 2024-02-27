@@ -10,7 +10,7 @@ map.setOptions('Base', {
 // Modifies the map controls, disabling unnessecary ones to improve readability.
 map.setControlVisibility({
     all: false,
-    layerList: false,
+    layerList: true,
     zoomControl: true,
     scaleControl: true,
     mapTypeControl: false,
