@@ -3,7 +3,9 @@ var style = require("users/dawnschumacher/nasa-eej:ui/map-style").style;
 var map = ui.Map();
 
 // Sets the map's visual style, creating a grayscale map.
-map.setOptions('ROADMAP', style);
+map.setOptions('ROADMAP', {
+  base: style
+});
 
 // Modifies the map controls, disabling unnessecary ones to improve readability.
 map.setControlVisibility({
