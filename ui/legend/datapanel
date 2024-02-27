@@ -15,8 +15,10 @@ function change_section(section_index) {
   switch(section_index) {
     case 0:
       datapanel.add(about.object);
+      break;
     case 1:
       datapanel.add(layers.object);
+      break;
   }
 }
 
