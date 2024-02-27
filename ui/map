@@ -4,7 +4,7 @@ var map = ui.Map();
 
 // Sets the map's visual style, creating a grayscale map.
 map.setOptions('ROADMAP', {
-  base: style
+  ROADMAP: style
 });
 
 // Modifies the map controls, disabling unnessecary ones to improve readability.
