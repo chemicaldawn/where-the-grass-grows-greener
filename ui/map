@@ -13,8 +13,8 @@ map.setControlVisibility({
     layerList: true,
     zoomControl: true,
     scaleControl: true,
-    mapTypeControl: false,
-    fullscreenControl: true
+    mapTypeControl: true,
+    fullscreenControl: false
 });
 
 // Sets the cursor style to a crosshair.
