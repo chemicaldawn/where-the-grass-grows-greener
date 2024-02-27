@@ -6,7 +6,7 @@ var map = ui.Map();
 map.setOptions('Map', {
   Map: style
 },
-"Map","SATELLITE");
+["Map","SATELLITE"]);
 
 // Modifies the map controls, disabling unnessecary ones to improve readability.
 map.setControlVisibility({
