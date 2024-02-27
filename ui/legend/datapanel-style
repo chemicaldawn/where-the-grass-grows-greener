@@ -28,7 +28,7 @@ exports.p = {
 
 exports.layerlabel = {
   margin: "8px",
-  backgroundColor: "#cce2ed"
+  backgroundColor: "#e4edf2"
 }
 
 exports.layerbox = {
