@@ -6,7 +6,7 @@ function create_layerbox(name) {
   
   var layerbox = ui.Panel({
     style: style.layerbox
-  }));
+  });
   
   layerbox.add(ui.Label({
     value: name
