@@ -1,21 +1,48 @@
-var map = require("users/dawnschumacher/nasa-eej:ui/map");
-var legend = require("users/dawnschumacher/nasa-eej:ui/legend/legend");
+var background = require("users/dawnschumacher/nasa-eej:data/background")
+var style = require("users/dawnschumacher/nasa-eej:ui/legend/datapanel-style");
 
-// init function, run on first load.
-function init() {
-  
-  // Replaces the base map with a cleaner, custom map.
-  ui.root.clear();
-  
-  var spacer = ui.SplitPanel(
-    map.object, legend.object
-  ) 
-  
-  ui.root.add(spacer);
-  
-  // Makes sure the buttons function as intended.
-  legend.init();
+function name_to_id(name) {
+  print(name.toLowerCase().replace(" ","_"));
+  return name.toLowerCase().replace(" ","_");
 }
 
-init();
-legend.update();
+var layers = ui.Panel();
+
+var raster_layerbox = ui.Panel({
+  style: style.layerbox
+});
+raster_layerbox.add(ui.Label({
+  value: "Background Layer",
+  style: style.layerlabel
+}));
+
+var raster_inline_panel = ui.Panel({
+  layout: ui.Panel.Layout.flow('horizontal'),
+  style: style.layerbox_inline
+})
+
+var raster_select = ui.Select({
+  items: ["None","Green Space Classification"],
+  placeholder: "Select a layer...",
+  value: "None",
+  style: style.layerbutton
+});
+raster_select.onChange(function (name) {
+  var id = name_to_id(name);
+  Map.addLayer(background.data[id]["layer"]);
+})
+raster_inline_panel.add(raster_select);
+
+var raster_slider = ui.Slider({
+  min: 0,
+  max: 1,
+  value: 1,
+  step: 0.01,
+  style: style.layerslider
+});
+raster_inline_panel.add(raster_slider);
+
+raster_layerbox.add(raster_inline_panel);
+layers.add(raster_layerbox);
+
+exports.object = layers
