@@ -4,3 +4,5 @@ var background_data = {
     layer: ee.Image('projects/nasa-eej/assets/EEJGreenSpaceClassificationR2')
   }
 }
+
+exports.data = background_data
