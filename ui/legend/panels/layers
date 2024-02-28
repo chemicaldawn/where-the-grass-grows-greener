@@ -18,6 +18,7 @@ raster_layerbox.add(ui.Label({
 var raster_inline_panel = ui.Panel({
   style: style.layerbox_inline
 })
+raster_inline_panel.setLayout("horizontal")
 
 var raster_select = ui.Select(
   ["None","Green Space Classification"],
