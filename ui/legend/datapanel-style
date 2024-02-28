@@ -27,22 +27,25 @@ exports.p = {
 }
 
 exports.layerlabel = {
-  margin: "8px 8px 2px 8px",
+  margin: "0px 0px 2px 0px",
   fontWeight: "700",
   backgroundColor: "#e4f2e6"
 }
 
 exports.layerbutton = {
+  margin: "0px",
   width: "50%",
   backgroundColor: exports.layerlabel.backgroundColor
 }
 
 exports.layerslider = {
+  margin: "0px",
   width: "50%",
   backgroundColor: exports.layerlabel.backgroundColor
 }
 
 exports.layerbox = {
+  padding: "8px"
   backgroundColor: exports.layerlabel.backgroundColor
 }
 
