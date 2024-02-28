@@ -51,6 +51,7 @@ exports.layerbox = {
 
 exports.layerbox_inline = {
   margin: "0px",
+  padding: "0px",
   backgroundColor: exports.layerlabel.backgroundColor
 }
 
