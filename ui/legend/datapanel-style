@@ -32,7 +32,13 @@ exports.layerlabel = {
   backgroundColor: "#e4f2e6"
 }
 
+exports.layerbutton = {
+  width: "50%",
+  backgroundColor: exports.layerlabel.backgroundColor
+}
+
 exports.layerslider = {
+  width: "50%",
   backgroundColor: exports.layerlabel.backgroundColor
 }
 
