@@ -1,3 +1,4 @@
+var background = require("users/dawnschumacher/nasa-eej:ui/legend/background")
 var style = require("users/dawnschumacher/nasa-eej:ui/legend/datapanel-style");
 
 var layers = ui.Panel();
