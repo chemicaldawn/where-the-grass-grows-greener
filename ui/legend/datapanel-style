@@ -32,7 +32,16 @@ exports.layerlabel = {
   backgroundColor: "#e4f2e6"
 }
 
+exports.layerslider = {
+  backgroundColor: exports.layerlabel.backgroundColor
+}
+
 exports.layerbox = {
+  backgroundColor: exports.layerlabel.backgroundColor
+}
+
+exports.layerbox_inline = {
+  margin: "0px",
   backgroundColor: exports.layerlabel.backgroundColor
 }
 
