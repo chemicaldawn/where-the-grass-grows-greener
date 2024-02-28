@@ -1,6 +1,10 @@
 var background = require("users/dawnschumacher/nasa-eej:ui/legend/background")
 var style = require("users/dawnschumacher/nasa-eej:ui/legend/datapanel-style");
 
+function name_to_id(name) {
+  return name.toLowerCase().replace(" ","_");
+}
+
 var layers = ui.Panel();
 
 var raster_layerbox = ui.Panel({
