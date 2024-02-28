@@ -45,7 +45,7 @@ exports.layerslider = {
 }
 
 exports.layerbox = {
-  padding: "8px"
+  padding: "8px",
   backgroundColor: exports.layerlabel.backgroundColor
 }
 
