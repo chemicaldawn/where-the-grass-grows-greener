@@ -2,8 +2,8 @@ var background = require("users/dawnschumacher/nasa-eej:data/background")
 var style = require("users/dawnschumacher/nasa-eej:ui/legend/datapanel-style");
 
 function name_to_id(name) {
-  print(name.toLowerCase().replace(" ","_"));
-  return name.toLowerCase().replace(" ","_");
+  var id = name.toLowerCase().replace(" ","_").replace(" ","_");
+  return id;
 }
 
 var layers = ui.Panel();
