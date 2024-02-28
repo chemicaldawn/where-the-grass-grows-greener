@@ -15,6 +15,10 @@ raster_layerbox.add(ui.Label({
   style: style.layerlabel
 }));
 
+var raster_inline_panel = ui.Panel({
+  style: style.layerbox_inline
+})
+
 var raster_select = ui.Select(
   ["None","Green Space Classification"],
   "Select a layer...",
@@ -23,7 +27,7 @@ raster_select.onChange(function (name) {
   var id = name_to_id(name);
   Map.addLayer(background.data[id]["layer"]);
 })
-raster_layerbox.add(raster_select);
+raster_inline_panel.add(raster_select);
 
 var raster_slider = ui.Slider({
   min: 0,
@@ -31,8 +35,8 @@ var raster_slider = ui.Slider({
   value: 1,
   step: 0.01
 });
-raster_layerbox.add(raster_slider);
+raster_inline_panel.add(raster_slider);
 
-layers.add(raster_layerbox);
+layers.add(raster_inline_panel);
 
 exports.object = layers
