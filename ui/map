@@ -33,6 +33,9 @@ map.style().set('cursor', 'crosshair');
 map.setCenter(-122.355537, 37.828, 9);
 
 // Map control
-layers.raster_select.
+layers.raster_select.onChange(function (name) {
+  var id = name_to_id(name);
+  map.addLayer(background.data[id]["layer"]);
+});
 
 exports.object = map
