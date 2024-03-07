@@ -42,6 +42,6 @@ layers.raster_select.onChange(function (name) {
 layers.raster_inline_panel.add(layers.raster_select);
 layers.raster_inline_panel.add(layers.raster_slider);
 layers.raster_layerbox.add(layers.raster_inline_panel);
-
+layers.object.add(layers.raster_layerbox);
 
 exports.object = map
