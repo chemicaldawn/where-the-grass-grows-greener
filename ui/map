@@ -33,6 +33,6 @@ map.style().set('cursor', 'crosshair');
 map.setCenter(-122.355537, 37.828, 9);
 
 // Map control
-
+layers.raster_select.
 
 exports.object = map
