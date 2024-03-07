@@ -22,10 +22,6 @@ var raster_select = ui.Select({
   value: "None",
   style: style.layerbutton
 });
-raster_select.onChange(function (name) {
-  var id = name_to_id(name);
-  Map.addLayer(background.data[id]["layer"]);
-})
 raster_inline_panel.add(raster_select);
 
 var raster_slider = ui.Slider({
