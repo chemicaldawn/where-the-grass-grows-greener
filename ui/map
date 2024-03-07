@@ -35,7 +35,9 @@ map.setCenter(-122.355537, 37.828, 9);
 // Map control
 layers.raster_select.onChange(function (name) {
   var id = name_to_id(name);
+  print(id)
   map.addLayer(background.data[id]["layer"]);
+  print(background.data[id])
 });
 
 exports.object = map
