@@ -13,6 +13,8 @@ function init() {
   
   ui.root.add(spacer);
   
+  // Links the layer selection buttons to the map itself.
+  map.init();
   // Makes sure the buttons function as intended.
   legend.init();
 }
