@@ -28,4 +28,5 @@ map.setCenter(-122.355537, 37.828, 9);
 
 // Map control
 
+
 exports.object = map
