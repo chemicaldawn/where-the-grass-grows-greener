@@ -39,5 +39,9 @@ layers.raster_select.onChange(function (name) {
   map.addLayer(background.data[id]["layer"]);
   print(background.data[id])
 });
+layers.raster_inline_panel.add(layers.raster_select);
+layers.raster_inline_panel.add(layers.raster_slider);
+layers.raster_layerbox.add(layers.raster_inline_panel);
+
 
 exports.object = map
