@@ -113,6 +113,21 @@ function change_section(section_index) {
 */
 var layers = ui.Panel();
 
+var raster_layer = null;
+var vector_layer = null;
+
+function redraw_map () {
+  
+  map.layers().clear()
+  
+  if(raster_layer) {
+    map.addLayer(raster_layer);
+  }
+  if(vector_layer) {
+    map.addLayer(vector_layer);
+  }
+}
+
 var raster_layerbox = ui.Panel({
   style: legend_style.layerbox
 });
