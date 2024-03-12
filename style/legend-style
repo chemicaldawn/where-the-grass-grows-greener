@@ -74,7 +74,7 @@ exports.rasterbox = {
 exports.vectorlabel = {
   margin: exports.rasterlabel.margin,
   fontWeight: exports.rasterlabel.fontWeight,
-  backgroundColor: "#e4f2e6"
+  backgroundColor: "#c9e7ff"
 }
 
 exports.vectorbutton = {
