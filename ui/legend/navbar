@@ -24,7 +24,7 @@ var about_button = ui.Button({
 })
 
 var univariate_button = ui.Button({
-  label: "Univariate Data",
+  label: "Layer Select",
   style: style.navbar_button
 });
 
