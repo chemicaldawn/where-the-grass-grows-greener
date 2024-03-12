@@ -1,6 +1,7 @@
 var background_data = {
   "Green Space Classification" : {
     name : "Green Space Classification",
+    visParams: {},
     layer: ee.Image('projects/nasa-eej/assets/EEJGreenSpaceClassificationR2')
   }
 }
