@@ -1,12 +1,6 @@
 var background_data = require("users/dawnschumacher/nasa-eej:data/background").data
 var style = require("users/dawnschumacher/nasa-eej:ui/map-style").style;
 
-// Converts a layer name to a layer ID
-function name_to_id(name) {
-  var id = name.toLowerCase().replace(" ","_").replace(" ","_");
-  return id;
-}
-
 var map = ui.Map();
 
 // Sets the map's visual style, creating a grayscale map.
