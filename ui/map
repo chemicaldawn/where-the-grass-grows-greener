@@ -1,9 +1,0 @@
-var background_data = require("users/dawnschumacher/nasa-eej:data/background").data
-var style = require("users/dawnschumacher/nasa-eej:ui/map-style").style;
-
-function set_background_layer(layer) {
-  print("test")
-  map.setCenter(-122.355537, 37.828, 9);
-  map.addLayer(layer);
-  exports.object = map;
-}
