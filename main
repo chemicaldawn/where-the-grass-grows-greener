@@ -123,6 +123,17 @@ function redraw_map () {
   });
 }
 
+function set_raster_layer(name) {
+  if(name != "None") {
+    raster_layer = name;
+  }
+  else {
+    raster_layer = null;
+  }
+  
+  redraw_map();
+}
+
 var raster_layerbox = ui.Panel({
   style: legend_style.layerbox
 });
