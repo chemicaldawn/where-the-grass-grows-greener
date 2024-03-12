@@ -26,6 +26,14 @@ var about = require("users/dawnschumacher/nasa-eej:panels/about");
 
 var raster_layer_list = ["None"];
 
+for(var layer in raster_data) {
+  map.addLayer({
+    name: layer,
+    eeObject: raster_data[layer]["layer"],
+    shown : false
+  });
+}
+
 /*
   UI
 */
@@ -202,16 +210,6 @@ map.setOptions('Map', {
   Map: map_style
 },
 ["Map","SATELLITE"]);
-
-// Loads all layers onto the map, but sets them invisible.
-for(var layer in raster_data) {
-  
-  map.addLayer({
-    name: layer,
-    eeObject: raster_data[layer]["layer"],
-    shown : false
-  });
-}
 
 // Modifies the map controls, disabling unnessecary ones to improve readability.
 map.setControlVisibility({
