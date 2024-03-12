@@ -21,6 +21,12 @@ var raster_data = require("users/dawnschumacher/nasa-eej:data/raster").data;
 var about = require("users/dawnschumacher/nasa-eej:panels/about");
 
 /*
+  Data Processing
+*/
+
+var raster_layer_list = ["None"];
+
+/*
   UI
 */
 // Create the base content panel inside the legend.
