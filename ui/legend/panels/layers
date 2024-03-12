@@ -1,3 +1,4 @@
+var map 
 var background = require("users/dawnschumacher/nasa-eej:data/background")
 var style = require("users/dawnschumacher/nasa-eej:ui/legend/datapanel-style");
 
