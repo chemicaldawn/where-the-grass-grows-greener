@@ -165,9 +165,6 @@ var raster_select = ui.Select({
   value: "None",
   style: legend_style.layerbutton
 });
-
-var raster_infobox = ui.Panel();
-
 raster_select.onChange(function (layer) {
   
   if(layer != "None") {
@@ -188,8 +185,10 @@ var raster_slider = ui.Slider({
   style: legend_style.layerslider
 });
 
-raster_inline_panel.add(raster_select);
-raster_inline_panel.add(raster_slider);
+var raster_infobox = ui.Panel();
+
+raster_layerbox.add(raster_select);
+raster_layerbox.add(raster_slider);
 raster_layerbox.add(raster_inline_panel);
 
 layers.add(raster_layerbox);
