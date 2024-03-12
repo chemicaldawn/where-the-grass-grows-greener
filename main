@@ -1,5 +1,5 @@
-var map = ui.Map();
 var map_style = require("users/dawnschumacher/nasa-eej:style/map-style").style;
+var map = ui.Map();
 
 var legend = ui.Panel({
   style: legend_style.legend
