@@ -118,7 +118,8 @@ var vector_layer = null;
 
 function redraw_map () {
   
-  map.layers = []
+  map.layers.pop();
+  map.layers.pop();
   
   if(raster_layer) {
     map.addLayer(raster_layer);
