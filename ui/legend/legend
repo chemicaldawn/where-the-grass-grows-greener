@@ -38,7 +38,7 @@ function change_section(section_index) {
     case 0:
       content.add(about.object);
       break;
-    case 1:
+    case 2:
       content.add(layers.object);
       break;
   }
