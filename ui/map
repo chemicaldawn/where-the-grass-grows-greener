@@ -35,4 +35,4 @@ function set_background_layer(layer) {
 }
 
 exports.object = map;
-exports.change_background_scene = set_background_layer
+exports.set_background_layer = set_background_layer
