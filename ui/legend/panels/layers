@@ -1,6 +1,6 @@
 var map = require("users/dawnschumacher/nasa-eej:ui/map");
 var background = require("users/dawnschumacher/nasa-eej:data/background");
-var style = require("users/dawnschumacher/nasa-eej:ui/legend/datapanel-style");
+var style = require("users/dawnschumacher/nasa-eej:ui/legend/legend-style");
 
 var layers = ui.Panel();
 
