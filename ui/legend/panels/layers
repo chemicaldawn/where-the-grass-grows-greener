@@ -32,8 +32,7 @@ var raster_slider = ui.Slider({
   style: style.layerslider
 });
 
-exports.object = layers;
-exports.raster_layerbox = raster_layerbox
-exports.raster_inline_panel = raster_inline_panel;
-exports.raster_select = raster_select;
-exports.raster_slider = raster_slider;
+raster_inline_panel.add(raster_select);
+raster_inline_panel.add(raster_slider);
+raster_layerbox.add(raster_inline_panel);
+layers.add(raster_layerbox);
