@@ -193,7 +193,7 @@ map.setOptions('Map', {
 ["Map","SATELLITE"]);
 
 // Loads all layers onto the map, but sets them invisible.
-for(const layer in raster_data) {
+for(layer in raster_data) {
   
   map.addLayer({
     name: layer,
