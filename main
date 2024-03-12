@@ -144,6 +144,12 @@ function redraw_map () {
 function set_raster_layer(name) {
   if(name != "None") {
     raster_layer = name;
+    
+    raster_infobox.clear();
+    raster_infobox.add(ui.Label({
+      value: raster_data[name]["info"],
+      style: legend_style.p
+    }));
   }
   else {
     raster_layer = null;
