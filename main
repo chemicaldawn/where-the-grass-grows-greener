@@ -240,6 +240,9 @@ vector_layerbox.add(vector_slider);
 
 layers.add(raster_layerbox);
 layers.add(raster_infobox);
+layers.add(ui.Panel({
+  style: legend_style.hr
+}))
 layers.add(vector_layerbox);
 layers.add(vector_infobox);
 
