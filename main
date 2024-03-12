@@ -39,9 +39,6 @@ function init() {
   ) 
   
   ui.root.add(spacer);
-  
-  // Makes sure the buttons function as intended.
-  legend.init();
 }
 
 init();
