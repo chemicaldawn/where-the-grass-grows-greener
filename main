@@ -1,3 +1,12 @@
+/*
+  Main
+  
+  Contains all logic for reactive UI elements. Unfortunately, due to how Earth Engine Apps works
+  internally, we have to do this all in one file. Subsections are defined by additional block comments
+  to try and organize this massive file.
+*/
+
+// Imports
 var map_style = require("users/dawnschumacher/nasa-eej:style/map-style").style;
 var map = ui.Map();
 
@@ -10,41 +19,6 @@ var raster_data = require("users/dawnschumacher/nasa-eej:data/raster").data;
 //var vector_data = require("users/dawnschumacher/nasa-eej:data/vector").data;
 
 var about = require("users/dawnschumacher/nasa-eej:panels/about");
-
-// init function, run on first load.
-function init_application() {
-  
-  // Sets the map's visual style, creating a grayscale map.
-  map.setOptions('Map', {
-    Map: map_style
-  },
-  ["Map","SATELLITE"]);
-  
-  // Modifies the map controls, disabling unnessecary ones to improve readability.
-  map.setControlVisibility({
-      all: false,
-      layerList: true,
-      zoomControl: true,
-      scaleControl: true,
-      mapTypeControl: true,
-      fullscreenControl: false
-  });
-  
-  // Sets the cursor style to a crosshair.
-  map.style().set('cursor', 'crosshair');
-  
-  // Centers the map on the San Francisco bay.
-  map.setCenter(-122.355537, 37.828, 9);
-  
-  // Replaces the base map with a cleaner, custom map.
-  ui.root.clear();
-  
-  var spacer = ui.SplitPanel(
-    map, legend
-  ) 
-  
-  ui.root.add(spacer);
-}
 
 /*
   UI
@@ -174,5 +148,39 @@ layers.add(raster_layerbox);
 legend.add(navbar);
 legend.add(content);
 
-init_application();
+/*
+  Map
+  
+  Contains all of the settings initially applied to the map.
+*/
+// Sets the map's visual style, creating a grayscale map.
+map.setOptions('Map', {
+  Map: map_style
+},
+["Map","SATELLITE"]);
+
+// Modifies the map controls, disabling unnessecary ones to improve readability.
+map.setControlVisibility({
+    all: false,
+    layerList: true,
+    zoomControl: true,
+    scaleControl: true,
+    mapTypeControl: true,
+    fullscreenControl: false
+});
+
+// Sets the cursor style to a crosshair.
+map.style().set('cursor', 'crosshair');
+
+// Centers the map on the San Francisco bay.
+map.setCenter(-122.355537, 37.828, 9);
+
+// Replaces the base map with a cleaner, custom map.
+ui.root.clear();
+
+var spacer = ui.SplitPanel(
+  map, legend
+) 
+
+ui.root.add(spacer);
 change_section(0);
