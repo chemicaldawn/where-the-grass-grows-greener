@@ -125,8 +125,6 @@ function change_section(section_index) {
       content.add(layers.object);
       break;
   }
-  
-  update();
 }
 
 legend.add(navbar);
