@@ -189,7 +189,6 @@ var raster_infobox = ui.Panel();
 
 raster_layerbox.add(raster_select);
 raster_layerbox.add(raster_slider);
-raster_layerbox.add(raster_inline_panel);
 
 layers.add(raster_layerbox);
 layers.add(raster_infobox);
