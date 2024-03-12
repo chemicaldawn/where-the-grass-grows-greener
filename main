@@ -148,7 +148,7 @@ var raster_infobox = ui.Panel();
 raster_select.onChange(function (layer) {
   
   if(layer != "None") {
-    raster_layer = raster_data[layer]["layer"]
+    raster_layer = layer
     redraw_map();
   }
   else {
