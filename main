@@ -174,15 +174,7 @@ var raster_select = ui.Select({
   style: legend_style.rasterbutton
 });
 raster_select.onChange(function (layer) {
-  
-  if(layer != "None") {
-    raster_layer = layer
-  }
-  else {
-    raster_layer = null;
-  }
-  
-  redraw_map();
+  set_raster_layer(layer);
 });
 
 var raster_slider = ui.Slider({
