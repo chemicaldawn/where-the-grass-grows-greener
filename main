@@ -1,4 +1,4 @@
-var map = require("users/dawnschumacher/nasa-eej:ui/map");
+var map = ui.Map();
 var legend = require("users/dawnschumacher/nasa-eej:ui/legend/legend");
 
 // init function, run on first load.
