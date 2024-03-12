@@ -26,6 +26,7 @@ var about = require("users/dawnschumacher/nasa-eej:panels/about");
 
 var raster_layer_list = ["None"];
 
+// Iterates over all listed layers, adds them to the map object, and compiles them into a list for use in the UI dropdown element.
 for(var layer in raster_data) {
   map.addLayer({
     name: layer,
