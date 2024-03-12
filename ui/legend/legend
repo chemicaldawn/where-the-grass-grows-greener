@@ -55,6 +55,9 @@ function update() {
   legend.add(content); 
 }
 
+// Sets the initial section to the About section.
+section_index(0);
+
 exports.object = legend;
 
 exports.init = init;
