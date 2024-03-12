@@ -31,4 +31,3 @@ map.style().set('cursor', 'crosshair');
 map.setCenter(-122.355537, 37.828, 9);
 
 exports.object = map;
-exports.init = init;
