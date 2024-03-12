@@ -216,9 +216,13 @@ var vector_infobox = ui.Panel();
 
 raster_layerbox.add(raster_select);
 raster_layerbox.add(raster_slider);
+vector_layerbox.add(vector_select_1);
+vector_layerbox.add(vector_slider);
 
 layers.add(raster_layerbox);
 layers.add(raster_infobox);
+layers.add(vector_layerbox);
+layers.add(vector_infobox);
 
 legend.add(navbar);
 legend.add(content);
