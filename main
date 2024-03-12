@@ -192,6 +192,15 @@ map.setOptions('Map', {
 },
 ["Map","SATELLITE"]);
 
+// Loads all layers onto the map, but sets them invisible.
+for(const layer in raster_data) {
+  
+  map.addLayer({
+    name: layer,
+    eeObject: raster_data[layer]["layer"]
+  });
+}
+
 // Modifies the map controls, disabling unnessecary ones to improve readability.
 map.setControlVisibility({
     all: false,
