@@ -23,7 +23,7 @@ function init() {
     change_section(2)
   });
   
-  section_index(0);
+  change_section(0);
 }
 
 // Called every time one of the navbar buttons is pressed.
