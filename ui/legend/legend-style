@@ -1,3 +1,69 @@
 exports.legend = {
   width: '30%'
 }
+
+exports.panel = {
+  padding: "16px"
+}
+
+exports.hr = {
+  margin: "24px 0px 12px 0px",
+  backgroundColor: "gray",
+  height: "1px"
+}
+
+exports.h1 = {
+  fontSize: "26px",
+  fontWeight: "600",
+  margin: "0px"
+}
+
+exports.h2 = {
+  fontSize: "14px",
+  fontWeight: "400",
+  margin: "2px 0px 2px 0px"
+}
+
+exports.p = {
+  fontSize: "14px",
+  fontWeight: "400",
+  margin: "16px 0px 0px 0px"
+}
+
+exports.layerlabel = {
+  margin: "0px 0px 2px 0px",
+  fontWeight: "700",
+  backgroundColor: "#e4f2e6"
+}
+
+exports.layerbutton = {
+  margin: "0px",
+  width: "50%",
+  backgroundColor: exports.layerlabel.backgroundColor
+}
+
+exports.layerslider = {
+  margin: "0px",
+  padding: "0px 0px 0px 8px",
+  height: "100%",
+  width: "50%",
+  backgroundColor: exports.layerlabel.backgroundColor
+}
+
+exports.layerbox = {
+  padding: "8px",
+  backgroundColor: exports.layerlabel.backgroundColor
+}
+
+exports.layerbox_inline = {
+  margin: "0px",
+  padding: "0px",
+  backgroundColor: exports.layerlabel.backgroundColor
+}
+
+exports.footer = {
+  color: "gray",
+  fontSize: "14px",
+  fontWeight: "400",
+  margin: "0px 0px 12px 0px"
+}
