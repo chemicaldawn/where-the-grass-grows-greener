@@ -194,6 +194,10 @@ var raster_slider = ui.Slider({
 });
 
 var raster_infobox = ui.Panel();
+raster_infobox.add(ui.Label({
+  value: "Select a background layer to display additonal info...",
+  style: legend_style.p
+}))
 
 // Vector Layerbox
 var vector_layerbox = ui.Panel({
