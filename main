@@ -153,18 +153,18 @@ function set_raster_layer(name) {
 
 // Raster Layerbox
 var raster_layerbox = ui.Panel({
-  style: legend_style.layerbox
+  style: legend_style.rasterbox
 });
 raster_layerbox.add(ui.Label({
   value: "Background Layer",
-  style: legend_style.layerlabel
+  style: legend_style.rasterlabel
 }));
 
 var raster_select = ui.Select({
   items: raster_layer_list,
   placeholder: "Select a layer...",
   value: "None",
-  style: legend_style.layerbutton
+  style: legend_style.rasterbutton
 });
 raster_select.onChange(function (layer) {
   
@@ -183,31 +183,31 @@ var raster_slider = ui.Slider({
   max: 1,
   value: 1,
   step: 0.01,
-  style: legend_style.layerslider
+  style: legend_style.rasterslider
 });
 
 var raster_infobox = ui.Panel();
 
 // Vector Layerbox
 var vector_layerbox = ui.Panel({
-  style: legend_style.layerbox
+  style: legend_style.vectorbox
 });
 vector_layerbox.add(ui.Label({
   value: "Census Layer",
-  style: legend_style.layerlabel
+  style: legend_style.vectorlabel
 }));
 
 var vector_select_1 = ui.Select({
   items: ["None"],
   placeholder: "Select a layer...",
   value: "None",
-  style: legend_style.layerbutton
+  style: legend_style.vectorbutton
 });
 var vector_select_2 = ui.Select({
   items: ["None"],
   placeholder: "Select a layer...",
   value: "None",
-  style: legend_style.layerbutton
+  style: legend_style.vectorbutton
 });
 
 var vector_slider = ui.Slider({
@@ -215,7 +215,7 @@ var vector_slider = ui.Slider({
   max: 1,
   value: 1,
   step: 0.01,
-  style: legend_style.layerslider
+  style: legend_style.vectorlider
 });
 
 var vector_infobox = ui.Panel();
