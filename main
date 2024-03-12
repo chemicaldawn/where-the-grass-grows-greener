@@ -1,7 +1,9 @@
 var map = ui.Map();
 var map_style = require("users/dawnschumacher/nasa-eej:style/map-style").style;
 
-var legend = ui.Panel();
+var legend = ui.Panel({
+  style: legend_style.legend
+});
 var legend_style = require("users/dawnschumacher/nasa-eej:style/legend-style");
 
 // init function, run on first load.
