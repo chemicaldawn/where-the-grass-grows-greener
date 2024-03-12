@@ -203,6 +203,12 @@ var vector_select_1 = ui.Select({
   value: "None",
   style: legend_style.layerbutton
 });
+var vector_select_2 = ui.Select({
+  items: ["None"],
+  placeholder: "Select a layer...",
+  value: "None",
+  style: legend_style.layerbutton
+});
 
 var vector_slider = ui.Slider({
   min: 0,
