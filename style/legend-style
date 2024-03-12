@@ -56,19 +56,19 @@ exports.rasterlabel = {
 exports.rasterbutton = {
   padding: "0px 6px 0px 6px",
   width: "100%",
-  backgroundColor: exports.layerlabel.backgroundColor
+  backgroundColor: exports.rasterlabel.backgroundColor
 }
 
 exports.rasterslider = {
   margin: "0px",
   padding: "0px 0px 0px 0px",
   width: "100%",
-  backgroundColor: exports.layerlabel.backgroundColor
+  backgroundColor: exports.rasterlabel.backgroundColor
 }
 
 exports.rasterbox = {
   padding: "8px",
-  backgroundColor: exports.layerlabel.backgroundColor
+  backgroundColor: exports.rasterlabel.backgroundColor
 }
 
 exports.vectorlabel = {
