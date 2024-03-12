@@ -1,5 +1,3 @@
-var legend = require("users/dawnschumacher/nasa-eej:ui/legend/legend");
-
 var map = ui.Map();
 var map_style = require("users/dawnschumacher/nasa-eej:style/map-style").style;
 
