@@ -192,4 +192,10 @@ var spacer = ui.SplitPanel(
 ) 
 
 ui.root.add(spacer);
+
+/*
+  Init
+  
+  Initializes the app.
+*/
 change_section(0);
