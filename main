@@ -132,6 +132,7 @@ var raster_info = ui.Label({
   value: "Select a layer for more information.",
   style: legend_style.p
 })
+layers.add(raster_info);
 
 raster_select.onChange(function (layer) {
   map.addLayer(raster_data[layer]["layer"]);
