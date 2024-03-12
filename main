@@ -90,8 +90,7 @@ button_row.add(layer_select_button);
 navbar.add(button_row);
 navbar.add(nav_highlight);
 
-// Changes the visible section by stretching or shrinking the margin of the blue highlight
-// UI panel.
+// Changes the visible section by stretching or shrinking the margin of the blue highlight UI panel.
 function change_highlight(section_index) {
   print(section_index);
   
