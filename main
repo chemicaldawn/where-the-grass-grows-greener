@@ -51,7 +51,7 @@ var content = ui.Panel({
 // Create the base navbar panel.
 var navbar = ui.Panel({
   layout: ui.Panel.Layout.flow('vertical'),
-  style: style.navbar
+  style: legend_style.navbar
 });
   
 // Create the containing panel for the row of buttons at the top, ensuring they are
@@ -62,23 +62,23 @@ var button_row = ui.Panel({
   
 // Create the blue highlight bar that changes position.
 var nav_highlight = ui.Panel({
-  style: style.nav_highlight
+  style: legend_style.nav_highlight
 })
   
 // Create the buttons. I would do this with a loop but it literally didn't work whatsoever.
 var about_button = ui.Button({
   label: "About",
-  style: style.navbar_button
+  style: legend_style.navbar_button
 })
 
 var explore_button = ui.Button({
   label: "Explore",
-  style: style.navbar_button
+  style: legend_style.navbar_button
 });
 
 var layer_select_button = ui.Button({
   label: "Layer Select",
-  style: style.navbar_button
+  style: legend_style.navbar_button
 });
 
 // Add the navbar buttons to the navigation panel.
