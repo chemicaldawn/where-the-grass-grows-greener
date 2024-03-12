@@ -149,12 +149,13 @@ raster_select.onChange(function (layer) {
   
   if(layer != "None") {
     raster_layer = layer
-    redraw_map();
   }
   else {
     raster_layer = null;
-    redraw_map();
   }
+  
+      redraw_map();
+
 });
 
 var raster_slider = ui.Slider({
