@@ -1,38 +1,9 @@
 var background_data = require("users/dawnschumacher/nasa-eej:data/background").data
 var style = require("users/dawnschumacher/nasa-eej:ui/map-style").style;
 
-var map = ui.Map();
-
-// Sets the map's visual style, creating a grayscale map.
-map.setOptions('Map', {
-  Map: style
-},
-["Map","SATELLITE"]);
-
-// Modifies the map controls, disabling unnessecary ones to improve readability.
-map.setControlVisibility({
-    all: false,
-    layerList: true,
-    zoomControl: true,
-    scaleControl: true,
-    mapTypeControl: true,
-    fullscreenControl: false
-});
-
-// Sets the cursor style to a crosshair.
-map.style().set('cursor', 'crosshair');
-
-// Centers the map on the San Francisco bay.
-map.setCenter(-122.355537, 37.828, 9);
-
 function set_background_layer(layer) {
   print("test")
   map.setCenter(-122.355537, 37.828, 9);
   map.addLayer(layer);
   exports.object = map;
 }
-
-set_background_layer(background_data["Green Space Classification"]["layer"])
-
-exports.object = map;
-exports.set_background_layer = set_background_layer
