@@ -129,6 +129,8 @@ function change_section(section_index) {
   }
 }
 
+
+
 legend.add(navbar);
 legend.add(content);
 
