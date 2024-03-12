@@ -129,4 +129,6 @@ function change_section(section_index) {
   update();
 }
 
+legend.add(content);
+
 init_application()
