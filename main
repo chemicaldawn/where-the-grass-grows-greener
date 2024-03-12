@@ -71,12 +71,12 @@ var about_button = ui.Button({
   style: style.navbar_button
 })
 
-var univariate_button = ui.Button({
+var explore_button = ui.Button({
   label: "Explore",
   style: style.navbar_button
 });
 
-var bivariate_button = ui.Button({
+var layer_select_button = ui.Button({
   label: "Layer Select",
   style: style.navbar_button
 });
