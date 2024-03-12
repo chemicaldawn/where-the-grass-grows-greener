@@ -72,12 +72,6 @@ exports.layerbox = {
   backgroundColor: exports.layerlabel.backgroundColor
 }
 
-exports.layerbox_inline = {
-  margin: "0px",
-  padding: "0px",
-  backgroundColor: exports.layerlabel.backgroundColor
-}
-
 exports.footer = {
   color: "gray",
   fontSize: "14px",
