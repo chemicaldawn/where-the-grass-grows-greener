@@ -31,11 +31,10 @@ function init() {
   ui.root.clear();
   
   var spacer = ui.SplitPanel(
-    map.object, legend.object
+    map, legend.object
   ) 
   
-  ui.root.add(map.object);
-  ui.root.add(legend.object);
+  ui.root.add(spacer);
   
   // Makes sure the buttons function as intended.
   legend.init();
