@@ -54,7 +54,7 @@ exports.layerlabel = {
 }
 
 exports.layerbutton = {
-  margin: "0px 6px 0px 6px",
+  padding: "0px 6px 0px 6px",
   width: "100%",
   backgroundColor: exports.layerlabel.backgroundColor
 }
