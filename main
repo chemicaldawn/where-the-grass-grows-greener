@@ -155,7 +155,7 @@ var raster_select = ui.Select({
 });
 
 raster_select.onChange(function (layer) {
-  map.set_background_layer(background.data[layer]["layer"]);
+  map.set_background_layer(background_data[layer]["layer"]);
 });
 
 var raster_slider = ui.Slider({
