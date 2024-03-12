@@ -24,6 +24,10 @@ var raster_select = ui.Select({
   style: style.layerbutton
 });
 
+raster_select.onChange(option) {
+
+}
+
 var raster_slider = ui.Slider({
   min: 0,
   max: 1,
