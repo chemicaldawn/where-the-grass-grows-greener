@@ -12,6 +12,7 @@ function init() {
   ) 
   
   ui.root.add(map.object);
+  ui.root.add(legend.object);
   
   // Makes sure the buttons function as intended.
   legend.init();
