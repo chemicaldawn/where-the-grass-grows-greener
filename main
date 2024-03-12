@@ -6,6 +6,8 @@ var legend = ui.Panel({
   style: legend_style.legend
 });
 
+var about = require("users/dawnschumacher/nasa-eej:panels/about");
+
 // init function, run on first load.
 function init_application() {
   
