@@ -32,5 +32,7 @@ function set_background_layer(layer) {
   exports.object = map;
 }
 
+set_background_layer(background_data["Green Space Classification"]["layer"])
+
 exports.object = map;
 exports.set_background_layer = set_background_layer
