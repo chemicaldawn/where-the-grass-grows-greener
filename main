@@ -203,19 +203,8 @@ var vector_select_1 = ui.Select({
   value: "None",
   style: legend_style.layerbutton
 });
-raster_select.onChange(function (layer) {
-  
-  if(layer != "None") {
-    raster_layer = layer
-  }
-  else {
-    raster_layer = null;
-  }
-  
-  redraw_map();
-});
 
-var raster_slider = ui.Slider({
+var vector_slider = ui.Slider({
   min: 0,
   max: 1,
   value: 1,
@@ -223,7 +212,7 @@ var raster_slider = ui.Slider({
   style: legend_style.layerslider
 });
 
-var raster_infobox = ui.Panel();
+var vector_layerbox = ui.Panel();
 
 raster_layerbox.add(raster_select);
 raster_layerbox.add(raster_slider);
