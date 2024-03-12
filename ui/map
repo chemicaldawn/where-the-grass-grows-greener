@@ -32,6 +32,7 @@ map.setCenter(-122.355537, 37.828, 9);
 
 function set_background_layer(layer) {
   map.addLayer(layer);
+  exports.object = map;
 }
 
 exports.object = map;
