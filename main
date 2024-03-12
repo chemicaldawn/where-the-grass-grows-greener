@@ -118,12 +118,9 @@ var vector_layer = null;
 
 function redraw_map () {
 
-  if(raster_layer) {
-    map.addLayer(raster_layer);
-  }
-  if(vector_layer) {
-    map.addLayer(vector_layer);
-  }
+  map.layers().forEach(function(element, index) {
+      element.setShown(selected == element.getName());
+  });
 }
 
 var raster_layerbox = ui.Panel({
