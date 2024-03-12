@@ -4,19 +4,7 @@ var layers = require("users/dawnschumacher/nasa-eej:ui/legend/panels/layers");
 var style = require("users/dawnschumacher/nasa-eej:ui/legend/datapanel-style");
 
 
-function change_section(section_index) {
-  datapanel.clear();
-  
-  // Add the corresponding UI elements depending on which tab is pressed.
-  switch(section_index) {
-    case 0:
-      datapanel.add(about.object);
-      break;
-    case 1:
-      datapanel.add(layers.object);
-      break;
-  }
-}
+
 
 change_section(0);
 
