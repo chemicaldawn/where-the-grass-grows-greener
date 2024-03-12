@@ -83,8 +83,8 @@ var layer_select_button = ui.Button({
 
 // Add the navbar buttons to the navigation panel.
 button_row.add(about_button);
-button_row.add(univariate_button);
-button_row.add(bivariate_button);
+button_row.add(explore_button);
+button_row.add(layer_select_button);
 
 // Construct the final navbar object.
 navbar.add(button_row);
