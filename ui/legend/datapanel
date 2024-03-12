@@ -1,6 +1,5 @@
 var about = require("users/dawnschumacher/nasa-eej:ui/legend/panels/about");
 var layers = require("users/dawnschumacher/nasa-eej:ui/legend/panels/layers");
-var bivariate_data = require("users/dawnschumacher/nasa-eej:ui/legend/panels/bivariate-data");
 
 var style = require("users/dawnschumacher/nasa-eej:ui/legend/datapanel-style");
 
