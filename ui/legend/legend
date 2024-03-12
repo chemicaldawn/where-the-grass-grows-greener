@@ -41,7 +41,7 @@ function update() {
   legend.add(navbar.object);
   
   // Add the dynamic Data Panel.
-  legend.add(datapanel.object); 
+  legend.add(content); 
 }
 
 exports.object = legend;
