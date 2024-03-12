@@ -156,6 +156,10 @@ raster_select.onChange(function (layer) {
     raster_layer = raster_data[layer]["layer"]
     redraw_map();
   }
+  else {
+    raster_layer = null;
+    redraw_map();
+  }
 });
 
 var raster_slider = ui.Slider({
