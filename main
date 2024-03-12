@@ -39,5 +39,60 @@ function init_application() {
   ui.root.add(spacer);
 }
 
+/*
+  UI
+*/
+
+// Create the base navbar panel.
+var navbar = ui.Panel({
+  layout: ui.Panel.Layout.flow('vertical'),
+  style: style.navbar
+});
+  
+// Create the containing panel for the row of buttons at the top, ensuring they are
+// displayed in a horizontal row.
+var button_row = ui.Panel({
+  layout: ui.Panel.Layout.flow('horizontal'),
+})
+  
+// Create the blue highlight bar that changes position.
+var nav_highlight = ui.Panel({
+  style: style.nav_highlight
+})
+  
+// Create the buttons. I would do this with a loop but it literally didn't work whatsoever.
+var about_button = ui.Button({
+  label: "About",
+  style: style.navbar_button
+})
+
+var univariate_button = ui.Button({
+  label: "Explore",
+  style: style.navbar_button
+});
+
+var bivariate_button = ui.Button({
+  label: "Layer Select",
+  style: style.navbar_button
+});
+
+// Add the navbar buttons to the navigation panel.
+button_row.add(about_button);
+button_row.add(univariate_button);
+button_row.add(bivariate_button);
+
+// Construct the final navbar object.
+navbar.add(button_row);
+navbar.add(nav_highlight);
+
+// Changes the visible section by stretching or shrinking the margin of the blue highlight
+// UI panel.
+function change_highlight(section_index) {
+  print(section_index);
+  
+  nav_highlight.style().set({
+    margin: "0% 0% 0% " + (33.3 * section_index).toString() + "%"
+  });
+
 init_application();
 legend.update();
