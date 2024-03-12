@@ -23,7 +23,6 @@ var about = require("users/dawnschumacher/nasa-eej:panels/about");
 /*
   UI
 */
-
 // Create the base content panel inside the legend.
 var content = ui.Panel({
   style: legend_style.panel
@@ -90,6 +89,7 @@ function change_highlight(section_index) {
   });
 }
 
+// Changes what is displayed in the "content" ui panel, creating a multi-page scrolling effect.
 function change_section(section_index) {
 
   change_highlight(section_index);
