@@ -1,8 +1,31 @@
-var map = ui.Map();
 var legend = require("users/dawnschumacher/nasa-eej:ui/legend/legend");
+
+var map = ui.Map();
 
 // init function, run on first load.
 function init() {
+  
+  // Sets the map's visual style, creating a grayscale map.
+  map.setOptions('Map', {
+    Map: style
+  },
+  ["Map","SATELLITE"]);
+  
+  // Modifies the map controls, disabling unnessecary ones to improve readability.
+  map.setControlVisibility({
+      all: false,
+      layerList: true,
+      zoomControl: true,
+      scaleControl: true,
+      mapTypeControl: true,
+      fullscreenControl: false
+  });
+  
+  // Sets the cursor style to a crosshair.
+  map.style().set('cursor', 'crosshair');
+  
+  // Centers the map on the San Francisco bay.
+  map.setCenter(-122.355537, 37.828, 9);
   
   // Replaces the base map with a cleaner, custom map.
   ui.root.clear();
