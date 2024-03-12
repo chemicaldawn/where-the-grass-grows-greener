@@ -31,9 +31,6 @@ map.style().set('cursor', 'crosshair');
 // Centers the map on the San Francisco bay.
 map.setCenter(-122.355537, 37.828, 9);
 
-// Adds, but does not show, all of the possible layers to the map.
-
-
 function set_background_layer(layer) {
   map.setCenter(-122.355537, 37.828, 9);
   map.addLayer(layer);
