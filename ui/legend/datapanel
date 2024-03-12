@@ -3,9 +3,6 @@ var layers = require("users/dawnschumacher/nasa-eej:ui/legend/panels/layers");
 
 var style = require("users/dawnschumacher/nasa-eej:ui/legend/datapanel-style");
 
-var datapanel = ui.Panel({
-  style: style.panel
-});
 
 function change_section(section_index) {
   datapanel.clear();
