@@ -62,7 +62,6 @@ exports.layerbutton = {
 exports.layerslider = {
   margin: "0px",
   padding: "0px 0px 0px 0px",
-  height: "100%",
   width: "100%",
   backgroundColor: exports.layerlabel.backgroundColor
 }
