@@ -31,6 +31,7 @@ map.style().set('cursor', 'crosshair');
 map.setCenter(-122.355537, 37.828, 9);
 
 function set_background_layer(layer) {
+  map.setCenter(-122.355537, 37.828, 9);
   map.addLayer(layer);
   exports.object = map;
 }
