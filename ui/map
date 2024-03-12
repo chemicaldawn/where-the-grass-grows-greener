@@ -30,4 +30,9 @@ map.style().set('cursor', 'crosshair');
 // Centers the map on the San Francisco bay.
 map.setCenter(-122.355537, 37.828, 9);
 
+function set_background_layer(layer) {
+  print("balls")
+}
+
 exports.object = map;
+exports.change_background_scene = set_background_layer
