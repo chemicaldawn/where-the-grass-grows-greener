@@ -1,7 +1,13 @@
 var background_data = {
   "Green Space Classification" : {
     name : "Green Space Classification",
-    visParams: {},
+    visParams: {
+          min: 1,
+          max: 3,
+          labels: ['Green space', 'Water', 'Urban/Impervious'],
+          palette: ['#008000', '#1e90ff', '#778899'],
+          opacity: 0.7
+      },
     layer: ee.Image('projects/nasa-eej/assets/EEJGreenSpaceClassificationR2')
   }
 }
