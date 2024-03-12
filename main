@@ -43,6 +43,11 @@ function init_application() {
   UI
 */
 
+// Create the base content panel inside the legend.
+var content = ui.Panel({
+  style: style.panel
+});
+
 // Create the base navbar panel.
 var navbar = ui.Panel({
   layout: ui.Panel.Layout.flow('vertical'),
