@@ -36,3 +36,5 @@ raster_inline_panel.add(raster_select);
 raster_inline_panel.add(raster_slider);
 raster_layerbox.add(raster_inline_panel);
 layers.add(raster_layerbox);
+
+exports.object = layers
