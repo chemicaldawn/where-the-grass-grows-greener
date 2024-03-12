@@ -44,6 +44,7 @@ function init_application() {
 /*
   UI
 */
+
 // Create the base content panel inside the legend.
 var content = ui.Panel({
   style: legend_style.panel
