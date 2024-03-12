@@ -22,6 +22,8 @@ function init() {
   navbar.bivariate_button.onClick(function() {
     change_section(2)
   });
+  
+  section_index(0);
 }
 
 // Called every time one of the navbar buttons is pressed.
@@ -42,7 +44,6 @@ function change_section(section_index) {
   
   update();
 }
-  
 
 function update() {
   
@@ -54,9 +55,6 @@ function update() {
   // Add the dynamic Data Panel.
   legend.add(content); 
 }
-
-// Sets the initial section to the About section.
-section_index(0);
 
 exports.object = legend;
 
