@@ -99,5 +99,4 @@ function change_highlight(section_index) {
   });
 }
 
-init_application();
-legend.update();
+init_application()
