@@ -47,28 +47,52 @@ exports.nav_highlight = {
   width: '33.3%'
 }
 
-exports.layerlabel = {
+exports.rasterlabel = {
   margin: "0px 0px 2px 0px",
   fontWeight: "700",
   backgroundColor: "#e4f2e6"
 }
 
-exports.layerbutton = {
+exports.rasterbutton = {
   padding: "0px 6px 0px 6px",
   width: "100%",
   backgroundColor: exports.layerlabel.backgroundColor
 }
 
-exports.layerslider = {
+exports.rasterslider = {
   margin: "0px",
   padding: "0px 0px 0px 0px",
   width: "100%",
   backgroundColor: exports.layerlabel.backgroundColor
 }
 
-exports.layerbox = {
+exports.rasterbox = {
   padding: "8px",
   backgroundColor: exports.layerlabel.backgroundColor
+}
+
+exports.vectorlabel = {
+  margin: exports.rasterlabel.margin,
+  fontWeight: exports.rasterlabel.fontWeight,
+  backgroundColor: "#e4f2e6"
+}
+
+exports.vectorbutton = {
+  padding: exports.rasterbutton.padding,
+  width: exports.rasterbutton.width,
+  backgroundColor: exports.vectorlabel.backgroundColor
+}
+
+exports.vectorslider = {
+  margin: exports.rasterslider.margin,
+  padding: exports.rasterslider.padding,
+  width: exports.rasterslider.width,
+  backgroundColor: exports.vectorlabel.backgroundColor
+}
+
+exports.vectorbox = {
+  padding: exports.rasterbox.padding,
+  backgroundColor: exports.vectorlabel.backgroundColor
 }
 
 exports.footer = {
