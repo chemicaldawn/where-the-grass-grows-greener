@@ -132,23 +132,23 @@ function change_section(section_index) {
 var layers = ui.Panel();
 
 var raster_layerbox = ui.Panel({
-  style: style.layerbox
+  style: legend_style.layerbox
 });
 raster_layerbox.add(ui.Label({
   value: "Background Layer",
-  style: style.layerlabel
+  style: legend_style.layerlabel
 }));
 
 var raster_inline_panel = ui.Panel({
   layout: ui.Panel.Layout.flow('horizontal'),
-  style: style.layerbox_inline
+  style: legend_style.layerbox_inline
 })
 
 var raster_select = ui.Select({
   items: ["None","Green Space Classification"],
   placeholder: "Select a layer...",
   value: "None",
-  style: style.layerbutton
+  style: legend_style.layerbutton
 });
 
 raster_select.onChange(function (layer) {
@@ -160,7 +160,7 @@ var raster_slider = ui.Slider({
   max: 1,
   value: 1,
   step: 0.01,
-  style: style.layerslider
+  style: legend_style.layerslider
 });
 
 raster_inline_panel.add(raster_select);
