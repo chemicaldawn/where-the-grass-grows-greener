@@ -151,7 +151,9 @@ var raster_select = ui.Select({
 var raster_infobox = ui.Panel();
 
 raster_select.onChange(function (layer) {
-  map.addLayer(raster_data[layer]["layer"]);
+  
+  raster_layer = raster_data[layer]["layer"]
+  redraw_map();
 });
 
 var raster_slider = ui.Slider({
