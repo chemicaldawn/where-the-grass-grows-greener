@@ -154,8 +154,7 @@ raster_select.onChange(function (layer) {
     raster_layer = null;
   }
   
-      redraw_map();
-
+  redraw_map();
 });
 
 var raster_slider = ui.Slider({
