@@ -88,6 +88,16 @@ function init_application() {
   button_row.add(explore_button);
   button_row.add(layer_select_button);
   
+  navbar.about_button.onClick(function() {
+    change_section(0)
+  });
+  navbar.explore_button.onClick(function() {
+    change_section(1)
+  });
+  navbar.layer_select_button.onClick(function() {
+    change_section(2)
+  });
+  
   // Construct the final navbar object.
   navbar.add(button_row);
   navbar.add(nav_highlight);
