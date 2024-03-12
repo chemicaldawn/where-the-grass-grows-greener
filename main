@@ -129,6 +129,7 @@ function change_section(section_index) {
   update();
 }
 
+legend.add(navbar);
 legend.add(content);
 
 init_application()
