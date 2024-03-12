@@ -165,7 +165,7 @@ var raster_inline_panel = ui.Panel({
 })
 
 var raster_select = ui.Select({
-  items: ["None","Green Space Classification"],
+  items: raster_layer_list,
   placeholder: "Select a layer...",
   value: "None",
   style: legend_style.layerbutton
