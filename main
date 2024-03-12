@@ -132,4 +132,5 @@ function change_section(section_index) {
 legend.add(navbar);
 legend.add(content);
 
-init_application()
+init_application();
+change_section(0);
