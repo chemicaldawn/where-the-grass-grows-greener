@@ -186,8 +186,6 @@ var raster_slider = ui.Slider({
   style: legend_style.layerslider
 });
 
-var raster_infobox = ui.Panel();
-
 // Vector Layerbox
 var vector_layerbox = ui.Panel({
   style: legend_style.layerbox
@@ -211,8 +209,6 @@ var vector_slider = ui.Slider({
   step: 0.01,
   style: legend_style.layerslider
 });
-
-var vector_layerbox = ui.Panel();
 
 raster_layerbox.add(raster_select);
 raster_layerbox.add(raster_slider);
