@@ -1,5 +1,4 @@
 var background = require("users/dawnschumacher/nasa-eej:data/background");
-var layers = require("users/dawnschumacher/nasa-eej:ui/legend/panels/layers");
 var style = require("users/dawnschumacher/nasa-eej:ui/map-style").style;
 
 // Converts a layer name to a layer ID
