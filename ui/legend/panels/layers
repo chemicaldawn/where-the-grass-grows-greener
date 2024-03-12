@@ -25,7 +25,7 @@ var raster_select = ui.Select({
 });
 
 raster_select.onChange(function (layer) {
-  print("e");
+  map.set_background_layer("test");
 });
 
 var raster_slider = ui.Slider({
