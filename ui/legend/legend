@@ -8,9 +8,7 @@ var legend = ui.Panel({
   style: style.legend
 });
 
-var content = ui.Panel({
-  style: style.panel
-});
+
 
 function init() {
   
