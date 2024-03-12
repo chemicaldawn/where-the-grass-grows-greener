@@ -11,7 +11,7 @@ function init() {
     map.object, legend.object
   ) 
   
-  ui.root.add(spacer);
+  ui.root.add(map.object);
   
   // Makes sure the buttons function as intended.
   legend.init();
