@@ -32,6 +32,8 @@ for(var layer in raster_data) {
     eeObject: raster_data[layer]["layer"],
     shown : false
   });
+  
+  raster_layer_list.push(layer);
 }
 
 /*
