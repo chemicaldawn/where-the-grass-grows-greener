@@ -3,6 +3,8 @@ var legend = require("users/dawnschumacher/nasa-eej:ui/legend/legend");
 var map = ui.Map();
 var map_style = require("users/dawnschumacher/nasa-eej:ui/map-style").style;
 
+var legend = ui.Panel();
+
 // init function, run on first load.
 function init() {
   
