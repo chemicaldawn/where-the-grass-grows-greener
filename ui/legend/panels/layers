@@ -2,43 +2,6 @@ var main = require("users/dawnschumacher/nasa-eej:main");
 var background = require("users/dawnschumacher/nasa-eej:data/background");
 var style = require("users/dawnschumacher/nasa-eej:ui/legend/legend-style");
 
-var layers = ui.Panel();
 
-var raster_layerbox = ui.Panel({
-  style: style.layerbox
-});
-raster_layerbox.add(ui.Label({
-  value: "Background Layer",
-  style: style.layerlabel
-}));
-
-var raster_inline_panel = ui.Panel({
-  layout: ui.Panel.Layout.flow('horizontal'),
-  style: style.layerbox_inline
-})
-
-var raster_select = ui.Select({
-  items: ["None","Green Space Classification"],
-  placeholder: "Select a layer...",
-  value: "None",
-  style: style.layerbutton
-});
-
-raster_select.onChange(function (layer) {
-  map.set_background_layer(background.data[layer]["layer"]);
-});
-
-var raster_slider = ui.Slider({
-  min: 0,
-  max: 1,
-  value: 1,
-  step: 0.01,
-  style: style.layerslider
-});
-
-raster_inline_panel.add(raster_select);
-raster_inline_panel.add(raster_slider);
-raster_layerbox.add(raster_inline_panel);
-layers.add(raster_layerbox);
 
 exports.object = layers
