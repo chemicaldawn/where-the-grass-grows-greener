@@ -1,6 +1,9 @@
 var navbar = require("users/dawnschumacher/nasa-eej:ui/legend/navbar");
 var style = require("users/dawnschumacher/nasa-eej:ui/legend/legend-style");
 
+var about = require("users/dawnschumacher/nasa-eej:ui/legend/panels/about");
+var layers = require("users/dawnschumacher/nasa-eej:ui/legend/panels/layers");
+
 var legend = ui.Panel({
   style: style.legend
 });
