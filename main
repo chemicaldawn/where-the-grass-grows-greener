@@ -197,7 +197,8 @@ for(var layer in raster_data) {
   
   map.addLayer({
     name: layer,
-    eeObject: raster_data[layer]["layer"]
+    eeObject: raster_data[layer]["layer"],
+    shown : false
   });
 }
 
