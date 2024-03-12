@@ -110,6 +110,24 @@ function init_application() {
       margin: "0% 0% 0% " + (33.3 * section_index).toString() + "%"
     });
   }
+  
+  function change_section(section_index) {
+  
+    navbar.change_highlight(section_index);
+    content.clear();
+    
+    // Add the corresponding UI elements depending on which tab is pressed.
+    switch(section_index) {
+      case 0:
+        content.add(about.object);
+        break;
+      case 2:
+        content.add(layers.object);
+        break;
+    }
+    
+    update();
+  }
 }
 
 init_application()
