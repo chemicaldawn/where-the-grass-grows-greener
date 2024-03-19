@@ -6,7 +6,7 @@ var var2 = ["None", "Displacement Risk", "Social Vulnerability", "Housing Price 
 var tract_data = {
   "Degree of Greenness and Displacement Risk" : {
     layer : tracts.map(function(feature) {
-      return feature.set('style', info.style.get(feature.get('ne')))
+      return feature.set('style', tracts.style.get(feature.get('ne')))
     })
   }
 }
