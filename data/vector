@@ -30,6 +30,17 @@ function get_layer(id, palette) {
     })
 }
 
+function get_empty() {
+  return tracts.map(function(feature) 
+    {
+      return feature.set('style', "#000000"))
+    })
+    .style({
+      styleProperty: 'style',
+      width: 0
+    })
+}
+
 var tract_data = {
   "Degree of Greenness and Displacement Risk" : {
     layer : get_layer("ne",color_pal)
