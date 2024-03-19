@@ -32,7 +32,22 @@ function get_layer(id, palette) {
 
 var tract_data = {
   "Degree of Greenness and Displacement Risk" : {
-    layer : get_layer("ne",color_pal)
+    layer : get_layer("ne",color_pal),
+  },
+  "Degree of Greenness and Social Vulnerability" : {
+    layer : get_layer("ne",color_pal),
+  },
+  "Degree of Greenness and Housing Price Trend" : {
+    layer : get_layer("ne",color_pal),
+  },
+  "Land Surface Temperature and Displacement Risk" : {
+    layer : get_layer("ne",color_pal),
+  },
+  "Land Surface Temperature and Social Vulnerability" : {
+    layer : get_layer("ne",color_pal),
+  },
+  "Land Surface Temperature and Housing Price Trend" : {
+    layer : get_layer("ne",color_pal),
   }
 }
 
