@@ -238,6 +238,7 @@ var vector_select_2 = ui.Select({
   value: "None",
   style: legend_style.vectorbutton
 });
+vector_select_2.onChange(set_vector_layer);
 
 var vector_slider = ui.Slider({
   min: 0,
