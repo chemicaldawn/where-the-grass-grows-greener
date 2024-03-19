@@ -45,8 +45,6 @@ for(var layer in vector_data) {
     eeObject: vector_data[layer]["layer"],
     shown : false
   });
-  
-  raster_layer_list.push(layer);
 }
 
 /*
