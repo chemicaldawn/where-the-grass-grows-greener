@@ -310,7 +310,7 @@ map.setOptions('Map', {
 // Modifies the map controls, disabling unnessecary ones to improve readability.
 map.setControlVisibility({
     all: false,
-    layerList: true,
+    layerList: false,
     zoomControl: true,
     scaleControl: true,
     mapTypeControl: true,
