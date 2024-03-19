@@ -21,7 +21,6 @@ var color_pal = ee.Dictionary({
 var tract_data = {
   "Degree of Greenness and Displacement Risk" : {
     layer : tracts.map(function(feature) {
-      print(feature.get('ne'))
       return feature.set('style', color_pal.get(feature.get('ne')))
     })
   }
