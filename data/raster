@@ -16,6 +16,9 @@ var background_data = {
     layer: ee.Image('projects/nasa-eej/assets/NDVI1yrTimeSeries1990to2020LinearTrendStats');.select('b3')
   },
   "Trend in Land Surface Temperature" : {
+    visParams: {
+      
+    },
     layer: ee.Image('projects/nasa-eej/assets/LST1yrTimeSeries1990to2020LinearTrendStats').select('b3')
   }
 }
