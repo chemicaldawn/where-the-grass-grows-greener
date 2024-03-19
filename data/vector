@@ -8,7 +8,7 @@ var color_pal = {palette: ['#f73593CC', '#a53593CC', '#403593CC', '#f78fb6CC', '
 var tract_data = {
   "Degree of Greenness and Displacement Risk" : {
     layer : tracts.map(function(feature) {
-      return feature.set('style', tracts.style.get(feature.get('ne')))
+      return feature.set('style', color_pal.get(feature.get('ne')))
     })
   }
 }
