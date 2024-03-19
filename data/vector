@@ -33,7 +33,7 @@ function get_layer(id, palette) {
 function get_empty() {
   return tracts.map(function(feature) 
     {
-      return feature.set('style', "#00000000")
+      return feature.set('style', {fillColor: "#00000000"})
     })
     .style({
       styleProperty: 'style',
