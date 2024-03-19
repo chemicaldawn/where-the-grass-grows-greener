@@ -11,7 +11,10 @@ var background_data = {
   },
   "Trend in Degree of Greenness" : {
     visParams: {
-      
+      min: -0.01,
+      max: 0.01,
+      palette: [],
+      opacity: 0.7
     },
     layer: ee.Image('projects/nasa-eej/assets/NDVI1yrTimeSeries1990to2020LinearTrendStats');.select('b3')
   },
