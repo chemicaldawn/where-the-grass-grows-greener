@@ -42,7 +42,7 @@ for(var layer in raster_data) {
 for(var layer in vector_data) {
   map.addLayer({
     name: layer,
-    eeObject: raster_data[layer]["layer"],
+    eeObject: vector_data[layer]["layer"],
     shown : false
   });
   
