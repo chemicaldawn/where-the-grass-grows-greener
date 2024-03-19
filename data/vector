@@ -32,7 +32,7 @@ function get_layer(id, palette) {
 
 var tract_data = {
   "Degree of Greenness and Displacement Risk" : {
-    
+    layer : get_layer("ne",color_pal)
   }
 }
 
