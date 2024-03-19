@@ -4,15 +4,15 @@ var var1 = ["None", "Degree of Greenness", "Land Surface Temperature"]
 var var2 = ["None", "Displacement Risk", "Social Vulnerability", "Housing Price Trend"]
 
 var color_pal = ee.Dictionary({
-              '1_3': {fillColor: '#f73593CC'},
-              '2_3': {fillColor: '#a53593CC'},
-              '3_3': {fillColor: '#403593CC'},
-              '1_2': {fillColor: '#f78fb6CC'},
-              '2_2': {fillColor: '#a58fb6CC'},
-              '3_2': {fillColor: '#408fa7CC'},
-              '1_1': {fillColor: '#f7fcf5CC'},
-              '2_1': {fillColor: '#a5e8cdCC'},
-              '3_1': {fillColor: '#40dba7CC'},
+              '1_3': {fillColor: '#f7359377'},
+              '2_3': {fillColor: '#a5359377'},
+              '3_3': {fillColor: '#40359377'},
+              '1_2': {fillColor: '#f78fb677'},
+              '2_2': {fillColor: '#a58fb677'},
+              '3_2': {fillColor: '#408fa777'},
+              '1_1': {fillColor: '#f7fcf577'},
+              '2_1': {fillColor: '#a5e8cd77'},
+              '3_1': {fillColor: '#40dba777'},
               '1_NA': {fillColor: '#FFFFFF77'},
               '2_NA': {fillColor: '#FFFFFF77'},
               '3_NA': {fillColor: '#FFFFFF77'}
