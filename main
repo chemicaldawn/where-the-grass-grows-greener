@@ -212,13 +212,13 @@ vector_layerbox.add(ui.Label({
 }));
 
 var vector_select_1 = ui.Select({
-  items: ["None"],
+  items: vector_layer_list_1,
   placeholder: "Select a layer...",
   value: "None",
   style: legend_style.vectorbutton
 });
 var vector_select_2 = ui.Select({
-  items: ["None"],
+  items: vector_layer_list_2,
   placeholder: "Select a layer...",
   value: "None",
   style: legend_style.vectorbutton
