@@ -160,6 +160,9 @@ function set_opacity () {
       else if(element.getName() == vector_layer) {
         element.setOpacity(vector_slider.getValue())
       }
+      else if(element.getName() == "Outlines") {
+        element.setOpacity(vector_slider.getValue() * 0.8 + 0.2)
+      }
   });
 }
 
