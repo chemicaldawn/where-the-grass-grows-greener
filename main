@@ -147,6 +147,13 @@ function redraw_map () {
 
   map.layers().forEach(function(element, index) {
       element.setShown(raster_layer == element.getName() || vector_layer == element.getName());
+      
+      if(element.getName() == "Outlines" && vector_layer) {
+        element.setShown(true);
+      }
+      else {
+        element.setShown(false);
+      }
   });
   
   set_opacity();
