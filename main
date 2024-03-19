@@ -179,6 +179,8 @@ function set_vector_layer(var1, var2) {
   else {
     vector_layer = null;
   }
+  
+  redraw_map();
 }
 
 // Raster Layerbox
