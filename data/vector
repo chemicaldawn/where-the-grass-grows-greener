@@ -18,14 +18,21 @@ var color_pal = ee.Dictionary({
               '3_NA': {fillColor: '#FFFFFF77'}
               });
 
+// Returns a layer with all of the census tracts colored correctly to represent the data.
+function get_layer(id, palette) {
+  return tracts.map(function(feature) 
+    {
+      return feature.set('style', color_pal.get(feature.get(id)))
+    })
+    .style({
+      styleProperty: 'style',
+      width: 1
+    })
+}
+
 var tract_data = {
   "Degree of Greenness and Displacement Risk" : {
-    layer : tracts.map(function(feature) {
-      return feature.set('style', color_pal.get(feature.get('ne')))
-    }).style({
-      styleProperty: 'style',
-      width: 0
-    })
+    
   }
 }
 
