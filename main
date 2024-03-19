@@ -152,6 +152,9 @@ function redraw_map () {
   });
 }
 
+/* 
+  Layer Selection Functions
+*/
 function set_raster_layer(name) {
   if(name != "None") {
     raster_layer = name;
