@@ -8,6 +8,15 @@ var background_data = {
           opacity: 0.9
       },
     layer: ee.Image('projects/nasa-eej/assets/EEJGreenSpaceClassificationR2')
+  },
+  "Trend in Degree of Greenness" : {
+    visParams: {
+      
+    },
+    layer: ee.Image('projects/nasa-eej/assets/NDVI1yrTimeSeries1990to2020LinearTrendStats');.select('b3')
+  },
+  "Trend in Land Surface Temperature" : {
+    layer: ee.Image('projects/nasa-eej/assets/LST1yrTimeSeries1990to2020LinearTrendStats').select('b3')
   }
 }
 
