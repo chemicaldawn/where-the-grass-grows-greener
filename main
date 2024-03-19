@@ -25,8 +25,8 @@ var about = require("users/dawnschumacher/nasa-eej:panels/about");
 */
 
 var raster_layer_list = ["None"];
-var vector_layer_list_1 = ["None"] + require("users/dawnschumacher/nasa-eej:data/vector").var1;
-var vector_layer_list_2 = ["None"] + require("users/dawnschumacher/nasa-eej:data/vector").var2;
+var vector_layer_list_1 = require("users/dawnschumacher/nasa-eej:data/vector").var1;
+var vector_layer_list_2 = require("users/dawnschumacher/nasa-eej:data/vector").var2;
 
 // Iterates over all listed layers, adds them to the map object, and compiles them into a list for use in the UI dropdown element.
 for(var layer in raster_data) {
