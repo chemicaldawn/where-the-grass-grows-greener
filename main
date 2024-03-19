@@ -172,6 +172,15 @@ function set_raster_layer(name) {
   redraw_map();
 }
 
+function set_vector_layer(var1, var2) {
+  if(var1 != "None" && var2 != "None") {
+    vector_layer = var1 + " and " + var2;
+  }
+  else {
+    vector_layer = null;
+  }
+}
+
 // Raster Layerbox
 var raster_layerbox = ui.Panel({
   style: legend_style.rasterbox
