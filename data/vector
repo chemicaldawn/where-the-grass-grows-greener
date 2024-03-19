@@ -59,6 +59,9 @@ var tract_data = {
   },
   "Land Surface Temperature and Housing Price Trend" : {
     layer : get_layer("lsc",color_pal)
+  },
+  "Outlines" : {
+    layer : get_empty()
   }
 }
 
