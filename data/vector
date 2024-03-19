@@ -4,7 +4,7 @@ var var1 = ["Degree of Greenness", "Land Surface Temperature"]
 var var2 = ["Displacement Risk", "Social Vulnerability", "Housing Price Trend"]
 
 var tract_data = {
-  ["Degree of Greenness", "Displacement Risk"] : {
+  "Degree of Greenness and Displacement Risk" : {
     layer : tracts
   }
 }
