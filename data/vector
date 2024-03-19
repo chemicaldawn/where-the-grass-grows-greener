@@ -3,6 +3,8 @@ var tracts = ee.FeatureCollection('projects/nasa-eej/assets/tract_for_webtool');
 var var1 = ["None", "Degree of Greenness", "Land Surface Temperature"]
 var var2 = ["None", "Displacement Risk", "Social Vulnerability", "Housing Price Trend"]
 
+var color_pal = {palette: ['#f73593CC', '#a53593CC', '#403593CC', '#f78fb6CC', '#a58fb6CC', '#408fa7CC', '#f7fcf5CC', '#a5e8cdCC', '#40dba7CC', '#FFFFFF77', '#FFFFFF77', '#FFFFFF77']}
+
 var tract_data = {
   "Degree of Greenness and Displacement Risk" : {
     layer : tracts.map(function(feature) {
