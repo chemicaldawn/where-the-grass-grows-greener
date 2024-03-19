@@ -37,6 +37,15 @@ for(var layer in raster_data) {
   
   raster_layer_list.push(layer);
 }
+for(var layer in vector_data) {
+  map.addLayer({
+    name: layer,
+    eeObject: raster_data[layer]["layer"],
+    shown : false
+  });
+  
+  raster_layer_list.push(layer);
+}
 
 /*
   UI
