@@ -1,0 +1,10 @@
+var tracts = ee.FeatureCollection('projects/nasa-eej/assets/tract_for_webtool');
+
+var var1 = ["Degree of Greenness", "Land Surface Temperature"]
+var var2 = ["Displacement Risk", "Social Vulnerability", "Housing Price Trend"]
+
+var tract_data = {
+  ["Degree of Greenness", "Displacement Risk"] : {
+    
+  }
+}
