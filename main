@@ -150,6 +150,17 @@ function redraw_map () {
   });
 }
 
+function set_opacity () {
+  map.layers().forEach(function(element, index) {
+      if(element.getName() == raster_layer) {
+        element.setOpacity(raster_slider.getValue())
+      }
+      else if(element.getName() == vector_layer) {
+        element.setOpacity(vector_slider.getValue())
+      }
+  });
+}
+
 /* 
   Layer Selection Functions
 */
