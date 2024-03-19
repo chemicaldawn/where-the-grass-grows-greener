@@ -231,6 +231,7 @@ var vector_select_1 = ui.Select({
   value: "None",
   style: legend_style.vectorbutton
 });
+vector_select_1.onChange(set_vector_layer);
 var vector_select_2 = ui.Select({
   items: vector_layer_list_2,
   placeholder: "Select a layer...",
