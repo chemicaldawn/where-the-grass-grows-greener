@@ -223,6 +223,7 @@ var raster_slider = ui.Slider({
   step: 0.01,
   style: legend_style.rasterslider
 });
+raster_slider.onSlide(set_opacity);
 
 var raster_infobox = ui.Panel();
 raster_infobox.add(ui.Label({
