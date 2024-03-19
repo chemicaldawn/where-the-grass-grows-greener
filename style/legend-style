@@ -50,7 +50,7 @@ exports.nav_highlight = {
 exports.rasterlabel = {
   margin: "0px 0px 2px 0px",
   fontWeight: "700",
-  backgroundColor: "#fafffb"
+  backgroundColor: "#f0f5f1"
 }
 
 exports.rasterbutton = {
@@ -74,7 +74,7 @@ exports.rasterbox = {
 exports.vectorlabel = {
   margin: exports.rasterlabel.margin,
   fontWeight: exports.rasterlabel.fontWeight,
-  backgroundColor: "#fafdff"
+  backgroundColor: "#f0f3f5"
 }
 
 exports.vectorbutton = {
