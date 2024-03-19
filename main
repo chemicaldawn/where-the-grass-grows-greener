@@ -172,7 +172,10 @@ function set_raster_layer(name) {
   redraw_map();
 }
 
-function set_vector_layer(var1, var2) {
+function set_vector_layer() {
+  var1 = vector_select_1.getValue();
+  var2 = vector_select_2.getValue();
+  
   if(var1 != "None" && var2 != "None") {
     vector_layer = var1 + " and " + var2;
   }
