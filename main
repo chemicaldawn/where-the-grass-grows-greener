@@ -262,6 +262,7 @@ var vector_slider = ui.Slider({
   step: 0.01,
   style: legend_style.vectorslider
 });
+vector_slider.onSlide(set_opacity);
 
 var vector_infobox = ui.Panel();
 
