@@ -248,6 +248,7 @@ var raster_slider = ui.Slider({
   style: legend_style.rasterslider
 });
 raster_slider.onSlide(set_opacity);
+raster_slider_container.add(raster_slider);
 
 var raster_infobox = ui.Panel();
 raster_infobox.add(ui.Label({
