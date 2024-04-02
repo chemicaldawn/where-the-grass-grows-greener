@@ -209,7 +209,8 @@ function set_vector_layer() {
     
     vector_infobox.clear();
     vector_infobox.add(ui.Label({
-      value: vector_data[vector_layer]["info"]
+      value: vector_data[vector_layer]["info"],
+      style: legend_style.p
     }));
   }
   else {
