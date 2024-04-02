@@ -96,10 +96,10 @@ button_row.add(explore_button);
 about_button.onClick(function() {
   change_section(0)
 });
-explore_button.onClick(function() {
+layer_select_button.onClick(function() {
   change_section(1)
 });
-layer_select_button.onClick(function() {
+explore_button.onClick(function() {
   change_section(2)
 });
 
