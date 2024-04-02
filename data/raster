@@ -17,7 +17,8 @@ var background_data = {
       palette: ["#a50026","#d73027","#f46d43","#fdae61","#fee08b","#ffffbf","#d9ef8b","#a6d96a","#66bd63","#1a9850","#006837"],
       opacity: 1
     },
-    layer: ee.Image('projects/nasa-eej/assets/NDVI1yrTimeSeries1990to2020LinearTrendStats').select('b3')
+    layer: ee.Image('projects/nasa-eej/assets/NDVI1yrTimeSeries1990to2020LinearTrendStats').select('b3'),
+    info: "Statistic describing an increasing or decreasing trend in land surface temperature (LST; source: Landsat) between 1990 and 2020. LST is measured in °C."
   },
   "Trend in Land Surface Temperature" : {
     visParams: {
