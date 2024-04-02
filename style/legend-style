@@ -108,7 +108,8 @@ exports.vectorbox = {
 }
 
 exports.infolabel = {
-  margin: "0px 0px 12px 0px",
+  fontSize: "14px",
+  margin: "16px 0px 12px 0px",
   fontWeight: "400"
 }
 
