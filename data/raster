@@ -32,12 +32,26 @@ var background_data = {
   }
 }
 
-function make_color_bar() {
+function make_color_bar(palette) {
   return ui.Thumbnail({
     image: ee.Image.pixelLonLat().select(0),
     
       // Parameters for color bar.
-      params: makeColorBarParams(vis.palette),
+      params: {
+        // Bounding box for color bar.
+        bbox: [0, 0, 1, 0.1],
+        // Dimensions of color bar.
+        dimensions: '100x10',
+        // Format of color bar.
+        format: 'png',
+        // Min value for color bar.
+        min: 0,
+        // Max value for color bar.
+        max: 1,
+        // Color palette for color bar.
+        palette: palette
+      };
+      
       style: {
           // Stretch color bar horizontally.
           stretch: 'horizontal',
