@@ -65,4 +65,7 @@ function make_color_bar(palette) {
   });
 }
 
+background_data["Trend in Degree of Greenness"]["legend"] = make_color_bar(background_data["Trend in Degree of Greenness"]["visParams"]["palette"]);
+background_data["Trend in Land Surface Temperature"]["legend"] = make_color_bar(background_data["Trend in Land Surface Temperature"]["visParams"]["palette"]);
+
 exports.data = background_data
