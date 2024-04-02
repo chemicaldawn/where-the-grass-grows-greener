@@ -334,7 +334,6 @@ layers.add(ui.Panel({
 
 layers.add(ui.Label({
   value: "Additional notes on methodology...",
-  style: legend_style.p
 }).setUrl("https://github.com/erthromero/EEJWebApp/blob/main/Documentation/GeospatialMethods.pdf"))
 
 /*
