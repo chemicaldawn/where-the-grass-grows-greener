@@ -190,6 +190,8 @@ function set_raster_layer(name) {
   }
   else {
     raster_layer = null;
+    
+    raster_infobox.clear();
   }
   
   redraw_map();
