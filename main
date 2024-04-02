@@ -307,7 +307,7 @@ vector_slider_container.add(vector_slider);
 
 var vector_infobox = ui.Panel();
 vector_infobox.add(ui.Label({
-  value: "Select a background layer to display additonal info...",
+  value: "Select two variables to display additional info...",
   style: legend_style.p
 }));
 
