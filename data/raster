@@ -50,7 +50,7 @@ function make_color_bar(palette) {
         max: 1,
         // Color palette for color bar.
         palette: palette
-      };
+      },
       
       style: {
           // Stretch color bar horizontally.
