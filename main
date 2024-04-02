@@ -284,6 +284,17 @@ var vector_select_2 = ui.Select({
 });
 vector_select_2.onChange(set_vector_layer);
 
+var vector_slider_container = ui.Panel({
+  layout: ui.Panel.Layout.flow('horizontal'),
+  style: {
+    backgroundColor: legend_style.vectorlabel.backgroundColor
+  }
+});
+raster_slider_container.add(ui.Label({
+  value: "Opacity",
+  style: legend_style.vectoropacity
+}));
+
 var vector_slider = ui.Slider({
   min: 0,
   max: 1,
