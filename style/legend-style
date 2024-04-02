@@ -60,7 +60,7 @@ exports.rasterbutton = {
 }
 
 exports.rasteropacity = {
-  margin: "0px 6px 0px 0px",
+  margin: "0px 24px 0px 0px",
   fontWeight: "400",
   backgroundColor: exports.rasterlabel.backgroundColor
 }
