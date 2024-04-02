@@ -233,6 +233,10 @@ raster_select.onChange(function (layer) {
   set_raster_layer(layer);
 });
 
+var raster_slider_container = ui.Panel({
+  layout: ui.Panel.Layout.flow('horizontal')
+})
+
 var raster_slider = ui.Slider({
   min: 0,
   max: 1,
