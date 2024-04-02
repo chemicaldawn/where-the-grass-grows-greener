@@ -235,7 +235,10 @@ raster_select.onChange(function (layer) {
 
 var raster_slider_container = ui.Panel({
   layout: ui.Panel.Layout.flow('horizontal')
-})
+});
+raster_slider_container.add(ui.Label({
+  value: "Opacity"
+}));
 
 var raster_slider = ui.Slider({
   min: 0,
