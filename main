@@ -271,7 +271,7 @@ var vector_layerbox = ui.Panel({
   style: legend_style.vectorbox
 });
 vector_layerbox.add(ui.Label({
-  value: "Census Layer",
+  value: "Two-variable Correlation",
   style: legend_style.vectorlabel
 }));
 
