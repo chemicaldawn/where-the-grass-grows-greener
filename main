@@ -187,6 +187,9 @@ function set_raster_layer(name) {
       value: raster_data[name]["info"],
       style: legend_style.p
     }));
+    raster_infobox.add(
+      raster_data[name]["legend"]
+    )
   }
   else {
     raster_layer = null;
