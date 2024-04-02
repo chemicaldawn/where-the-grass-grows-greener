@@ -328,6 +328,13 @@ layers.add(vector_infobox);
 
 legend.add(navbar);
 legend.add(content);
+layers.add(ui.Panel({
+  style: legend_style.hr
+}))
+
+legend.add(ui.Label({
+  value: "Additional notes on methodology..."
+}))
 
 /*
   Map
