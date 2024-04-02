@@ -33,7 +33,9 @@ var background_data = {
 }
 
 function make_color_bar() {
-  
+  return ui.Thumbnail({
+    
+  });
 }
 
 exports.data = background_data
