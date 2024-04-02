@@ -27,7 +27,8 @@ var background_data = {
       palette: ["#abd9e9","#ffffbf","#fee090","#fdae61","#f46d43","#d73027","#a50026"],
       opacity: 1
     },
-    layer: ee.Image('projects/nasa-eej/assets/LST1yrTimeSeries1990to2020LinearTrendStats').select('b3')
+    layer: ee.Image('projects/nasa-eej/assets/LST1yrTimeSeries1990to2020LinearTrendStats').select('b3'),
+    info: "Areas classified as green space, water, or urban areas in 2020 using machine learning."
   }
 }
 
