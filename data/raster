@@ -7,7 +7,8 @@ var background_data = {
           palette: ['#008000ff', "", ""],
           opacity: 1
       },
-    layer: ee.Image('projects/nasa-eej/assets/EEJGreenSpaceClassificationR2')
+    layer: ee.Image('projects/nasa-eej/assets/EEJGreenSpaceClassificationR2'),
+    info: "Statistic describing an increasing or decreasing trend in greenness defined using the normalized difference vegetation index (NDVI; source: Landsat) between 1990 and 2020. NDVI is a unitless measure of vegetation health between -1 and 1."
   },
   "Trend in Degree of Greenness" : {
     visParams: {
