@@ -234,10 +234,14 @@ raster_select.onChange(function (layer) {
 });
 
 var raster_slider_container = ui.Panel({
-  layout: ui.Panel.Layout.flow('horizontal')
+  layout: ui.Panel.Layout.flow('horizontal'),
+  style: {
+    backgroundColor: legend_style.rasterlabel.backgroundColor
+  }
 });
 raster_slider_container.add(ui.Label({
-  value: "Opacity"
+  value: "Opacity",
+  style: legend_style.rasteropacity
 }));
 
 var raster_slider = ui.Slider({
