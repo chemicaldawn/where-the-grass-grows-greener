@@ -34,7 +34,20 @@ var background_data = {
 
 function make_color_bar() {
   return ui.Thumbnail({
+    image: ee.Image.pixelLonLat().select(0),
     
+      // Parameters for color bar.
+      params: makeColorBarParams(vis.palette),
+      style: {
+          // Stretch color bar horizontally.
+          stretch: 'horizontal',
+          // Margin of color bar.
+          margin: '0px 20px 0px 20px',
+          // Max height of color bar.
+          maxHeight: '10%',
+          // Width of color bar.
+          width: '91%'
+      },
   });
 }
 
