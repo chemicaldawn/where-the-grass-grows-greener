@@ -90,8 +90,8 @@ var layer_select_button = ui.Button({
 
 // Add the navbar buttons to the navigation panel.
 button_row.add(about_button);
-button_row.add(explore_button);
 button_row.add(layer_select_button);
+button_row.add(explore_button);
 
 about_button.onClick(function() {
   change_section(0)
