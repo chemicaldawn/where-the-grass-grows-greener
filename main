@@ -127,7 +127,7 @@ function change_section(section_index) {
     case 0:
       content.add(about.object);
       break;
-    case 2:
+    case 1:
       content.add(layers);
       break;
   }
