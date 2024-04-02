@@ -206,9 +206,10 @@ function set_vector_layer() {
   
   if(var1 != "None" && var2 != "None") {
     vector_layer = var1 + " and " + var2;
+    
     vector_infobox.clear();
     vector_infobox.add(ui.Label({
-      
+      value: vector_data[vector_layer]["info"]
     }));
   }
   else {
