@@ -292,7 +292,7 @@ vector_slider.onSlide(set_opacity);
 var vector_infobox = ui.Panel();
 
 raster_layerbox.add(raster_select);
-raster_layerbox.add(raster_slider);
+raster_layerbox.add(raster_slider_container);
 
 vector_layerbox.add(vector_select_1);
 vector_layerbox.add(vector_select_2);
