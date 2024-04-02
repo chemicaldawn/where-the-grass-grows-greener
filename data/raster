@@ -32,4 +32,8 @@ var background_data = {
   }
 }
 
+function make_color_bar() {
+  
+}
+
 exports.data = background_data
