@@ -62,7 +62,7 @@ exports.rasterbutton = {
 exports.rasterslider = {
   margin: "0px",
   padding: "0px 0px 0px 0px",
-  width: "100%",
+  width: "80%",
   backgroundColor: exports.rasterlabel.backgroundColor
 }
 
