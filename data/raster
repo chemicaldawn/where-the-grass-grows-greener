@@ -8,7 +8,7 @@ var background_data = {
           opacity: 1
       },
     layer: ee.Image('projects/nasa-eej/assets/EEJGreenSpaceClassificationR2'),
-    info: "Statistic describing an increasing or decreasing trend in greenness defined using the normalized difference vegetation index (NDVI; source: Landsat) between 1990 and 2020. NDVI is a unitless measure of vegetation health between -1 and 1."
+    info: "Statistic describing an increasing or decreasing trend in greenness defined using the normalized difference vegetation index between 1990 and 2020. NDVI is a unitless measure of vegetation health between -1 and 1."
   },
   "Trend in Degree of Greenness" : {
     visParams: {
@@ -18,7 +18,7 @@ var background_data = {
       opacity: 1
     },
     layer: ee.Image('projects/nasa-eej/assets/NDVI1yrTimeSeries1990to2020LinearTrendStats').select('b3'),
-    info: "Statistic describing an increasing or decreasing trend in land surface temperature (LST; source: Landsat) between 1990 and 2020. LST is measured in °C."
+    info: "Statistic describing an increasing or decreasing trend in land surface temperature between 1990 and 2020. LST is measured in °C."
   },
   "Trend in Land Surface Temperature" : {
     visParams: {
