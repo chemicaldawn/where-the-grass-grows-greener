@@ -312,7 +312,7 @@ raster_layerbox.add(raster_slider_container);
 
 vector_layerbox.add(vector_select_1);
 vector_layerbox.add(vector_select_2);
-vector_layerbox.add(vector_slider);
+vector_layerbox.add(vector_slider_container);
 
 layers.add(raster_layerbox);
 layers.add(raster_infobox);
