@@ -107,6 +107,11 @@ exports.vectorbox = {
   backgroundColor: exports.vectorlabel.backgroundColor
 }
 
+exports.infolabel = {
+  margin: "0px 0px 12px 0px",
+  fontWeight: "400"
+}
+
 exports.footer = {
   color: "gray",
   fontSize: "14px",
