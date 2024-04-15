@@ -1,4 +1,4 @@
-var tracts = ee.FeatureCollection('projects/nasa-eej/assets/tract_for_webtool')
+var tracts = ui.Map.FeatureViewLayer("projects/nasa-eej/assets/tract_featureview")
 
 var var1 = ["None", "Degree of Greenness", "Land Surface Temperature"]
 var var2 = ["None", "Displacement Risk", "Social Vulnerability", "Housing Price Trend"]
@@ -19,26 +19,13 @@ var color_pal = ee.Dictionary({
               });
 
 // Returns a layer with all of the census tracts colored correctly to represent the data.
-function get_layer(id, palette) {
-  return tracts.map(function(feature) 
-    {
-      return feature.set('style', color_pal.get(feature.get(id)))
-    })
-    .style({
-      styleProperty: 'style',
-      width: 0
-    })
+function getVisParams(id, palette) {
+  tracts.setVisParams({
+    
+  })
 }
 
-function get_empty() {
-  return tracts.map(function(feature) 
-    {
-      return feature.set('style', {fillColor: "#00000000"})
-    })
-    .style({
-      styleProperty: 'style',
-      width: 0
-    })
+function getOutlines() {
 }
 
 var tract_data = {
@@ -63,7 +50,7 @@ var tract_data = {
     info : "Change in average land surface temperature compared to the CDC's 2018 Social Vulnerability Index at the census tract level."
   },
   "Land Surface Temperature and Housing Price Trend" : {
-    layer : get_layer("lsc",color_pal),
+    visParams : get_layer("lsc",color_pal),
     info : "Change in average land surface temperature compared to the yearly average increase in housing price (2000 - 2020) at the zip code level."
   },
   "Outlines" : {
