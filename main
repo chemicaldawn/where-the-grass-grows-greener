@@ -42,7 +42,8 @@ for(var layer in raster_data) {
   raster_layer_list.push(layer);
 }
 
-map.add()
+map.add(vector.tracts);
+map.add(vector.outlines);
 
 /*
   UI
