@@ -227,11 +227,9 @@ function redraw_map () {
   });
   
   // If any layer is showing, show the legend
+  map.remove(legend);
   if(raster_layer !== null || vector_layer !== null) {
     map.add(legend);
-  }
-  else {
-    map.remove(legend);
   }
   
   // Set the opacity of layers according to the opacity sliders
