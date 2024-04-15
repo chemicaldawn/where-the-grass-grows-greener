@@ -144,31 +144,31 @@ var about = ui.Panel();
 
 about.add(ui.Label({
   value: "Where the Grass Grows Greener",
-  style: style.h1
+  style: legend_style.h1
 }));
 
 about.add(ui.Label({
   value: "The Impacts of Urban Greening on Housing Prices and Neighborhood Stability",
-  style: style.h2
+  style: legend_style.h2
 }));
 
 about.add(ui.Label({
   value: "This webtool shows trends in urban greenery and land surface temperature in the San Francisco Bay Area between 1990 and 2020. It also illustrates spatial relationships with socioeconomic indicators such as housing prices and displacement risk. Note that the vector layers include only census tracts or zip codes that are located in areas designated as 'urban'.",
-  style: style.p
+  style: legend_style.p
 }));
 
 about.add(ui.Panel({
-  style: style.hr
+  style: legend_style.hr
 }));
 
 about.add(ui.Label({
   value: "Created by Eric Romero, Julia Greenberg, and Dawn Schumacher",
-  style: style.footer
+  style: legend_style.footer
 }));
 
 about.add(ui.Label({
   value: "Funding from the NASA Equity and Environmental Justice program, Data Integration Project, grant no. 80NSSC22K1699",
-  style: style.footer
+  style: legend_style.footer
 }));
 
 /*
