@@ -3,24 +3,30 @@ var tracts = ui.Map.FeatureViewLayer("projects/nasa-eej/assets/tract_featureview
 var var1 = ["None", "Degree of Greenness", "Land Surface Temperature"]
 var var2 = ["None", "Displacement Risk", "Social Vulnerability", "Housing Price Trend"]
 
-var color_pal = ee.Dictionary({
-              '1_3': {fillColor: '#f73593FF'},
-              '2_3': {fillColor: '#a53593FF'},
-              '3_3': {fillColor: '#403593FF'},
-              '1_2': {fillColor: '#f78fb6FF'},
-              '2_2': {fillColor: '#a58fb6FF'},
-              '3_2': {fillColor: '#408fa7FF'},
-              '1_1': {fillColor: '#f7fcf5FF'},
-              '2_1': {fillColor: '#a5e8cdFF'},
-              '3_1': {fillColor: '#40dba7FF'},
-              '1_NA': {fillColor: '#FFFFFF77'},
-              '2_NA': {fillColor: '#FFFFFF77'},
-              '3_NA': {fillColor: '#FFFFFF77'}
-              });
+var color_pal = [
+  ['1_3', '#f73593FF'],
+  ['2_3': '#a53593FF'],
+  ['3_3': '#403593FF'],
+  ['1_2': '#f78fb6FF'],
+  ['2_2': '#a58fb6FF'],
+  ['3_2': '#408fa7FF'],
+  ['1_1': '#f7fcf5FF'],
+  ['2_1': '#a5e8cdFF'],
+  ['3_1': '#40dba7FF'],
+  ['1_NA': '#FFFFFF77'],
+  ['2_NA': '#FFFFFF77'],
+  ['3_NA', '#FFFFFF77']
+];
 
 // Returns a layer with all of the census tracts colored correctly to represent the data.
 function getVisParams(id, palette) {
+  
+  categories = []
+  
+  palette.
+  
   return {
+    property: id,
     
   }
 }
