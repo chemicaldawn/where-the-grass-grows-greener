@@ -342,6 +342,14 @@ layers.add(ui.Label({
   value: "Additional notes on methodology...",
 }).setUrl("https://github.com/erthromero/EEJWebApp/blob/main/Documentation/GeospatialMethods.pdf"))
 
+
+/*
+  Explore
+  
+   
+*/
+
+
 /*
   Map
   
