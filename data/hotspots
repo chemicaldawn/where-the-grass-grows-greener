@@ -1,3 +1,8 @@
+/*
+  Data Processing
+*/
+var tracts = ee.FeatureCollection('projects/nasa-eej/assets/tract_for_webtool')
+
 
 
 var hotspots = {
