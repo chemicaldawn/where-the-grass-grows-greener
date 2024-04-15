@@ -16,7 +16,10 @@ var legend = ui.Panel({
 });
 
 var raster_data = require("users/dawnschumacher/nasa-eej:data/raster").data;
+
+var vector = require("users/dawnschumacher/nasa-eej:data/vector");
 var vector_data = require("users/dawnschumacher/nasa-eej:data/vector").data;
+
 var hotspot_data = require("users/dawnschumacher/nasa-eej:data/hotspots").data;
 
 /*
@@ -38,13 +41,8 @@ for(var layer in raster_data) {
   
   raster_layer_list.push(layer);
 }
-for(var layer in vector_data) {
-  map.addLayer({
-    name: layer,
-    eeObject: vector_data[layer]["layer"],
-    shown : false
-  });
-}
+
+map.add()
 
 /*
   UI
