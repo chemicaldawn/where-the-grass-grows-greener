@@ -209,6 +209,7 @@ var vector_layer = null;
 
 function redraw_map () {
 
+  // Select which layers to show
   map.layers().forEach(function(element, index) {
       if(element.getName() == raster_layer) {
         element.setShown(true);
@@ -227,6 +228,7 @@ function redraw_map () {
       }
   });
   
+  // Set the opacity of layers according to the opacity sliders
   set_opacity();
 }
 
