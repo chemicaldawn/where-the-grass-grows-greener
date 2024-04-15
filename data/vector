@@ -57,12 +57,8 @@ var tract_data = {
     info : "Change in average land surface temperature compared to the yearly average increase in housing price (2000 - 2020) at the zip code level."
   },
   "Outlines" : {
-    layer : get_empty()
+    layer : getOutlines()
   }
-}
-
-var info = {
-  
 }
 
 exports.data = tract_data
