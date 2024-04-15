@@ -1,0 +1,11 @@
+var tracts = ee.FeatureCollection('projects/nasa-eej/assets/tract_for_webtool')
+
+Export.table.toFeatureView({
+  collection: tracts,
+  assetId: 'tract_featureview',
+  description: 'tract_featureview',
+  maxFeaturesPerTile: 1500,
+  thinningStrategy: 'HIGHER_DENSITY',
+  thinningRanking: [],
+  zOrderRanking: [],
+});
