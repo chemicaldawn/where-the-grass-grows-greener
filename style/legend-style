@@ -9,7 +9,7 @@ exports.panel = {
 exports.br = {
   margin: "0px",
   backgroundColor: "white",
-  height: "12px"
+  height: "16px"
 }
 
 exports.hr = {
