@@ -178,6 +178,11 @@ about.add(ui.Label({
 */
 var layers = ui.Panel();
 
+about.add(ui.Label({
+  value: "Layer Select",
+  style: legend_style.h1
+}));
+
 var raster_layer = null;
 var vector_layer = null;
 
