@@ -1,6 +1,6 @@
 /*
   Data Processing
 */
-var tracts = ee.FeatureCollection("FAO/GAUL/2015/level2")
+var tracts = ui.Map.FeatureViewLayer("FAO/GAUL/2015/level2_FeatureView")
 
 Map.addLayer(tracts);
