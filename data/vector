@@ -28,6 +28,8 @@ function getVisParams(id, palette) {
       categories: palette
     },
     
+    outline: 0,
+    
     opacity: 0.7
   }
 }
