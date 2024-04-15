@@ -4,18 +4,18 @@ var var1 = ["None", "Degree of Greenness", "Land Surface Temperature"]
 var var2 = ["None", "Displacement Risk", "Social Vulnerability", "Housing Price Trend"]
 
 var color_pal = [
-  ['1_3', '#f73593FF'],
-  ['2_3', '#a53593FF'],
-  ['3_3', '#403593FF'],
-  ['1_2', '#f78fb6FF'],
-  ['2_2', '#a58fb6FF'],
-  ['3_2', '#408fa7FF'],
-  ['1_1', '#f7fcf5FF'],
-  ['2_1', '#a5e8cdFF'],
-  ['3_1', '#40dba7FF'],
-  ['1_NA', '#FFFFFF77'],
-  ['2_NA', '#FFFFFF77'],
-  ['3_NA', '#FFFFFF77']
+  ['1_3', '#f73593'],
+  ['2_3', '#a53593'],
+  ['3_3', '#403593'],
+  ['1_2', '#f78fb6'],
+  ['2_2', '#a58fb6'],
+  ['3_2', '#408fa7'],
+  ['1_1', '#f7fcf5'],
+  ['2_1', '#a5e8cd'],
+  ['3_1', '#40dba7'],
+  ['1_NA', '#FFFFFF'],
+  ['2_NA', '#FFFFFF'],
+  ['3_NA', '#FFFFFF']
 ];
 
 // Returns a layer with all of the census tracts colored correctly to represent the data.
