@@ -4,6 +4,3 @@
 var tracts = ee.FeatureCollection('projects/nasa-eej/assets/tract_for_webtool')
 
 print(tracts.toList(tracts.size()))
-
-
-exports.data = hotspots
