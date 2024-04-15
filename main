@@ -230,6 +230,7 @@ function redraw_map () {
   
   // Update the legend
   map.clear();
+  // If any layer is showing, show the legend
   if(raster_layer !== null || vector_layer !== null) {
     map.add(legend);
   }
