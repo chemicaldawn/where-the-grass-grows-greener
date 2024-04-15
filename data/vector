@@ -28,7 +28,7 @@ function getVisParams(id, palette) {
       categories: palette
     },
     
-    polygonStrokeWidth: 0.5,
+    polygonStrokeWidth: 0,
     
     opacity: 0.7
   }
