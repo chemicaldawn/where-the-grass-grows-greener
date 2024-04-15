@@ -467,7 +467,7 @@ map.setCenter(-122.355537, 37.828, 9);
 ui.root.clear();
 
 var spacer = ui.SplitPanel(
-  map, legend
+  map, sidebar
 ) 
 
 ui.root.add(spacer);
