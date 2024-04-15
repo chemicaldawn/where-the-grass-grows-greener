@@ -3,7 +3,7 @@
 */
 var tracts = ee.FeatureCollection('projects/nasa-eej/assets/tract_for_webtool')
 
-for(tract in tracts.toList()) {
+for(tract in tracts.toList(tracts.size())) {
   print(tract)
 }
 
