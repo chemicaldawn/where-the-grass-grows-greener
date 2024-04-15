@@ -17,6 +17,7 @@ var legend = ui.Panel({
 
 var raster_data = require("users/dawnschumacher/nasa-eej:data/raster").data;
 var vector_data = require("users/dawnschumacher/nasa-eej:data/vector").data;
+var hotspot_data = require("users/dawnschumacher/nasa-eej:data/hotspots").data;
 
 /*
   Data Processing
