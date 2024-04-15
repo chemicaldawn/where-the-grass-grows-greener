@@ -10,7 +10,7 @@
 var map_style = require("users/dawnschumacher/nasa-eej:style/map-style").style;
 var map = ui.Map();
 
-var legend_style = require("users/dawnschumacher/nasa-eej:style/legend-style");
+var sidebar_style = require("users/dawnschumacher/nasa-eej:style/sidebar-style");
 var sidebar = ui.Panel({
   style: legend_style.legend
 });
