@@ -197,11 +197,11 @@ function redraw_map () {
       }
       
       else if(element.getName() == "Tracts") {
-        element.setShown(vector_layer != null);
+        element.setShown(vector_layer !== null);
       }
       
       else if(element.getName() == "Outlines") {
-        element.setShown(vector_layer != null);
+        element.setShown(vector_layer !== null);
       }
       
       else {
