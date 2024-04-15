@@ -85,5 +85,6 @@ outlines.setVisParams(
 exports.tracts = tracts
 exports.outlines = outlines
 exports.data = tract_data
+
 exports.var1 = var1
 exports.var2 = var2
