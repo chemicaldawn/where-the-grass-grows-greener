@@ -125,10 +125,13 @@ function change_section(section_index) {
   // Add the corresponding UI elements depending on which tab is pressed.
   switch(section_index) {
     case 0:
-      content.add(about.object);
+      content.add(about);
       break;
     case 1:
       content.add(layers);
+      break;
+    case 1:
+      content.add(explore);
       break;
   }
 }
@@ -138,6 +141,37 @@ function change_section(section_index) {
   
   The landing page for the tool.
 */
+
+var about = ui.Panel();
+
+about.add(ui.Label({
+  value: "Where the Grass Grows Greener",
+  style: style.h1
+}));
+
+about.add(ui.Label({
+  value: "The Impacts of Urban Greening on Housing Prices and Neighborhood Stability",
+  style: style.h2
+}));
+
+about.add(ui.Label({
+  value: "This webtool shows trends in urban greenery and land surface temperature in the San Francisco Bay Area between 1990 and 2020. It also illustrates spatial relationships with socioeconomic indicators such as housing prices and displacement risk. Note that the vector layers include only census tracts or zip codes that are located in areas designated as 'urban'.",
+  style: style.p
+}));
+
+about.add(ui.Panel({
+  style: style.hr
+}));
+
+about.add(ui.Label({
+  value: "Created by Eric Romero, Julia Greenberg, and Dawn Schumacher",
+  style: style.footer
+}));
+
+about.add(ui.Label({
+  value: "Funding from the NASA Equity and Environmental Justice program, Data Integration Project, grant no. 80NSSC22K1699",
+  style: style.footer
+}));
 
 /*
   Layer Select
