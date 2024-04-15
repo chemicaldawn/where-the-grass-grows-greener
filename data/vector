@@ -21,13 +21,10 @@ var color_pal = [
 // Returns a layer with all of the census tracts colored correctly to represent the data.
 function getVisParams(id, palette) {
   
-  categories = []
-  
-  palette.
-  
   return {
     property: id,
-    
+    defaultValue: palette["1_NA"],
+    categories: palette
   }
 }
 
