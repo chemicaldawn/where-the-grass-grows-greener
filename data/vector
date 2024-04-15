@@ -62,6 +62,5 @@ var tract_data = {
 }
 
 exports.data = tract_data
-exports.info = info
 exports.var1 = var1
 exports.var2 = var2
