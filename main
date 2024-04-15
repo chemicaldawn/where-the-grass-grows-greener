@@ -258,6 +258,7 @@ function set_vector_layer() {
   if(var1 != "None" && var2 != "None") {
     vector_layer = var1 + " and " + var2;
     
+    // Find the tracts layer and set the colors corresponding to the given data set.
     map.layers().forEach(function(element, index) {
       if(element.getName() == "Tracts") {
         element.setVisParams(vector_data[vector_layer]["visParams"])
