@@ -61,8 +61,6 @@ legend.add(ui.Label({
 var legend_content = ui.Panel();
 legend.add(legend_content);
 
-map.add(legend);
-
 /*
   Content Panel
 */
