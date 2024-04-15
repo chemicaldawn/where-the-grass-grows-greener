@@ -20,9 +20,9 @@ var color_pal = ee.Dictionary({
 
 // Returns a layer with all of the census tracts colored correctly to represent the data.
 function getVisParams(id, palette) {
-  tracts.setVisParams({
+  return {
     
-  })
+  }
 }
 
 function getOutlines() {
