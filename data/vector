@@ -5,16 +5,16 @@ var var2 = ["None", "Displacement Risk", "Social Vulnerability", "Housing Price 
 
 var color_pal = [
   ['1_3', '#f73593FF'],
-  ['2_3': '#a53593FF'],
-  ['3_3': '#403593FF'],
-  ['1_2': '#f78fb6FF'],
-  ['2_2': '#a58fb6FF'],
-  ['3_2': '#408fa7FF'],
-  ['1_1': '#f7fcf5FF'],
-  ['2_1': '#a5e8cdFF'],
-  ['3_1': '#40dba7FF'],
-  ['1_NA': '#FFFFFF77'],
-  ['2_NA': '#FFFFFF77'],
+  ['2_3', '#a53593FF'],
+  ['3_3', '#403593FF'],
+  ['1_2', '#f78fb6FF'],
+  ['2_2', '#a58fb6FF'],
+  ['3_2', '#408fa7FF'],
+  ['1_1', '#f7fcf5FF'],
+  ['2_1', '#a5e8cdFF'],
+  ['3_1', '#40dba7FF'],
+  ['1_NA', '#FFFFFF77'],
+  ['2_NA', '#FFFFFF77'],
   ['3_NA', '#FFFFFF77']
 ];
 
