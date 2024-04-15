@@ -67,6 +67,12 @@ print(
   getVisParams("ns",color_pal)
 )
 
+tracts.setVisParams({
+  opacity: 0.5,
+  lineWidth: 10,
+  polygonFillColor: 'purple'
+}
+
 Map.add(tracts);
 
 exports.data = tract_data
