@@ -7,8 +7,4 @@ for(tract in tracts.toList()) {
   print(tract)
 }
 
-var hotspots = {
-  ""
-}
-
 exports.data = hotspots
