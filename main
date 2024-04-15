@@ -192,7 +192,7 @@ var vector_layer = null;
 function redraw_map () {
 
   map.layers().forEach(function(element, index) {
-      element.setShown(raster_layer == element.getName() || vector_layer == element.getName());
+      element.setShown(raster_layer == element.getName());
       
       if(element.getName() == "Outlines") {
         if(vector_layer) {
