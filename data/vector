@@ -54,7 +54,7 @@ var tract_data = {
     info : "Degree of greenness compared to the CDC's 2018 Social Vulnerability Index at the census tract level."
   },
   "Degree of Greenness and Housing Price Trend" : {
-    visParams : getVisParams("nsc",color_pal),
+    visParams : getVisParams("nshp",color_pal),
     info : "Degree of greenness compared to the yearly average increase in housing price (2000 - 2020) at the zip code level."
   },
   "Land Surface Temperature and Displacement Risk" : {
@@ -66,7 +66,7 @@ var tract_data = {
     info : "Change in average land surface temperature compared to the CDC's 2018 Social Vulnerability Index at the census tract level."
   },
   "Land Surface Temperature and Housing Price Trend" : {
-    visParams : getVisParams("lsc",color_pal),
+    visParams : getVisParams("lshp",color_pal),
     info : "Change in average land surface temperature compared to the yearly average increase in housing price (2000 - 2020) at the zip code level."
   },
   "Outlines" : {
