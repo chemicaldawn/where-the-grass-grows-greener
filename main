@@ -12,7 +12,7 @@ var map = ui.Map();
 
 var sidebar_style = require("users/dawnschumacher/nasa-eej:style/sidebar-style");
 var sidebar = ui.Panel({
-  style: legend_style.legend
+  style: sidebar_style.legend
 });
 
 var raster_data = require("users/dawnschumacher/nasa-eej:data/raster").data;
@@ -68,13 +68,13 @@ map.add(legend);
 */
 // Create the base content panel inside the legend.
 var content = ui.Panel({
-  style: legend_style.panel
+  style: sidebar_style.panel
 });
 
 // Create the base navbar panel.
 var navbar = ui.Panel({
   layout: ui.Panel.Layout.flow('vertical'),
-  style: legend_style.navbar
+  style: sidebar_style.navbar
 });
   
 // Create the containing panel for the row of buttons at the top, ensuring they are
@@ -85,23 +85,23 @@ var button_row = ui.Panel({
   
 // Create the blue highlight bar that changes position.
 var nav_highlight = ui.Panel({
-  style: legend_style.nav_highlight
+  style: sidebar_style.nav_highlight
 })
   
 // Create the buttons. I would do this with a loop but it literally didn't work whatsoever.
 var about_button = ui.Button({
   label: "About",
-  style: legend_style.navbar_button
+  style: sidebar_style.navbar_button
 })
 
 var explore_button = ui.Button({
   label: "Explore",
-  style: legend_style.navbar_button
+  style: sidebar_style.navbar_button
 });
 
 var layer_select_button = ui.Button({
   label: "Layer Select",
-  style: legend_style.navbar_button
+  style: sidebar_style.navbar_button
 });
 
 // Add the navbar buttons to the navigation panel.
@@ -162,31 +162,31 @@ var about = ui.Panel();
 
 about.add(ui.Label({
   value: "Where the Grass Grows Greener",
-  style: legend_style.h1
+  style: sidebar_style.h1
 }));
 
 about.add(ui.Label({
   value: "The Impacts of Urban Greening on Housing Prices and Neighborhood Stability",
-  style: legend_style.h2
+  style: sidebar_style.h2
 }));
 
 about.add(ui.Label({
   value: "This webtool shows trends in urban greenery and land surface temperature in the San Francisco Bay Area between 1990 and 2020. It also illustrates spatial relationships with socioeconomic indicators such as housing prices and displacement risk. Note that the vector layers include only census tracts or zip codes that are located in areas designated as 'urban'.",
-  style: legend_style.p
+  style: sidebar_style.p
 }));
 
 about.add(ui.Panel({
-  style: legend_style.hr
+  style: sidebar_style.hr
 }));
 
 about.add(ui.Label({
   value: "Created by Eric Romero, Julia Greenberg, and Dawn Schumacher",
-  style: legend_style.footer
+  style: sidebar_style.footer
 }));
 
 about.add(ui.Label({
   value: "Funding from the NASA Equity and Environmental Justice program, Data Integration Project, grant no. 80NSSC22K1699",
-  style: legend_style.footer
+  style: sidebar_style.footer
 }));
 
 /*
@@ -198,10 +198,10 @@ var layers = ui.Panel();
 
 layers.add(ui.Label({
   value: "Layer Select",
-  style: legend_style.h1
+  style: sidebar_style.h1
 }));
 layers.add(ui.Panel({
-  style: legend_style.br
+  style: sidebar_style.br
 }))
 
 var raster_layer = null;
@@ -254,7 +254,7 @@ function set_raster_layer(name) {
     raster_infobox.clear();
     raster_infobox.add(ui.Label({
       value: raster_data[name]["info"],
-      style: legend_style.infolabel
+      style: sidebar_style.infolabel
     }));
     raster_infobox.add(
       raster_data[name]["legend"]
@@ -286,7 +286,7 @@ function set_vector_layer() {
     vector_infobox.clear();
     vector_infobox.add(ui.Label({
       value: vector_data[vector_layer]["info"],
-      style: legend_style.p
+      style: sidebar_style.p
     }));
   }
   else {
@@ -298,18 +298,18 @@ function set_vector_layer() {
 
 // Raster Layerbox
 var raster_layerbox = ui.Panel({
-  style: legend_style.rasterbox
+  style: sidebar_style.rasterbox
 });
 raster_layerbox.add(ui.Label({
   value: "Background Layer",
-  style: legend_style.rasterlabel
+  style: sidebar_style.rasterlabel
 }));
 
 var raster_select = ui.Select({
   items: raster_layer_list,
   placeholder: "Select a layer...",
   value: "None",
-  style: legend_style.rasterbutton
+  style: sidebar_style.rasterbutton
 });
 raster_select.onChange(function (layer) {
   set_raster_layer(layer);
@@ -318,12 +318,12 @@ raster_select.onChange(function (layer) {
 var raster_slider_container = ui.Panel({
   layout: ui.Panel.Layout.flow('horizontal'),
   style: {
-    backgroundColor: legend_style.rasterlabel.backgroundColor
+    backgroundColor: sidebar_style.rasterlabel.backgroundColor
   }
 });
 raster_slider_container.add(ui.Label({
   value: "Opacity",
-  style: legend_style.rasteropacity
+  style: sidebar_style.rasteropacity
 }));
 
 var raster_slider = ui.Slider({
@@ -331,7 +331,7 @@ var raster_slider = ui.Slider({
   max: 1,
   value: 1,
   step: 0.01,
-  style: legend_style.rasterslider
+  style: sidebar_style.rasterslider
 });
 raster_slider.onSlide(set_opacity);
 raster_slider_container.add(raster_slider);
@@ -339,42 +339,42 @@ raster_slider_container.add(raster_slider);
 var raster_infobox = ui.Panel();
 raster_infobox.add(ui.Label({
   value: "Select a background layer to display additonal info...",
-  style: legend_style.p
+  style: sidebar_style.p
 }))
 
 // Vector Layerbox
 var vector_layerbox = ui.Panel({
-  style: legend_style.vectorbox
+  style: sidebar_style.vectorbox
 });
 vector_layerbox.add(ui.Label({
   value: "Two-variable Correlation",
-  style: legend_style.vectorlabel
+  style: sidebar_style.vectorlabel
 }));
 
 var vector_select_1 = ui.Select({
   items: vector_layer_list_1,
   placeholder: "Select a layer...",
   value: "None",
-  style: legend_style.vectorbutton
+  style: sidebar_style.vectorbutton
 });
 vector_select_1.onChange(set_vector_layer);
 var vector_select_2 = ui.Select({
   items: vector_layer_list_2,
   placeholder: "Select a layer...",
   value: "None",
-  style: legend_style.vectorbutton
+  style: sidebar_style.vectorbutton
 });
 vector_select_2.onChange(set_vector_layer);
 
 var vector_slider_container = ui.Panel({
   layout: ui.Panel.Layout.flow('horizontal'),
   style: {
-    backgroundColor: legend_style.vectorlabel.backgroundColor
+    backgroundColor: sidebar_style.vectorlabel.backgroundColor
   }
 });
 vector_slider_container.add(ui.Label({
   value: "Opacity",
-  style: legend_style.vectoropacity
+  style: sidebar_style.vectoropacity
 }));
 
 var vector_slider = ui.Slider({
@@ -382,7 +382,7 @@ var vector_slider = ui.Slider({
   max: 1,
   value: 1,
   step: 0.01,
-  style: legend_style.vectorslider
+  style: sidebar_style.vectorslider
 });
 vector_slider.onSlide(set_opacity);
 vector_slider_container.add(vector_slider);
@@ -390,7 +390,7 @@ vector_slider_container.add(vector_slider);
 var vector_infobox = ui.Panel();
 vector_infobox.add(ui.Label({
   value: "Select two variables to display additional info...",
-  style: legend_style.p
+  style: sidebar_style.p
 }));
 
 raster_layerbox.add(raster_select);
@@ -403,7 +403,7 @@ vector_layerbox.add(vector_slider_container);
 layers.add(raster_layerbox);
 layers.add(raster_infobox);
 layers.add(ui.Panel({
-  style: legend_style.hr
+  style: sidebar_style.hr
 }))
 layers.add(vector_layerbox);
 layers.add(vector_infobox);
@@ -411,7 +411,7 @@ layers.add(vector_infobox);
 sidebar.add(navbar);
 sidebar.add(content);
 layers.add(ui.Panel({
-  style: legend_style.hr
+  style: sidebar_style.hr
 }))
 
 layers.add(ui.Label({
@@ -429,14 +429,14 @@ var explore = ui.Panel();
 
 explore.add(ui.Label({
   value: "Explore",
-  style: legend_style.h1
+  style: sidebar_style.h1
 }));
 explore.add(ui.Label({
   value: "Bay Area Resilience Hotspots",
-  style: legend_style.h2
+  style: sidebar_style.h2
 }));
 explore.add(ui.Panel({
-  style: legend_style.br
+  style: sidebar_style.br
 }))
 
 /*
