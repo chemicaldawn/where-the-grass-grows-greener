@@ -6,6 +6,6 @@ Export.table.toFeatureView({
   description: 'tract_featureview',
   maxFeaturesPerTile: 1500,
   thinningStrategy: 'HIGHER_DENSITY',
-  thinningRanking: [],
-  zOrderRanking: []
+  thinningRanking: ["size DESC"],
+  zOrderRanking: ["size ASC"]
 });
