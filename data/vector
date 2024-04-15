@@ -69,7 +69,7 @@ print(
 
 tracts.setVisParams({
   opacity: 0.5,
-  lineWidth: 10,
+  lineWidth: 1,
   polygonFillColor: 'purple'
 })
 
