@@ -10,6 +10,6 @@ Export.table.toFeatureView({
   description: 'tract_featureview',
   maxFeaturesPerTile: 1000,
   thinningStrategy: 'HIGHER_DENSITY',
-  thinningRanking: ['REP_AREA DESC'],
-  zOrderRanking: ['REP_AREA DESC'],
+  thinningRanking: [],
+  zOrderRanking: [],
 });
