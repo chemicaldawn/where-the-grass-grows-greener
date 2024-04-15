@@ -1,4 +1,5 @@
 var tracts = ui.Map.FeatureViewLayer("projects/nasa-eej/assets/tract_featureview");
+var outlines = ui.Map.FeatureViewLayer("projects/nasa-eej/assets/tract_featureview");
 
 var var1 = ["None", "Degree of Greenness", "Land Surface Temperature"]
 var var2 = ["None", "Displacement Risk", "Social Vulnerability", "Housing Price Trend"]
@@ -78,6 +79,8 @@ tracts.setVisParams(
   //getVisParams("ns",color_pal)
 )
 
+exports.tracts = tracts
+exports.outlines = outlines
 exports.data = tract_data
 exports.var1 = var1
 exports.var2 = var2
