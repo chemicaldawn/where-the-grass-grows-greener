@@ -230,6 +230,9 @@ function redraw_map () {
   
   // Update the legend
   map.clear();
+  if(raster_layer !== null || vector_layer !== null) {
+    map.add(legend);
+  }
   
   // Set the opacity of layers according to the opacity sliders
   set_opacity();
