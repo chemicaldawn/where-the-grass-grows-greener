@@ -22,9 +22,11 @@ var color_pal = [
 function getVisParams(id, palette) {
   
   return {
-    property: id,
-    defaultValue: '#FFFFFF',
-    categories: palette
+    color: {
+      property: id,
+      defaultValue: '#FFFFFF',
+      categories: palette
+    }
   }
 }
 
