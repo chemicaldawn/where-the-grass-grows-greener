@@ -36,7 +36,7 @@ function getVisParams(id, palette) {
 
 function getOutlines() {
   return {
-    polygonFillColor: "#FFFFFF00",
+    polygonFillColor: "#FFFFFF",
     polygonStrokeWidth: 1,
     
     opacity: 1
