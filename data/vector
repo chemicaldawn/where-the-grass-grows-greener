@@ -22,7 +22,7 @@ var color_pal = [
 function getVisParams(id, palette) {
   
   return {
-    color: {
+    polygonFillColor: {
       property: id,
       defaultValue: '#FFFFFF',
       categories: palette
