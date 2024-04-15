@@ -23,7 +23,7 @@ function getVisParams(id, palette) {
   
   return {
     property: id,
-    defaultValue: '#FFFFFF77',
+    defaultValue: '#FFFFFF',
     categories: palette
   }
 }
