@@ -6,6 +6,12 @@ exports.panel = {
   padding: "16px"
 }
 
+exports.br = {
+  margin: "0px",
+  backgroundColor: "white",
+  height: "12px"
+}
+
 exports.hr = {
   margin: "24px 0px 24px 0px",
   backgroundColor: "gray",
