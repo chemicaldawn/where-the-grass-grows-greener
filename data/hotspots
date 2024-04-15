@@ -1,7 +1,7 @@
 /*
   Data Processing
 */
-var tracts = ui.Map.FeatureViewLayer("FAO/GAUL/2015/level2_FeatureView")
+var tracts = ee.FeatureCollection('projects/nasa-eej/assets/tract_for_webtool')
 
 // Export the WDPA FeatureCollection as a FeatureView asset.
 Export.table.toFeatureView({
