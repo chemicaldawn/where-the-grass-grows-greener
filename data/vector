@@ -68,7 +68,7 @@ print(
 )
 
 tracts.setVisParams({
-  color : {
+  polygonFillColor : {
     property: "ns",
     categories: color_pal
   }
