@@ -68,9 +68,10 @@ print(
 )
 
 tracts.setVisParams({
-  opacity: 0.5,
-  lineWidth: 1,
-  polygonFillColor: 'purple'
+  color : {
+    property: "ns",
+    categories: color_pal
+  }
 })
 
 Map.add(tracts);
