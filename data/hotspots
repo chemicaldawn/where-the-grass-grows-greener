@@ -1,0 +1,5 @@
+var hotspots = {
+  
+}
+
+exports.data = hotspots
