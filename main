@@ -50,6 +50,15 @@ map.add(vector.outlines);
 /*
   UI
 */
+/*
+  Legend
+*/
+var legend = ui.Panel({style: {position: 'bottom-left'}}); 
+root.add(legend);
+
+/*
+  Content Panel
+*/
 // Create the base content panel inside the legend.
 var content = ui.Panel({
   style: legend_style.panel
