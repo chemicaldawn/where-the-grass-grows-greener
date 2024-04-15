@@ -54,7 +54,7 @@ map.add(vector.outlines);
   Legend
 */
 var legend = ui.Panel({style: {position: 'bottom-left'}}); 
-root.add(legend);
+ui.root.add(legend);
 
 /*
   Content Panel
