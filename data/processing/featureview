@@ -7,5 +7,5 @@ Export.table.toFeatureView({
   maxFeaturesPerTile: 1500,
   thinningStrategy: 'HIGHER_DENSITY',
   thinningRanking: [],
-  zOrderRanking: [],
+  zOrderRanking: []
 });
