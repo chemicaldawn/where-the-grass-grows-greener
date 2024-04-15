@@ -3,4 +3,4 @@
 */
 var tracts = ee.FeatureCollection("WM/geoLab/geoBoundaries/600/ADM2") 
 
-print(tracts.toList(tracts.size()))
+Map.addLayer(tracts):
