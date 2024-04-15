@@ -71,7 +71,7 @@ tracts.setVisParams({
   opacity: 0.5,
   lineWidth: 10,
   polygonFillColor: 'purple'
-}
+})
 
 Map.add(tracts);
 
