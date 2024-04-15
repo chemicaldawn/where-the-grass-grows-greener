@@ -36,7 +36,6 @@ function getVisParams(id, palette) {
 
 function getOutlines() {
   return {
-    
     polygonFillOpacity: 0,
     polygonStrokeWidth: 1,
     
@@ -75,7 +74,7 @@ var tract_data = {
 }
 
 tracts.setVisParams(
-  //getOutlines()
+  getOutlines()
   getVisParams("ns",color_pal)
 )
 
