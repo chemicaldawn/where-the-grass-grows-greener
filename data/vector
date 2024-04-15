@@ -33,27 +33,27 @@ function getOutlines() {
 
 var tract_data = {
   "Degree of Greenness and Displacement Risk" : {
-    layer : get_layer("ne",color_pal),
+    visParams : getVisParams("ne",color_pal),
     info : "Degree of greenness compared to level of displacement risk in 2019 (from Estimated Displacement Risk model) at the census tract level."
   },
   "Degree of Greenness and Social Vulnerability" : {
-    layer : get_layer("ns",color_pal),
+    visParams : getVisParams("ns",color_pal),
     info : "Degree of greenness compared to the CDC's 2018 Social Vulnerability Index at the census tract level."
   },
   "Degree of Greenness and Housing Price Trend" : {
-    layer : get_layer("nsc",color_pal),
+    visParams : getVisParams("nsc",color_pal),
     info : "Degree of greenness compared to the yearly average increase in housing price (2000 - 2020) at the zip code level."
   },
   "Land Surface Temperature and Displacement Risk" : {
-    layer : get_layer("le",color_pal),
+    visParams : getVisParams("le",color_pal),
     info : "Change in average land surface temperature compared to level of displacement risk in 2019 (from Estimated Displacement Risk model) at the census tract level."
   },
   "Land Surface Temperature and Social Vulnerability" : {
-    layer : get_layer("ls",color_pal),
+    visParams : getVisParams("ls",color_pal),
     info : "Change in average land surface temperature compared to the CDC's 2018 Social Vulnerability Index at the census tract level."
   },
   "Land Surface Temperature and Housing Price Trend" : {
-    visParams : get_layer("lsc",color_pal),
+    visParams : getVisParams("lsc",color_pal),
     info : "Change in average land surface temperature compared to the yearly average increase in housing price (2000 - 2020) at the zip code level."
   },
   "Outlines" : {
