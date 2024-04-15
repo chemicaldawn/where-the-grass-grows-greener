@@ -3,4 +3,13 @@
 */
 var tracts = ui.Map.FeatureViewLayer("FAO/GAUL/2015/level2_FeatureView")
 
-Map.add(tracts);
+// Export the WDPA FeatureCollection as a FeatureView asset.
+Export.table.toFeatureView({
+  collection: tracts,
+  assetId: 'tract_featureview',
+  description: 'tract_featureview',
+  maxFeaturesPerTile: 1000,
+  thinningStrategy: 'HIGHER_DENSITY',
+  thinningRanking: ['REP_AREA DESC'],
+  zOrderRanking: ['REP_AREA DESC'],
+});
