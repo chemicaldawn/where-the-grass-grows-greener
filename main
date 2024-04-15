@@ -397,15 +397,15 @@ layers.add(ui.Label({
 
 var explore = ui.Panel();
 
-layers.add(ui.Label({
+explore.add(ui.Label({
   value: "Explore",
   style: legend_style.h1
 }));
-layers.add(ui.Label({
+explore.add(ui.Label({
   value: "Bay Area Resilience Hotspots",
   style: legend_style.h2
 }));
-layers.add(ui.Panel({
+explore.add(ui.Panel({
   style: legend_style.br
 }))
 
