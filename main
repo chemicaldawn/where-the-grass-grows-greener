@@ -58,7 +58,7 @@ legend.add(ui.Label({
   value: "Legend"
 }))
 
-ui.root.add(legend);
+map.add(legend);
 
 /*
   Content Panel
