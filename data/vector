@@ -63,16 +63,9 @@ var tract_data = {
   }
 }
 
-print(
+tracts.setVisParams(
   getVisParams("ns",color_pal)
 )
-
-tracts.setVisParams({
-  polygonFillColor : {
-    property: "ns",
-    categories: color_pal
-  }
-})
 
 Map.add(tracts);
 
