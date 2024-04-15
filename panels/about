@@ -1,5 +1,0 @@
-var style = require("users/dawnschumacher/nasa-eej:style/legend-style");
-
-
-
-exports.object = about;
