@@ -134,6 +134,12 @@ function change_section(section_index) {
 }
 
 /*
+  About
+  
+  The landing page for the tool.
+*/
+
+/*
   Layer Select
   
   The page for granular control over the map layers and map opacity.
