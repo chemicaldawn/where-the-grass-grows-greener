@@ -75,7 +75,7 @@ var tract_data = {
 
 tracts.setVisParams(
   getOutlines()
-  getVisParams("ns",color_pal)
+  //getVisParams("ns",color_pal)
 )
 
 Map.add(tracts);
