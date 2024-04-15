@@ -405,8 +405,8 @@ layers.add(ui.Panel({
 layers.add(vector_layerbox);
 layers.add(vector_infobox);
 
-legend.add(navbar);
-legend.add(content);
+sidebar.add(navbar);
+sidebar.add(content);
 layers.add(ui.Panel({
   style: legend_style.hr
 }))
