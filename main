@@ -182,10 +182,6 @@ layers.add(ui.Label({
   value: "Layer Select",
   style: legend_style.h1
 }));
-layers.add(ui.Label({
-  value: "The Impacts of Urban Greening on Housing Prices and Neighborhood Stability",
-  style: legend_style.h2
-}));
 layers.add(ui.Panel({
   style: legend_style.br
 }))
