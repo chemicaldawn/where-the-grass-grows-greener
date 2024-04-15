@@ -35,6 +35,11 @@ function getVisParams(id, palette) {
 }
 
 function getOutlines() {
+  polygonFillColor: "#FFFFFF00"
+  
+  polygonStrokeWidth: 1,
+
+  opacity: 1
 }
 
 var tract_data = {
