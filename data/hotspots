@@ -1,6 +1,6 @@
 /*
   Data Processing
 */
-var tracts = ee.FeatureCollection("WM/geoLab/geoBoundaries/600/ADM2") 
+var tracts = ee.FeatureCollection("FAO/GAUL/2015/level2")
 
 Map.addLayer(tracts);
