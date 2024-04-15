@@ -76,7 +76,7 @@ var tract_data = {
 
 tracts.setVisParams(
   getOutlines()
-  //getVisParams("ns",color_pal)
+  getVisParams("ns",color_pal)
 )
 
 exports.tracts = tracts
