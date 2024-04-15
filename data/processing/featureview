@@ -2,7 +2,7 @@ var tracts = ee.FeatureCollection('projects/nasa-eej/assets/tract_for_webtool')
 
 // compute area and add it as a property
 var getArea = function(feature) {
-  feature.set({area: feature.geometry().area().divide(100 * 100)});
+  return feature.set({area: feature.geometry().area().divide(100 * 100)});
 };
 var tracts_with_area = tracts.map(getArea);
 
