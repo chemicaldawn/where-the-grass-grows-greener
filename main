@@ -389,6 +389,8 @@ layers.add(ui.Label({
    
 */
 
+var explore = ui.Panel();
+
 
 /*
   Map
