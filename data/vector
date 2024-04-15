@@ -61,7 +61,9 @@ var tract_data = {
   }
 }
 
-print(getVisParams("ns",color_pal));
+tracts.setVisParams(
+  getVisParams("ns",color_pal)
+)
 
 Map.add(tracts);
 
