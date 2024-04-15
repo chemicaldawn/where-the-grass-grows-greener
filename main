@@ -187,7 +187,7 @@ layers.add(ui.Label({
   style: legend_style.h2
 }));
 layers.add(ui.Panel({
-  style: legend_style.hr
+  style: legend_style.br
 }))
 
 var raster_layer = null;
