@@ -257,6 +257,12 @@ function set_vector_layer() {
   
   if(var1 != "None" && var2 != "None") {
     vector_layer = var1 + " and " + var2;
+    
+    map.layers().forEach(function(element, index) {
+      if(element.getName() == "Tracts") {
+        element.setVisParams(vector_data[vector_layer]["visParams"])
+      }
+    });
 
     vector_infobox.clear();
     vector_infobox.add(ui.Label({
