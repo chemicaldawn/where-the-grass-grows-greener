@@ -1,7 +1,6 @@
 /**** Start of imports. If edited, may not auto-convert in the playground. ****/
 var featureViewLayer = ui.Map.FeatureViewLayer("projects/nasa-eej/assets/tract_featureview", null, "tract_featureview");
 /***** End of imports. If edited, may not auto-convert in the playground. *****/
-var tracts = featureViewLayer
 
 var var1 = ["None", "Degree of Greenness", "Land Surface Temperature"]
 var var2 = ["None", "Displacement Risk", "Social Vulnerability", "Housing Price Trend"]
