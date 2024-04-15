@@ -3,9 +3,7 @@
 */
 var tracts = ee.FeatureCollection('projects/nasa-eej/assets/tract_for_webtool')
 
-tracts.toList(tracts.size()).foreach((tract) => {
-  print(tract)
-});
+print(tracts.toList(tracts.size()))
 
 
 exports.data = hotspots
