@@ -26,7 +26,9 @@ function getVisParams(id, palette) {
       property: id,
       defaultValue: '#FFFFFF',
       categories: palette
-    }
+    },
+    
+    opacity: 1
   }
 }
 
