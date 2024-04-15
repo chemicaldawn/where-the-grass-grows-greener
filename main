@@ -178,7 +178,7 @@ about.add(ui.Label({
 */
 var layers = ui.Panel();
 
-about.add(ui.Label({
+layers.add(ui.Label({
   value: "Layer Select",
   style: legend_style.h1
 }));
