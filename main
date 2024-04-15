@@ -229,6 +229,7 @@ function redraw_map () {
   });
   
   // Update the legend
+  map.clear();
   
   // Set the opacity of layers according to the opacity sliders
   set_opacity();
