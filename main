@@ -212,7 +212,7 @@ function set_opacity () {
       if(element.getName() == raster_layer) {
         element.setOpacity(raster_slider.getValue())
       }
-      else if(element.getName() == vector_layer) {
+      else if(element.getName() == "Tracts") {
         element.setOpacity(vector_slider.getValue())
       }
       else if(element.getName() == "Outlines") {
