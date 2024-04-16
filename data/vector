@@ -19,6 +19,16 @@ var color_pal = [
   ['3_NA', '#FFFFFF']
 ];
 
+function to_dict() {
+  var dict = {};
+  
+  color_pal.foreach((pair) => {
+    dict[pair[0]] = pair[1];
+  });
+  
+  return dict;
+}
+
 // Returns a layer with all of the census tracts colored correctly to represent the data.
 function getVisParams(id, palette) {
   
