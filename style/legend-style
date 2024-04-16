@@ -44,7 +44,7 @@ exports.category_container = {
 exports.category_label = {
   backgroundColor: subpanel_color,
   
-  margin: "0px",
+  margin: "0px 0px 0px 4px",
   padding: "2px"
 }
 
