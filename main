@@ -307,6 +307,7 @@ function set_raster_layer(name) {
       raster_data[name]["legend"]
     )
     
+    //
     legend_raster.add(ui.Panel({
       widgets: [
         ui.Label(raster_data[name]["min"], 
