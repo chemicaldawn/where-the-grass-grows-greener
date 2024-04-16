@@ -68,7 +68,7 @@ function get_categories(visParams) {
       })
     )
     
-    c
+    container.add(base);
   }
 }
 
