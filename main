@@ -305,7 +305,9 @@ function set_raster_layer(name) {
     
     // Add legend entry content
     if(raster_data[name]["type"] == "categorical") {
-      
+      legend_raster.add(
+        raster.get_color_bar(raster_data[name]["visParams"])
+      )
     }
     
     else if(raster_data[name]["type"] == "univariate") {
