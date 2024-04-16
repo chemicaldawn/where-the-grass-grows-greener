@@ -100,7 +100,9 @@ function get_square(color) {
   })
 }
 
-function get_matrix(var1, var2) {
+function get_matrix(var1, var2, categories) {
+
+  var category_dict = to_dict(categories);
 
   // Columns
   ui.Panel({
