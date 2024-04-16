@@ -365,6 +365,13 @@ function set_vector_layer() {
       value: vector_data[vector_layer]["info"],
       style: sidebar_style.p
     }));
+    
+    // Build the label for the legend entry. Appends the unit onto the end of the label for better
+    // readability.
+    var legend_label = name
+    if(raster_data[name]["unit"] !== "") {
+      legend_label += " (" + raster_data[name]["unit"] + ")"
+    }
   }
   else {
     vector_layer = null;
