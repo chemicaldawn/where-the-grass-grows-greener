@@ -235,6 +235,9 @@ function redraw_map () {
   if(raster_layer) {
     legend_content.add(legend_raster);
   }
+  if(vector_layer) {
+    legend_content.add(legend_vector);
+  }
   
   // If any layer is showing, show the legend
   map.remove(legend);
