@@ -31,7 +31,8 @@ exports.labels = {
 }
 
 exports.min = {
-  margin: "0px"
+  margin: "0px",
+  backgroundColor: "#f2f2f2"
 }
 
 exports.spacer = {
@@ -41,5 +42,6 @@ exports.spacer = {
 }
 
 exports.max = {
-  margin: "0px"
+  margin: "0px",
+  backgroundColor: "#f2f2f2"
 }
