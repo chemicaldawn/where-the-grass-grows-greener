@@ -311,7 +311,7 @@ function set_raster_layer(name) {
     else if(raster_data[name]["type"] == "univariate") {
       // Adds the color bar to the legend
       legend_raster.add(
-        raster_data[name]["legend"]
+        raster.get_color_bar(raster_data[name]["visParams"]["palette"])
       )
       
       // Adds the bottom labels to the legend
