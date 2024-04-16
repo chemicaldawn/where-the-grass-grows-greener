@@ -50,15 +50,11 @@ function get_categories(visParams) {
     
     var label = visParams.labels[i];
     var color = visParams.palette[i];
-  }
-  .add(
-    ui.Panel()
-  )
-  .add(
-    ui.Label({
-      value
+    
+    var base = ui.Panel({
+      layout: ee.L
     })
-  );
+  }
 }
 
 function get_color_bar(palette) {
