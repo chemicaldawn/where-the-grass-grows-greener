@@ -91,6 +91,8 @@ function get_square(color) {
 }
 
 function get_matrix(var1, var2, categories) {
+  
+  print(categories)
 
   // Columns
   ui.Panel({
