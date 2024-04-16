@@ -5,7 +5,8 @@ exports.h1 = {
 }
 
 exports.h2 = {
-  
+  fontSize: "12px",
+  fontWeight: "400",
 }
 
 exports.panel = {
