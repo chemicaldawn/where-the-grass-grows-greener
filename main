@@ -6,7 +6,7 @@
   to try and organize this massive file.
 */
 
-// Imports
+// Style Imports
 var map_style = require("users/dawnschumacher/nasa-eej:style/map-style").style;
 var map = ui.Map();
 
@@ -15,6 +15,9 @@ var sidebar = ui.Panel({
   style: sidebar_style.legend
 });
 
+var legend_style = require("users/dawnschumacher/nasa-eej:style/legend-style");
+
+// Data Imports
 var raster_data = require("users/dawnschumacher/nasa-eej:data/raster").data;
 
 var vector = require("users/dawnschumacher/nasa-eej:data/vector");
