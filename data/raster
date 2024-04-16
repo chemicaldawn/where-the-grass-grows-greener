@@ -60,7 +60,7 @@ function make_color_bar(palette) {
           // Max height of color bar.
           maxHeight: '10%',
           // Width of color bar.
-          width: '91%'
+          width: '100%'
       },
   });
 }
