@@ -65,7 +65,8 @@ function get_categories(visParams) {
     )
     base.add(
       ui.Label({
-        value : label
+        value : label,
+        style: legend_style.h2
       })
     )
     
