@@ -13,7 +13,7 @@ exports.panel = {
 }
 
 exports.subpanel= {
-  margin: "4px 0px 0px 0px"
+  margin: "4px 0px 0px 0px",
   padding: "8px",
   backgroundColor: "#f2f2f2"
 }
