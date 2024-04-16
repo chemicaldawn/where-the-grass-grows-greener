@@ -15,5 +15,5 @@ exports.panel = {
 exports.subpanel= {
   margin: "4px 0px 0px 0px"
   padding: "8px",
-  backgroundColor: "gray"
+  backgroundColor: "#f2f2f2"
 }
