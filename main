@@ -320,7 +320,10 @@ function set_raster_layer(name) {
           legend_style.max
         ),
       ],
-      layout: ui.Panel.Layout.flow('horizontal')
+      
+      layout: ui.Panel.Layout.flow('horizontal'),
+      style: legend_style.labels
+      
     }));
   }
   else {
