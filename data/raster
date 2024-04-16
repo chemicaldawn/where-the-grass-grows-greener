@@ -80,4 +80,5 @@ function get_color_bar(palette) {
 
 exports.data = background_data
 
+exports.get_categories = get_categories
 exports.get_color_bar = get_color_bar
