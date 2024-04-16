@@ -19,10 +19,10 @@ var color_pal = [
   ['3_NA', '#FFFFFF']
 ];
 
-function to_dict() {
+function to_dict(palette) {
   var dict = {};
   
-  color_pal.foreach((pair) => {
+  palette.foreach((pair) => {
     dict[pair[0]] = pair[1];
   });
   
