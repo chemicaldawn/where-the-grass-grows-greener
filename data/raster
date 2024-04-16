@@ -1,3 +1,6 @@
+var green_space_classification = ee.Image('projects/nasa-eej/assets/EEJGreenSpaceClassificationR2')
+
+
 var background_data = {
   "Green Space Classification" : {
     visParams: {
@@ -7,7 +10,7 @@ var background_data = {
           palette: ['#008000ff', "#000080ff", "#800000ff"],
           opacity: 1
       },
-    layer: ee.Image('projects/nasa-eej/assets/EEJGreenSpaceClassificationR2').clamp(1.0,1.0),
+    layer: green_space_classification.reduce(ee.Reducer.min()),
     type: "categorical",
     info: "Areas classified as green space, water, or urban areas in 2020 using machine learning.",
     unit: ""
