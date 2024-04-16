@@ -303,7 +303,7 @@ function set_raster_layer(name) {
     )
     
     // Add legend entry content
-    if(raster_data[name]["type"] == ) {
+    if(raster_data[name]["type"] == "categorical") {
       
     }
     
