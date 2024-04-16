@@ -1,3 +1,5 @@
+var legend_style = 
+
 var green_space_classification = ee.Image('projects/nasa-eej/assets/EEJGreenSpaceClassificationR2')
 
 
@@ -81,4 +83,4 @@ function get_color_bar(palette) {
 exports.data = background_data
 
 exports.get_categories = get_categories
-exports.get_color_bar = get_color_bar
+exports.get_color_bar = get_color_bar 
