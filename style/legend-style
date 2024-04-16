@@ -13,5 +13,6 @@ exports.panel = {
 }
 
 exports.subpanel= {
-  
+  padding: "4px",
+  backgroundColor: "gray"
 }
