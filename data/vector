@@ -95,6 +95,9 @@ outlines.setVisParams(
 function get_square(color) {
   return ui.Panel({
     style : {
+      height: "8px",
+      width: "8px",
+      
       backgroundColor: color
     }
   })
