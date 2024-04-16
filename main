@@ -309,15 +309,15 @@ function set_raster_layer(name) {
     
     legend_raster.add(ui.Panel({
       widgets: [
-        ui.Label(vis.min, {
+        ui.Label(vis.min, 
           legend_style.min
-        }),
-        ui.Label('', {
+        ),
+        ui.Label('', 
           legend_style.spacer
-        }),
-        ui.Label(vis.max, {
+        ),
+        ui.Label(vis.max, 
           legend_style.max
-        }),
+        ),
       ],
       layout: ui.Panel.Layout.flow('horizontal')
     }));
