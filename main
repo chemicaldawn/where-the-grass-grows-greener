@@ -286,10 +286,18 @@ function set_raster_layer(name) {
       style: sidebar_style.infolabel
     }));
     
+    // Build the label for the legend entry. Appends the unit onto the end of the label for better user
+    // experience.
+    var legend_label = name
+    if(raster_data[name]["unit"] !== "") {
+      legend_label += " (" + raster_data[name]["unit"] + ")"
+    }
+
+    // Adds the legend entry to the legend    
     legend_raster.clear();
     legend_raster.add(
       ui.Label({
-        value: name,
+        value: legend_label,
         style: legend_style.h2
       })  
     )
