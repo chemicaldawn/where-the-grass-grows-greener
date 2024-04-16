@@ -293,7 +293,7 @@ function set_raster_layer(name) {
       legend_label += " (" + raster_data[name]["unit"] + ")"
     }
 
-    // Adds the legend entry to the legend    
+    // Adds the label entry to the legend    
     legend_raster.clear();
     legend_raster.add(
       ui.Label({
@@ -301,6 +301,8 @@ function set_raster_layer(name) {
         style: legend_style.h2
       })  
     )
+    
+    // Adds the color bar to the legend
     legend_raster.add(
       raster_data[name]["legend"]
     )
