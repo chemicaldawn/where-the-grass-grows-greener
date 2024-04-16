@@ -9,7 +9,7 @@ exports.h2 = {
 }
 
 exports.panel = {
-  
+  padding: "8px"
 }
 
 exports.subpanel= {
