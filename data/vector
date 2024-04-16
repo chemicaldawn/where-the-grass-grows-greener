@@ -106,16 +106,14 @@ function get_square(color) {
   })
 }
 
-function get_matrix(var1, var2, categories) {
-  
-  print(categories)
+function get_matrix(var1, var2) {
 
   // Columns
   ui.Panel({
     widgets : [
       ui.Panel({
         widgets : [
-          get_square(categories["1_3"]),
+          get_square(color_dict["1_3"]),
           get_square(categories["2_3"]),
           get_square(categories["3_3"])
         ],
