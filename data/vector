@@ -83,7 +83,11 @@ outlines.setVisParams(
 )
 
 function get_square(color) {
-  
+  return ui.Panel({
+    style : {
+      backgroundColor: color
+    }
+  })
 }
 
 function get_matrix(var1, var2, visParams) {
