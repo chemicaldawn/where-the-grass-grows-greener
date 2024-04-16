@@ -302,7 +302,12 @@ function set_raster_layer(name) {
       })  
     )
     
-    if(raster_data[name]["type"] == "univariate") {
+    // Add legend entry content
+    if(raster_data[name]["type"] == ) {
+      
+    }
+    
+    else if(raster_data[name]["type"] == "univariate") {
       // Adds the color bar to the legend
       legend_raster.add(
         raster_data[name]["legend"]
