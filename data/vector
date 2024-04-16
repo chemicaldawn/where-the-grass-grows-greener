@@ -82,9 +82,15 @@ outlines.setVisParams(
   getOutlines()
 )
 
+function get_matrix(name) {
+  
+}
+
 exports.tracts = tracts
 exports.outlines = outlines
 exports.data = tract_data
+
+exports.get_matrix = get_matrix
 
 exports.var1 = var1
 exports.var2 = var2
