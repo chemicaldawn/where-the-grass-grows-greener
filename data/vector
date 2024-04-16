@@ -19,6 +19,7 @@ var color_dict = [
   ['3_NA', '#FFFFFF']
 ];
 
+// List version of the color dictionary for use in vector layer styling.
 var color_pal = [
   ['1_3', '#f73593'],
   ['2_3', '#a53593'],
