@@ -367,10 +367,16 @@ function set_vector_layer() {
     }));
     
     // Build the label for the legend entry.
-    var legend_label = name
-    if(raster_data[name]["unit"] !== "") {
-      legend_label += " (" + raster_data[name]["unit"] + ")"
-    }
+    var legend_label = vector_layer;
+    
+    // Adds the label entry to the legend    
+    legend_vector.clear();
+    legend_vector.add(
+      ui.Label({
+        value: legend_label,
+        style: legend_style.h2
+      })  
+    )
   }
   else {
     vector_layer = null;
