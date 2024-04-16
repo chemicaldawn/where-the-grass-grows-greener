@@ -56,7 +56,7 @@ function make_color_bar(palette) {
           // Stretch color bar horizontally.
           stretch: 'horizontal',
           // Margin of color bar.
-          margin: '0px 20px 0px 20px',
+          margin: '0px 0px 0px 20px',
           // Max height of color bar.
           maxHeight: '10%',
           // Width of color bar.
