@@ -59,8 +59,8 @@ function get_categories(visParams) {
       ui.Panel({
         style : {
           backgroundColor: color,
-          height: "20px",
-          width: "20px"
+          height: "16px",
+          width: "16px"
         }
       })
     )
