@@ -27,6 +27,7 @@ exports.subpanel= {
 
 exports.labels = {
   margin: "0px",
+  padding: "2px",
   backgroundColor: "#f2f2f2"
 }
 
