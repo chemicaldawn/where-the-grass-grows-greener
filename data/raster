@@ -5,9 +5,9 @@ var background_data = {
   "Green Space Classification" : {
     visParams: {
           min: 1,
-          max: 3,
-          labels: ['Green Space', 'Water', 'Urban/Impervious'],
-          palette: ['#008000ff', "#000080ff", "#800000ff"],
+          max: 1,
+          labels: ['Green Space'],
+          palette: ['#008000ff'],
           opacity: 1
       },
     layer: green_space_classification.subtract(ee.Image.constant(1)).not().selfMask(),
