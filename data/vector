@@ -84,7 +84,30 @@ outlines.setVisParams(
 
 function get_matrix(var1, var2, visParams) {
 
-  
+  // Columns
+  ui.Panel({
+    widgets : [
+      ui.Panel({
+        widgets : [
+        
+        ]
+        layout: ui.Panel.Layout.flow("horizontal")
+      }),
+      ui.Panel({
+        widgets : [
+        
+        ]
+        layout: ui.Panel.Layout.flow("horizontal")
+      }),
+      ui.Panel({
+        widgets : [
+        
+        ]
+        layout: ui.Panel.Layout.flow("horizontal")
+      })
+    ]
+    layout: ui.Panel.Layout.flow("vertical")
+  })
   
 }
 
