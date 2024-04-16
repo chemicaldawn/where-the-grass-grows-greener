@@ -41,6 +41,10 @@ var background_data = {
   }
 }
 
+function get_categories(visParams) {
+  
+}
+
 function get_color_bar(palette) {
   return ui.Thumbnail({
     image: ee.Image.pixelLonLat().select(0),
