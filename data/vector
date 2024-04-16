@@ -22,9 +22,9 @@ var color_pal = [
 function to_dict(palette) {
   var dict = {};
   
-  palette.forEach((pair) => {
-    dict[pair[0]] = pair[1];
-  });
+  for(var i = 0; i < palette.length; i++) {
+    dict[palette[i][0]] = palette[i][1]
+  }
   
   return dict;
 }
