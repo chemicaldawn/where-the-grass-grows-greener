@@ -82,7 +82,7 @@ outlines.setVisParams(
   getOutlines()
 )
 
-function get_matrix(name) {
+function get_matrix(name, visParams) {
   
 }
 
