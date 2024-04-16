@@ -52,7 +52,7 @@ function get_categories(visParams) {
     var color = visParams.palette[i];
     
     var base = ui.Panel({
-      style: category_container
+      style: category_container,
       layout: ui.Panel.Layout.flow('horizontal')
     })
     base.add(
