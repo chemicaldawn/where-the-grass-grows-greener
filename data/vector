@@ -82,8 +82,9 @@ outlines.setVisParams(
   getOutlines()
 )
 
-function get_matrix(name, visParams) {
-  variables = name.split(" and ");
+function get_matrix(var1, var2, visParams) {
+
+  
   
 }
 
