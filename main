@@ -230,6 +230,8 @@ function redraw_map () {
       }
   });
   
+  // Add the raster/vector content to the legend depending on layer visibility
+  
   // If any layer is showing, show the legend
   map.remove(legend);
   if(raster_layer !== null || vector_layer !== null) {
