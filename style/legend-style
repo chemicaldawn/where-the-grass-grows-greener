@@ -14,7 +14,9 @@ exports.h2 = {
 
 exports.panel = {
   position: 'bottom-left',
-  padding: "8px"
+  padding: "8px",
+  
+  width: "25%"
 }
 
 exports.subpanel= {
