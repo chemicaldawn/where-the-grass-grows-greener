@@ -41,7 +41,7 @@ var background_data = {
   }
 }
 
-function make_color_bar(palette) {
+function get_color_bar(palette) {
   return ui.Thumbnail({
     image: ee.Image.pixelLonLat().select(0),
     
