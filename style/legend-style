@@ -14,13 +14,13 @@ exports.h2 = {
 
 exports.panel = {
   position: 'bottom-left',
-  padding: "8px",
+  padding: "12px",
   
   width: "33%"
 }
 
 exports.subpanel= {
-  margin: "8px 0px 0px 0px",
+  margin: "12px 0px 0px 0px",
   padding: "8px",
   backgroundColor: "#f2f2f2"
 }
