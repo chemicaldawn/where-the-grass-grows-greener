@@ -63,8 +63,12 @@ legend.add(ui.Label({
 
 var legend_content = ui.Panel();
 
-var legend_raster = ui.Panel();
-var legend_vector = ui.Panel();
+var legend_raster = ui.Panel({
+  style: legend_style.subpanel
+});
+var legend_vector = ui.Panel({
+  style: legend_style.subpanel
+});
 
 legend.add(legend_content);
 
