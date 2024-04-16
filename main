@@ -262,7 +262,8 @@ function set_raster_layer(name) {
       value: raster_data[name]["info"],
       style: sidebar_style.infolabel
     }));
-    raster_infobox.add(
+    
+    legend_content.add(
       raster_data[name]["legend"]
     )
   }
