@@ -58,7 +58,7 @@ function make_color_bar(palette) {
           // Margin of color bar.
           margin: '0px 0px 0px 0px',
           // Max height of color bar.
-          maxHeight: '10%',
+          maxHeight: '20px',
           // Width of color bar.
           width: '100%'
       },
