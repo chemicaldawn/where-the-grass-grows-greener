@@ -276,7 +276,8 @@ function set_raster_layer(name) {
       style: sidebar_style.infolabel
     }));
     
-    legend_content.add(
+    legend_raster.clear();
+    legend_raster.add(
       raster_data[name]["legend"]
     )
   }
