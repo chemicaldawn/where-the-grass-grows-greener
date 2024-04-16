@@ -54,6 +54,14 @@ function get_categories(visParams) {
     var base = ui.Panel({
       layout: ui.Panel.Layout.flow('horizontal')
     })
+    base.add(
+      ui.Panel({
+        style : {
+          backgroundColor: color,
+          padding: "4px"
+        }
+      })
+    )
   }
 }
 
