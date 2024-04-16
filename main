@@ -231,6 +231,10 @@ function redraw_map () {
   });
   
   // Add the raster/vector content to the legend depending on layer visibility
+  legend_content.clear();
+  if(raster_layer) {
+    legend_content.add(legend_raster);
+  }
   
   // If any layer is showing, show the legend
   map.remove(legend);
