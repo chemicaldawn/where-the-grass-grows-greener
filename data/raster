@@ -44,7 +44,7 @@ var background_data = {
 }
 
 function get_categories(visParams) {
-  var containter = ui.Panel();
+  var container = ui.Panel();
   
   for(var i = 0; i < visParams.labels.length; i++) {
     
@@ -67,6 +67,8 @@ function get_categories(visParams) {
         value : label
       })
     )
+    
+    c
   }
 }
 
