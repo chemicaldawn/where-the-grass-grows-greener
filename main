@@ -56,7 +56,9 @@ map.add(vector.outlines);
 /*
   Legend
 */
-var legend = ui.Panel({style: {position: 'bottom-left'}}); 
+var legend = ui.Panel({
+  style: legend_style.panel
+}); 
 legend.add(ui.Label({
   value: "Legend",
   style: legend_style.h1
