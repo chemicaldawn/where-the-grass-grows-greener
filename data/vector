@@ -4,7 +4,6 @@ var outlines = ui.Map.FeatureViewLayer("projects/nasa-eej/assets/tract_featurevi
 var var1 = ["None", "Degree of Greenness", "Land Surface Temperature"]
 var var2 = ["None", "Displacement Risk", "Social Vulnerability", "Housing Price Trend"]
 
-// List version of the color dictionary for use in vector layer styling.
 var color_pal = [
   ['1_3', '#f73593'],
   ['2_3', '#a53593'],
