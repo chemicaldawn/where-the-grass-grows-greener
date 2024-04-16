@@ -31,14 +31,15 @@ exports.labels = {
 }
 
 exports.min = {
-  
+  margin: "0px"
 }
 
 exports.spacer = {
+  margin: "0px",
   textAlign: 'center',
   stretch: 'horizontal'
 }
 
 exports.max = {
-  
+  margin: "0px"
 }
