@@ -18,6 +18,7 @@ var sidebar = ui.Panel({
 var legend_style = require("users/dawnschumacher/nasa-eej:style/legend-style");
 
 // Data Imports
+var raster = require("users/dawnschumacher/nasa-eej:data/raster");
 var raster_data = require("users/dawnschumacher/nasa-eej:data/raster").data;
 
 var vector = require("users/dawnschumacher/nasa-eej:data/vector");
