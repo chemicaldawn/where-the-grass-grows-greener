@@ -38,7 +38,7 @@ function getVisParams(id, palette) {
 function getOutlines() {
   return {
     polygonFillOpacity: 0,
-    polygonStrokeWidth: 1,
+    polygonStrokeWidth: 0.5,
     
     opacity: 1
   }
