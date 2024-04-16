@@ -379,7 +379,7 @@ function set_vector_layer() {
     )
     
     legend_vector.add(
-      vector.get_matrix(var1, var2, vector_data[vector_layer]["visParams"])
+      vector.get_matrix(var1, var2, vector_data[vector_layer]["visParams"].polygonFillColor.categories)
     )
   }
   else {
