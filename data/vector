@@ -105,8 +105,10 @@ function get_matrix(var1, var2, categories) {
   var category_dict = to_dict(categories);
 
   // Columns
-  ui.Panel({
+  return ui.Panel({
     widgets : [
+      
+      // Rows
       ui.Panel({
         widgets : [
           get_square(category_dict["1_3"]),
@@ -134,7 +136,6 @@ function get_matrix(var1, var2, categories) {
     ],
     layout: ui.Panel.Layout.flow("vertical")
   })
-  
 }
 
 exports.tracts = tracts
