@@ -16,7 +16,7 @@ exports.panel = {
   position: 'bottom-left',
   padding: "8px",
   
-  width: "25%"
+  width: "33%"
 }
 
 exports.subpanel= {
