@@ -70,6 +70,8 @@ function get_categories(visParams) {
     
     container.add(base);
   }
+  
+  return container;
 }
 
 function get_color_bar(palette) {
