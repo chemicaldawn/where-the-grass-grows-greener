@@ -82,6 +82,10 @@ outlines.setVisParams(
   getOutlines()
 )
 
+function get_square(color) {
+  
+}
+
 function get_matrix(var1, var2, visParams) {
 
   // Columns
