@@ -44,7 +44,9 @@ var background_data = {
 }
 
 function get_categories(visParams) {
-  
+  return ui.Panel({
+    
+  });
 }
 
 function get_color_bar(palette) {
