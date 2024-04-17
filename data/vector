@@ -50,7 +50,7 @@ function getOutlines() {
     polygonFillOpacity: 0,
     polygonStrokeWidth: 0.5,
     
-    opacity: 0.7
+    opacity: 0.3
   }
 }
 
