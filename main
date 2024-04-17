@@ -193,7 +193,7 @@ about.add(ui.Panel({
 }));
 
 about.add(ui.Label({
-  value: "Created by Eric Romero, Julia Greenberg, and Dawn Schumacher",
+  value: "Created by Dawn Schumacher, Eric Romero, and Julia Greenberg",
   style: sidebar_style.footer
 }));
 
