@@ -73,3 +73,11 @@ exports.max = {
 /*
   Bivariate 
 */
+
+exports.bivariate_label_right = {
+  backgroundColor: subpanel_color
+}
+
+exports.bivariate_label_bottom = {
+  backgroundColor: subpanel_color
+}
