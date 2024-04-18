@@ -161,7 +161,9 @@ function get_matrix(var1, var2, categories) {
       ui.Label({
         value: "No"
       })
-    ]
+    ],
+    
+    layout: ui.Panel.Layout.flow("vertical")
   });
 }
 
