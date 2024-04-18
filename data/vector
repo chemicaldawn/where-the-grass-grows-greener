@@ -1,6 +1,8 @@
 var tracts = ui.Map.FeatureViewLayer("projects/nasa-eej/assets/tract_featureview",null,"Tracts",false);
 var outlines = ui.Map.FeatureViewLayer("projects/nasa-eej/assets/tract_featureview",null,"Outlines",false);
 
+var legend_style = require("users/dawnschumacher/nasa-eej/style/legend-style")
+
 var var1 = ["None", "Degree of Greenness", "Land Surface Temperature"]
 var var2 = ["None", "Displacement Risk", "Social Vulnerability", "Housing Price Trend"]
 
