@@ -75,6 +75,8 @@ exports.max = {
 */
 
 exports.bivariate_label_right = {
+  
+  padding: "8px 0px 8px 0px",
   backgroundColor: subpanel_color
 }
 
