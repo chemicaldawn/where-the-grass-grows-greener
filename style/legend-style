@@ -25,6 +25,8 @@ exports.panel = {
 exports.subpanel= {
   margin: "12px 0px 0px 0px",
   padding: "8px",
+  
+  border: "1px solid gray",
   backgroundColor: subpanel_color
 }
 
@@ -67,3 +69,7 @@ exports.max = {
   margin: "0px",
   backgroundColor: subpanel_color
 }
+
+/*
+  Bivariate 
+*/
