@@ -114,6 +114,8 @@ exports.vectorslider = {
 
 exports.vectorbox = {
   padding: exports.rasterbox.padding,
+  
+  border: "1px solid #7292ab",
   backgroundColor: exports.vectorlabel.backgroundColor
 }
 
