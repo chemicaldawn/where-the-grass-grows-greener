@@ -82,6 +82,8 @@ exports.rasterslider = {
 
 exports.rasterbox = {
   padding: "8px",
+  
+  border: "1px solid #79ab7b"
   backgroundColor: exports.rasterlabel.backgroundColor
 }
 
