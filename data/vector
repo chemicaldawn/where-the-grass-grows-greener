@@ -157,6 +157,7 @@ function get_matrix(var1, var2, categories) {
           })
         ],
         
+        style: legend_style.category_container,
         layout: ui.Panel.Layout.flow("horizontal")
       }),
       
@@ -167,7 +168,7 @@ function get_matrix(var1, var2, categories) {
       })
     ],
     
-    style: legend_style.container
+    style: legend_style.category_container,
     layout: ui.Panel.Layout.flow("vertical")
   });
 }
