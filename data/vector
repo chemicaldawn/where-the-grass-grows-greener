@@ -107,50 +107,61 @@ function get_matrix(var1, var2, categories) {
 
   var category_dict = to_dict(categories);
 
-  
+  // This is the worst, least readable code I've ever written.
   return ui.Panel({
-    
     widgets: [
-      // Columns
+  
+      // Upper Container
       ui.Panel({
-        widgets : [
+        
+        widgets: [
+          // Columns
+          ui.Panel({
+            widgets : [
+              
+              // Rows
+              ui.Panel({
+                widgets : [
+                  get_square(category_dict["1_3"]),
+                  get_square(category_dict["2_3"]),
+                  get_square(category_dict["3_3"])
+                ],
+                layout: ui.Panel.Layout.flow("horizontal")
+              }),
+              ui.Panel({
+                widgets : [
+                  get_square(category_dict["1_2"]),
+                  get_square(category_dict["2_2"]),
+                  get_square(category_dict["3_2"])
+                ],
+                layout: ui.Panel.Layout.flow("horizontal")
+              }),
+              ui.Panel({
+                widgets : [
+                  get_square(category_dict["1_1"]),
+                  get_square(category_dict["2_1"]),
+                  get_square(category_dict["3_1"])
+                ],
+                layout: ui.Panel.Layout.flow("horizontal")
+              })
+            ],
+            layout: ui.Panel.Layout.flow("vertical")
+          }),
           
-          // Rows
-          ui.Panel({
-            widgets : [
-              get_square(category_dict["1_3"]),
-              get_square(category_dict["2_3"]),
-              get_square(category_dict["3_3"])
-            ],
-            layout: ui.Panel.Layout.flow("horizontal")
-          }),
-          ui.Panel({
-            widgets : [
-              get_square(category_dict["1_2"]),
-              get_square(category_dict["2_2"]),
-              get_square(category_dict["3_2"])
-            ],
-            layout: ui.Panel.Layout.flow("horizontal")
-          }),
-          ui.Panel({
-            widgets : [
-              get_square(category_dict["1_1"]),
-              get_square(category_dict["2_1"]),
-              get_square(category_dict["3_1"])
-            ],
-            layout: ui.Panel.Layout.flow("horizontal")
+          // Right-side Label
+          ui.Label({
+            value: "Yes"
           })
         ],
-        layout: ui.Panel.Layout.flow("vertical")
+        
+        layout: ui.Panel.Layout.flow("horizontal")
       }),
       
-      // Right-side Label
+      // Lower Label
       ui.Label({
-        value: "Yes"
+        value: "No"
       })
-    ],
-    
-    layout: ui.Panel.Layout.flow("horizontal")
+    ]
   });
 }
 
