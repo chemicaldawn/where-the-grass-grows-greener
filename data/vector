@@ -151,7 +151,7 @@ function get_matrix(var1, var2, categories) {
           // Right-side Label
           ui.Label({
             value: "↑ " + var1,
-            style: legend_style.legend_label_right
+            style: legend_style.bivariate_label_right
           })
         ],
         
@@ -161,7 +161,7 @@ function get_matrix(var1, var2, categories) {
       // Lower Label
       ui.Label({
         value: "→ " + var2,
-        style: legend_style.legend_label_right
+        style: legend_style.bivariate_label_right
       })
     ],
     
