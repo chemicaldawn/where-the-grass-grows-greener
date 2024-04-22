@@ -9,7 +9,7 @@ var background_data = {
           min: 1,
           max: 1,
           labels: ['Green Space'],
-          palette: ['#008000ff'],
+          palette: ['#a4e38f'],
           opacity: 1
       },
     layer: green_space_classification.subtract(ee.Image.constant(1)).not().selfMask(),
