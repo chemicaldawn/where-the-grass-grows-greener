@@ -58,7 +58,11 @@ function getVisParams(id, palette) {
     
     polygonStrokeWidth: 0,
     
-    opacity: 0.7
+    opacity: {
+      property: id,
+      defaultValue: 0.7,
+      categories: opacity_pal
+    }
   }
 }
 
