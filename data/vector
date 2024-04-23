@@ -33,7 +33,11 @@ var opacity_pal = [
   ['3_1', 0.7],
   ['1_NA', 0],
   ['2_NA', 0],
-  ['3_NA', 0]
+  ['3_NA', 0],
+  ['NA_1', 0],
+  ['NA_2', 0],
+  ['NA_3', 0],
+  ['NA_NA', 0]
 ];
 
 function to_dict(palette) {
