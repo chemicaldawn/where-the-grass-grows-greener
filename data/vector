@@ -56,7 +56,7 @@ function getVisParams(id, palette) {
       categories: palette
     },
     
-    polygonStrokeWidth: 0,
+    polygonStrokeWidth: 1,
     
     opacity: {
       property: id,
@@ -71,7 +71,7 @@ function getOutlines() {
     polygonFillOpacity: 0,
     polygonStrokeWidth: 0.5,
     
-    opacity: 1
+    opacity: 0
   }
 }
 
