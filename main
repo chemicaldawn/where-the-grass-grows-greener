@@ -625,7 +625,7 @@ map.onClick(function(location) {
   Tract-level Data
 */
 var tract_data = ui.Panel({
-  style: legend_style.panel
+  style: legend_style.tract_panel
 }); 
 tract_data.add(ui.Label({
   value: "Tract Data",
