@@ -1,7 +1,16 @@
 var cities = ui.Map.FeatureViewLayer("projects/nasa-eej/assets/tract_featureview", null, "Cities", false);
 
 function highlight_city(name) {
-  
+  return {
+    
+    polygonStrokeWidth: 2,
+    
+    opacity: {
+      property: "CITY",
+      defaultValue: 0,
+      categories: [name, 1]
+    }
+  }
 }
 
 exports.data = {
