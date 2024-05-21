@@ -52,7 +52,8 @@ for(var layer in raster_data) {
 var tracts = vector.tracts
 var tract_layer = vector.tract_layer
 var highlight_layer = vector.highlight_layer
-map.add(tracts);
+map.add(tract_layer);
+map.add(highlight_layer);
 
 // 
 var cities = hotspots.cities
