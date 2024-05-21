@@ -34,7 +34,7 @@ exports.data = {
   
   "Newark" : {
     lon: 37.53,
-    lat: -122.02,
+    lat: -122.03,
     zoom: 13
   },
   
