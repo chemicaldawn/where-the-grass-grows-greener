@@ -110,10 +110,6 @@ var tract_data = {
   }
 }
 
-tracts.setVisParams(
-  getVisParams("ns",color_pal)
-)
-
 function get_square(color) {
   return ui.Panel({
     style : {
