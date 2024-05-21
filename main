@@ -54,7 +54,7 @@ map.add(vector.outlines);
 
 // 
 var cities = hotspots.cities
-cities.setVisParams()
+cities.setVisParams(hotspots.highlight_city("San Francisco"))
 map.add(cities);
 
 /*
