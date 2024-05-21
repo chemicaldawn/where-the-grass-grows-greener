@@ -282,7 +282,7 @@ function set_opacity () {
         element.setOpacity(vector_slider.getValue())
       }
       else if(element.getName() == "Outlines") {
-        element.setOpacity(vector_slider.getValue() * 0.1 + 0.9)
+        element.setOpacity(vector_slider.getValue())
       }
   });
 }
