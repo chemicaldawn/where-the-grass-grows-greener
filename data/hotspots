@@ -2,7 +2,7 @@ var cities = ui.Map.FeatureViewLayer("projects/nasa-eej/assets/cities_featurevie
 
 function highlight_city(name) {
   return {
-    
+    polygonFillColor: 
     polygonStrokeWidth: 2,
     
     opacity: {
