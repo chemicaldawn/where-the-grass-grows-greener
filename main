@@ -530,7 +530,18 @@ explore.add(ui.Label({
 }));
 explore.add(ui.Panel({
   style: sidebar_style.br
-}))
+}));
+
+explore.add(ui.Select({
+  items: [
+    "Test", "Test 2"
+  ],
+  placeholder: "Select a resilience hotspot...",
+  value : "Test"
+}));
+explore.onChange(function (layer) {
+  
+});
 
 /*
   Map
