@@ -640,6 +640,13 @@ tract_data.add(ui.Label({
   style: legend_style.h1
 }))
 
+var table_panel = ui.Panel({});
+tract_data.add(table_panel);
+
+function update_tract_data() {
+  
+}
+
 /*
   Map
   
