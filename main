@@ -243,6 +243,10 @@ function redraw_map () {
         element.setShown(vector_layer !== null);
       }
       
+      else if(element.getName() == "Cities") {
+        element.setShown(true);
+      }
+      
       else {
         element.setShown(false);
       }
