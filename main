@@ -532,16 +532,19 @@ explore.add(ui.Panel({
   style: sidebar_style.br
 }));
 
-explore.add(ui.Select({
+hotspot_select = ui.Select({
   items: [
     "Test", "Test 2"
   ],
   placeholder: "Select a resilience hotspot...",
   value : "Test"
-}));
-explore.onChange(function (layer) {
+});
+
+hotspot_select.onChange(function (layer) {
   
 });
+
+explore.add(hotspot_select);
 
 /*
   Map
