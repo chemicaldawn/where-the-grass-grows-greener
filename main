@@ -49,7 +49,8 @@ for(var layer in raster_data) {
 
 // Adds the two vector layers. Instead of using one layer for each bivariate correlation, I've opted
 // to dynamically update the styling of one census tract layer with each correlation.
-map.add(vector.tracts);
+var tracts = vector.tracts
+map.add(tracts);
 //map.add(vector.outlines);
 
 // 
