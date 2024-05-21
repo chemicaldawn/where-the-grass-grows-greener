@@ -593,7 +593,7 @@ map.onClick(function(location) {
   
   var new_tract = filtered.first();
   
-  if(new_tract == null) {
+  if(new_tract === null) {
     selected_tract = "";
   }
   else {
