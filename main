@@ -552,7 +552,9 @@ hotspot_select.onChange(function (layer) {
   map.setCenter(hotspot_data[layer].lat, hotspot_data[layer].lon, hotspot_data[layer].zoom)
 });
 
-explore.add(hotspot_select);
+hotspot_inline.add(hotspot_select);
+hotspot_inline.add(hotspot_button);
+explore.add(hotspot_inline);
 
 /*
   Map
