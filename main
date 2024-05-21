@@ -599,7 +599,7 @@ explore.add(hotspot_inline);
 var selected_tract = ""
 
 map.onClick(function(location) {
-  var filtered = highlighting.filterBounds(ee.Geometry.Point([location.lon, location.lat]));
+  var filtered = tracts.filterBounds(ee.Geometry.Point([location.lon, location.lat]));
   
   var new_tract = filtered.first();
   
