@@ -620,6 +620,7 @@ map.onClick(function(location) {
     else {
       
       selected_tract = new_id;
+      map.remove(tract_data);
       map.add(tract_data);
     }
   }
