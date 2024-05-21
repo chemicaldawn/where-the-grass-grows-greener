@@ -10,7 +10,9 @@ exports.data = {
   },
   
   "North Richmond" : {
-    
+    lat: 37.95,
+    lon: -122.37,
+    zoom: 14
   },
   
   "Newark" : {
