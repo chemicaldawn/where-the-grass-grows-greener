@@ -599,6 +599,13 @@ map.onClick(function(location) {
   else {
     
     var new_id = new_tract.get("GEOID");
+    
+    if(selected_tract == new_id) {
+      selected_tract = null;
+    }
+    else {
+      selected_tract = new_id;
+    }
   }
   print(new_tract)
 });
