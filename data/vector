@@ -51,7 +51,7 @@ function to_dict(palette) {
 }
 
 // Returns a layer with all of the census tracts colored correctly to represent the data.
-function getVisParams(id, highlighted_tract, palette) {
+function get_vis_params(id, highlighted_tract, palette) {
   
   return {
     polygonFillColor: {
@@ -76,27 +76,33 @@ function getVisParams(id, highlighted_tract, palette) {
 
 var tract_data = {
   "Degree of Greenness and Displacement Risk" : {
-    visParams : getVisParams("ne",color_pal),
+    id : "ne",
+    palette: color_pal,
     info : "Degree of greenness compared to level of displacement risk in 2019 (from Estimated Displacement Risk model) at the census tract level."
   },
   "Degree of Greenness and Social Vulnerability" : {
-    visParams : getVisParams("ns",color_pal),
+    id : "ns",
+    palette: color_pal,
     info : "Degree of greenness compared to the CDC's 2018 Social Vulnerability Index at the census tract level."
   },
   "Degree of Greenness and Housing Price Trend" : {
-    visParams : getVisParams("nshp",color_pal),
+    id : "nshp",
+    palette: color_pal,
     info : "Degree of greenness compared to the yearly average increase in housing price (2000 - 2020) at the zip code level."
   },
   "Land Surface Temperature and Displacement Risk" : {
-    visParams : getVisParams("le",color_pal),
+    id : "le",
+    palette: color_pal,
     info : "Change in average land surface temperature compared to level of displacement risk in 2019 (from Estimated Displacement Risk model) at the census tract level."
   },
   "Land Surface Temperature and Social Vulnerability" : {
-    visParams : getVisParams("ls",color_pal),
+    id : "ls",
+    palette: color_pal,
     info : "Change in average land surface temperature compared to the CDC's 2018 Social Vulnerability Index at the census tract level."
   },
   "Land Surface Temperature and Housing Price Trend" : {
-    visParams : getVisParams("lshp",color_pal),
+    id : "lshp",
+    palette: color_pal,
     info : "Change in average land surface temperature compared to the yearly average increase in housing price (2000 - 2020) at the zip code level."
   }
 }
@@ -188,6 +194,7 @@ exports.tracts = tracts
 exports.highlighting = highlighting
 exports.data = tract_data
 
+exports.get_vis_params = get_vis_params
 exports.get_matrix = get_matrix
 
 exports.var1 = var1
