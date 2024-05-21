@@ -123,11 +123,11 @@ exports.hotspot_inline = {
   width: "100%"
 }
 exports.hotspot_select = {
-  width: "85%"
+  width: "85%",
   margin: "0% 0% 0% 5%"
 }
 exports.hotspot_button = {
-  width = "10%"
+  width: "10%"
 }
 
 exports.infolabel = {
