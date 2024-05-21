@@ -52,7 +52,7 @@ map.add(vector.tracts);
 map.add(vector.outlines);
 
 // 
-map.add(hotspots.cities)
+map.add(hotspots.cities);
 
 /*
   UI
