@@ -1,5 +1,9 @@
 var cities = ui.Map.FeatureViewLayer("projects/nasa-eej/assets/tract_featureview", null, "Cities", false);
 
+function highlight_city(name) {
+  
+}
+
 exports.data = {
   "Suisun City" : {
     lon: 38.24,
@@ -31,4 +35,6 @@ exports.data = {
     zoom: 14
   }
 }
+
+exports.cities = cities;
 
