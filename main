@@ -560,6 +560,7 @@ for(var hotspot in hotspot_data) {
 hotspot_select.onChange(function (hotspot) {
   hotspot_button.setDisabled(false);
   map.setCenter(hotspot_data[hotspot].lat, hotspot_data[hotspot].lon, hotspot_data[hotspot].zoom)
+  cities.setVisParams(hotspots.highlightCity(hotspot));
 });
 hotspot_button.onClick(function() {
   var hotspot = hotspot_select.getValue();
