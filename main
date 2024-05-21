@@ -541,7 +541,7 @@ for(var hotspot in hotspot_data) {
 }
 
 hotspot_select.onChange(function (layer) {
-  
+  map.setCenter(hotspot_data[layer].x, hotspot_data[layer].y, hotspot_data[layer].zoom)
 });
 
 explore.add(hotspot_select);
