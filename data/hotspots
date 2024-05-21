@@ -8,7 +8,7 @@ function highlight_city(name) {
     opacity: {
       property: "CITY",
       defaultValue: 0,
-      categories: [name, 1]
+      categories: [[name, 1]]
     }
   }
 }
