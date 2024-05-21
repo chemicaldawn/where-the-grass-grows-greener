@@ -113,10 +113,6 @@ tracts.setVisParams(
   getVisParams("ns",color_pal)
 )
 
-outlines.setVisParams(
-  getOutlines()
-)
-
 function get_square(color) {
   return ui.Panel({
     style : {
