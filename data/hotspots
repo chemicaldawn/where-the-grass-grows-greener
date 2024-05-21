@@ -6,7 +6,9 @@ exports.data = {
   },
   
   "Southwest Santa Rosa" : {
-    
+    lat: 38.41,
+    lon:  122.75,
+    zoom: 14
   },
   
   "North Richmond" : {
