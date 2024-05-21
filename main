@@ -589,8 +589,10 @@ explore.add(hotspot_inline);
 var selected_tract = null
 
 map.onClick(function(location) {
-  highlighting.filterBounds(ee.Geometry.Point([location.lon, location.lat]));
-  print(highlighting.first().get("GEOID"))
+  var filtered = highlighting.filterBounds(ee.Geometry.Point([location.lon, location.lat]));
+  
+  var new_tract = filtered.first().get("GEOID"))
+  print(new_tract);
 });
 
 /*
