@@ -1,5 +1,6 @@
-var tracts = ui.Map.FeatureViewLayer("projects/nasa-eej/assets/tract_featureview",null,"Tracts",false);
-var highlighting = ee.FeatureCollection("projects/nasa-eej/assets/tract_for_webtool");
+var tracts = ee.FeatureCollection("projects/nasa-eej/assets/tract_for_webtool");
+var tract_layer = ui.Map.FeatureViewLayer("projects/nasa-eej/assets/tract_featureview",null,"Tracts",false);
+var highlight_layer = ui.Map.FeatureViewLayer("projects/nasa-eej/assets/tract_featureview",null,"Tracts",false);
 
 var legend_style = require("users/dawnschumacher/nasa-eej:style/legend-style")
 
@@ -190,7 +191,8 @@ function get_matrix(var1, var2, categories) {
 }
 
 exports.tracts = tracts
-exports.highlighting = highlighting
+exports.tract_layer = tract_layer
+exports.highlight_layer = highlight_layer
 exports.data = tract_data
 
 exports.get_vis_params = get_vis_params
