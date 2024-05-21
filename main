@@ -590,7 +590,7 @@ var selected_tract = null
 
 map.onClick(function(location) {
   highlighting.filterBounds(ee.Geometry.Point([location.lon, location.lat]));
-  print(highlighting.get("GEOID"))
+  print(highlighting.first().get("GEOID"))
 });
 
 /*
