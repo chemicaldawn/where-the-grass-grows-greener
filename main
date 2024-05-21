@@ -605,6 +605,8 @@ map.onClick(function(location) {
   
   if(new_tract === null) {
     selected_tract = "";
+    map.remove(tract_data);
+    
   }
   else {
     
@@ -612,9 +614,13 @@ map.onClick(function(location) {
     
     if(selected_tract == new_id) {
       selected_tract = "";
+      map.remove(tract_data);
+      
     }
     else {
+      
       selected_tract = new_id;
+      map.add(tract_data);
     }
   }
   
