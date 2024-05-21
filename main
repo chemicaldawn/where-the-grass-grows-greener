@@ -52,7 +52,10 @@ for(var layer in raster_data) {
 var tracts = vector.tracts
 var highlighting = vector.highlighting
 map.add(tracts);
-map.add(highlighting);
+map.addLayer({
+  eeObject: highlighting,
+  name: "Highlighting"
+});
 
 // 
 var cities = hotspots.cities
