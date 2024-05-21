@@ -281,7 +281,7 @@ function set_opacity () {
       else if(element.getName() == "Tracts") {
         element.setOpacity(vector_slider.getValue())
       }
-      else if(element.getName() == "Outlines") {
+      else if(element.getName() == "Highlighting") {
         element.setOpacity(vector_slider.getValue())
       }
   });
