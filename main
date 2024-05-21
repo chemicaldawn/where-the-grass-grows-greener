@@ -562,7 +562,7 @@ hotspot_select.onChange(function (hotspot) {
   hotspot_button.setDisabled(false);
   map.setCenter(hotspot_data[hotspot].lat, hotspot_data[hotspot].lon, hotspot_data[hotspot].zoom)
   
-  cities.
+  cities.setShown(true);
   cities.setVisParams(hotspots.highlightCity(hotspot));
 });
 hotspot_button.onClick(function() {
