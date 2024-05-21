@@ -587,7 +587,7 @@ explore.add(hotspot_inline);
   Click Handling
 */
 map.onClick(function(location) {
-  highlighting.filterBounds(location);
+  highlighting.filterBounds(ee.Geometry.Point(location));
 });
 
 /*
