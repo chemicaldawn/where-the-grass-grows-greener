@@ -602,6 +602,7 @@ map.onClick(function(location) {
   var filtered = tracts.filterBounds(ee.Geometry.Point([location.lon, location.lat]));
   
   var new_tract = filtered.first();
+  print(new_tract);
   
   if(new_tract === null) {
     selected_tract = "";
