@@ -1,4 +1,4 @@
-exports.data = {
+exports.data = ee.Dictionary({
   "Suisun City" : {
     x: 1,
     y: 2,
@@ -20,4 +20,4 @@ exports.data = {
   "Gilroy" : {
     
   }
-}
+});
