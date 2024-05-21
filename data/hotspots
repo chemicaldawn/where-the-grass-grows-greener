@@ -1,7 +1,7 @@
 exports.data = {
   "Suisun City" : {
-    lat: -122.12,
-    lon: 38.03,
+    lat: -122.04,
+    lon: 38.23,
     zoom: 14
   },
   
