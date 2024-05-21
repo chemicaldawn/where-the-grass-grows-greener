@@ -55,6 +55,7 @@ map.add(vector.tracts);
 // 
 var cities = hotspots.cities
 cities.setVisParams(hotspots.highlight_city("San Francisco"))
+cities.setShown(true);
 map.add(cities);
 
 /*
@@ -560,6 +561,8 @@ for(var hotspot in hotspot_data) {
 hotspot_select.onChange(function (hotspot) {
   hotspot_button.setDisabled(false);
   map.setCenter(hotspot_data[hotspot].lat, hotspot_data[hotspot].lon, hotspot_data[hotspot].zoom)
+  
+  cities.
   cities.setVisParams(hotspots.highlightCity(hotspot));
 });
 hotspot_button.onClick(function() {
