@@ -1,3 +1,21 @@
 exports.data = {
+  "Suisun City" : {
+    
+  },
   
+  "Southwest Santa Rosa" : {
+    
+  },
+  
+  "North Richmond" : {
+    
+  },
+  
+  "Newark" : {
+    
+  },
+  
+  "Gilroy" : {
+    
+  }
 }
