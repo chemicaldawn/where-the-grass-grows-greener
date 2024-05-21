@@ -53,7 +53,9 @@ map.add(vector.tracts);
 map.add(vector.outlines);
 
 // 
-map.add(hotspots.cities);
+var cities = hotspots.cities
+cities.setVisParams()
+map.add(cities);
 
 /*
   UI
