@@ -119,6 +119,10 @@ exports.vectorbox = {
   backgroundColor: exports.vectorlabel.backgroundColor
 }
 
+exports.hotspot_inline = {
+  width: "100%"
+}
+
 exports.infolabel = {
   fontSize: "14px",
   margin: "16px 0px 12px 0px",
