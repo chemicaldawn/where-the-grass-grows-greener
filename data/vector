@@ -64,12 +64,6 @@ function get_vis_params(value) {
       categories: palette
     },
     
-    polygonStrokeWidth: {
-      property: "GEOID",
-      defaultValue: 0.5,
-      categories: [[highlighted_tract, 2]]
-    },
-    
     opacity: {
       property: id,
       defaultValue: 0.7,
@@ -78,7 +72,9 @@ function get_vis_params(value) {
   }
 }
 
-function get_highlight()
+function get_highlight(highlighted_tract) {
+  
+}
 
 var tract_data = {
   "Degree of Greenness and Displacement Risk" : {
