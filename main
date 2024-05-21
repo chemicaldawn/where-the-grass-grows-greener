@@ -55,6 +55,8 @@ var highlight_layer = vector.highlight_layer
 map.add(tract_layer);
 map.add(highlight_layer);
 
+var tract_data = ee.FeatureCollection("")
+
 // 
 var cities = hotspots.cities
 cities.setVisParams(hotspots.highlight_city("None"))
