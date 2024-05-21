@@ -363,11 +363,11 @@ function set_raster_layer(name) {
 }
 
 function color_vector_layer() {
-  let var1 = vector_select_1.getValue();
-  let var2 = vector_select_2.getValue();
+  var var1 = vector_select_1.getValue();
+  var var2 = vector_select_2.getValue();
   
   if(var1 != "None" && var2 != "None") {
-    let vector_layer = var1 + " and " + var2;
+    var vector_layer = var1 + " and " + var2;
     
     map.layers().forEach(function(element, index) {
       if(element.getName() == "Tracts") {
@@ -378,11 +378,11 @@ function color_vector_layer() {
 }
 
 function set_vector_layer() {
-  let var1 = vector_select_1.getValue();
-  let var2 = vector_select_2.getValue();
+  var var1 = vector_select_1.getValue();
+  var var2 = vector_select_2.getValue();
   
   if(var1 != "None" && var2 != "None") {
-    let vector_layer = var1 + " and " + var2;
+    var vector_layer = var1 + " and " + var2;
     
     // Find the tracts layer and set the colors corresponding to the given data set.
     color_vector_layer();
