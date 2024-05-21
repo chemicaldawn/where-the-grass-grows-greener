@@ -241,7 +241,7 @@ function redraw_map () {
         element.setShown(vector_layer !== null);
       }
       
-      else if(element.getName() == "Outlines") {
+      else if(element.getName() == "Highlighting") {
         element.setShown(vector_layer !== null);
       }
       
