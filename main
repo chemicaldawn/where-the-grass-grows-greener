@@ -618,7 +618,7 @@ map.onClick(function(location) {
     }
   }
   
-  color_vector_layer();
+  highlight_tract();
 });
 
 /*
