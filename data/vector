@@ -51,7 +51,7 @@ function to_dict(palette) {
 }
 
 // Returns a layer with all of the census tracts colored correctly to represent the data.
-function getVisParams(id, palette) {
+function getVisParams(id, highlighted_tract, palette) {
   
   return {
     polygonFillColor: {
@@ -60,7 +60,11 @@ function getVisParams(id, palette) {
       categories: palette
     },
     
-    polygonStrokeWidth: 0.5,
+    polygonStrokeWidth: {
+      property: "GEOID",
+      defaultValue: 0.5,
+      categories: [[highlighted_tract, 2]]
+    },
     
     opacity: {
       property: id,
