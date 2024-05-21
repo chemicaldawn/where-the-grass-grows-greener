@@ -579,6 +579,13 @@ hotspot_inline.add(hotspot_button);
 explore.add(hotspot_inline);
 
 /*
+  Click Handling
+*/
+map.onClick(function(location) {
+  tracts.filterBounds(location);
+});
+
+/*
   Map
   
   Contains all of the settings initially applied to the map.
