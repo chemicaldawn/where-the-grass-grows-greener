@@ -532,8 +532,10 @@ explore.add(ui.Panel({
   style: sidebar_style.br
 }));
 
+print(hotspot_data.keys());
+
 var hotspot_select = ui.Select({
-  items: hotspot_data.keys(),
+  items: [],
   placeholder: "Select a resilience hotspot..."
 });
 
