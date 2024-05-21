@@ -24,7 +24,7 @@ var raster_data = require("users/dawnschumacher/nasa-eej:data/raster").data;
 var vector = require("users/dawnschumacher/nasa-eej:data/vector");
 var vector_data = require("users/dawnschumacher/nasa-eej:data/vector").data;
 
-var hotspots = require("users/dawnschumacher/nasa-eej:data/hotspots")
+var hotspots = require("users/dawnschumacher/nasa-eej:data/hotspots");
 var hotspot_data = require("users/dawnschumacher/nasa-eej:data/hotspots").data;
 
 /*
