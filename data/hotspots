@@ -1,6 +1,8 @@
 exports.data = {
   "Suisun City" : {
-    
+    x: 1,
+    y: 2,
+    zoom: 3
   },
   
   "Southwest Santa Rosa" : {
