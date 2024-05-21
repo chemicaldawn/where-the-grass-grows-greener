@@ -532,8 +532,16 @@ explore.add(ui.Panel({
   style: sidebar_style.br
 }));
 
+var hotspot_inline = ui.Panel({
+  style: sidebar_style.hotspot_inline
+})
 var hotspot_select = ui.Select({
-  placeholder: "Select a resilience hotspot..."
+  placeholder: "Select a resilience hotspot...",
+  style: sidebar_style.hotspot_select
+});
+var hotspot_button = ui.Button({
+  label: "Zoom",
+  style: sidebar_style.hotspot_button
 });
 
 for(var hotspot in hotspot_data) {
