@@ -22,6 +22,13 @@ exports.panel = {
   width: "28%"
 }
 
+exports.tract_panel = {
+  position: 'top-left',
+  padding: "12px",
+  
+  width: "28%"
+}
+
 exports.subpanel= {
   margin: "12px 0px 0px 0px",
   padding: "8px",
