@@ -618,7 +618,8 @@ map.onClick(function(location) {
       selected_tract = new_id;
     }
   }
-  print(new_tract)
+  
+  color_vector_layer();
 });
 
 /*
