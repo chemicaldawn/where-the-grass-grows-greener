@@ -556,8 +556,8 @@ hotspot_select.onChange(function (hotspot) {
   map.setCenter(hotspot_data[hotspot].lat, hotspot_data[hotspot].lon, hotspot_data[hotspot].zoom)
 });
 hotspot_button.onClick(function() {
-  print(map.getCenter());
-  print(map.getZoom());
+  var hotspot = hotspot_select.getValue();
+  map.setCenter(hotspot_data[hotspot].lat, hotspot_data[hotspot].lon, hotspot_data[hotspot].zoom)
 });
 
 hotspot_inline.add(hotspot_select);
