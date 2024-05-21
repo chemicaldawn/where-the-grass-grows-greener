@@ -40,8 +40,8 @@ exports.data = {
   
   "Gilroy" : {
     lon: 37.00,
-    lat: -121.56,
-    zoom: 14
+    lat: -121.57,
+    zoom: 13
   }
 }
 
