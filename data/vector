@@ -64,6 +64,8 @@ function get_vis_params(value) {
       categories: palette
     },
     
+    polygonStrokeWidth: 0.5,
+    
     opacity: {
       property: id,
       defaultValue: 0.7,
@@ -74,6 +76,15 @@ function get_vis_params(value) {
 
 function get_highlight(highlighted_tract) {
   
+  return {
+    polygonFillOpacity: 0,
+    
+    polygonStrokeWidth: {
+      property: "GEOID",
+      defaultValue: 0,
+      categories: [[highlighted_tract, 2]]
+    }
+  }
 }
 
 var tract_data = {
