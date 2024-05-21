@@ -362,19 +362,30 @@ function set_raster_layer(name) {
   redraw_map();
 }
 
-function set_vector_layer() {
-  var var1 = vector_select_1.getValue();
-  var var2 = vector_select_2.getValue();
+function color_vector_layer() {
+  let var1 = vector_select_1.getValue();
+  let var2 = vector_select_2.getValue();
   
   if(var1 != "None" && var2 != "None") {
-    vector_layer = var1 + " and " + var2;
+    let vector_layer = var1 + " and " + var2;
     
-    // Find the tracts layer and set the colors corresponding to the given data set.
     map.layers().forEach(function(element, index) {
       if(element.getName() == "Tracts") {
-        element.setVisParams(vector_data[vector_layer]["visParams"])
+        element.setVisParams(vector.get_vis_params(vector_layer, selected_tract))
       }
-    });
+    })
+  }
+}
+
+function set_vector_layer() {
+  let var1 = vector_select_1.getValue();
+  let var2 = vector_select_2.getValue();
+  
+  if(var1 != "None" && var2 != "None") {
+    let vector_layer = var1 + " and " + var2;
+    
+    // Find the tracts layer and set the colors corresponding to the given data set.
+    color_vector_layer();
 
     vector_infobox.clear();
     vector_infobox.add(ui.Label({
