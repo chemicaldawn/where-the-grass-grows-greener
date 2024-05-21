@@ -591,8 +591,16 @@ var selected_tract = null
 map.onClick(function(location) {
   var filtered = highlighting.filterBounds(ee.Geometry.Point([location.lon, location.lat]));
   
-  var new_tract = filtered.first().get("GEOID");
-  print(new_tract);
+  var new_tract = filtered.first();
+  
+  if(new_tract == null) {
+    selected_tract = null;
+  }
+  else {
+    
+    var new_id = new_tract.get("GEOID");
+  }
+  print(new_tract)
 });
 
 /*
