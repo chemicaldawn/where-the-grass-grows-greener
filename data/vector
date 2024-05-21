@@ -51,7 +51,7 @@ function to_dict(palette) {
 }
 
 // Returns a layer with all of the census tracts colored correctly to represent the data.
-function get_vis_params(id, highlighted_tract, palette) {
+function get_vis_params(id, highlighted_tract) {
   
   return {
     polygonFillColor: {
