@@ -18,10 +18,14 @@ exports.data = {
   },
   
   "Newark" : {
-    
+    lat: 37.53,
+    lon: 122.04,
+    zoom: 14
   },
   
   "Gilroy" : {
-    
+    lat: 37.00,
+    lon: -121.56,
+    zoom: 14
   }
 }
