@@ -70,15 +70,6 @@ function getVisParams(id, palette) {
   }
 }
 
-function getOutlines() {
-  return {
-    polygonFillOpacity: 0,
-    polygonStrokeWidth: 0.5,
-    
-    opacity: 0
-  }
-}
-
 var tract_data = {
   "Degree of Greenness and Displacement Risk" : {
     visParams : getVisParams("ne",color_pal),
@@ -103,9 +94,6 @@ var tract_data = {
   "Land Surface Temperature and Housing Price Trend" : {
     visParams : getVisParams("lshp",color_pal),
     info : "Change in average land surface temperature compared to the yearly average increase in housing price (2000 - 2020) at the zip code level."
-  },
-  "Outlines" : {
-    layer : getOutlines(getVisParams("ns",color_pal))
   }
 }
 
@@ -193,7 +181,7 @@ function get_matrix(var1, var2, categories) {
 }
 
 exports.tracts = tracts
-exports.outlines = outlines
+exports.highlighting = highlighting
 exports.data = tract_data
 
 exports.get_matrix = get_matrix
