@@ -545,12 +545,14 @@ var hotspot_button = ui.Button({
   label: "Zoom",
   style: sidebar_style.hotspot_button
 });
+hotspot_button.setDisabled(true);
 
 for(var hotspot in hotspot_data) {
   hotspot_select.items().add(hotspot);
 }
 
 hotspot_select.onChange(function (layer) {
+  hotspot_button.setDisabled(false);
   map.setCenter(hotspot_data[layer].lat, hotspot_data[layer].lon, hotspot_data[layer].zoom)
 });
 
