@@ -120,7 +120,7 @@ var tract_data = {
   }
 }
 
-tract_layer.setVisParams(get_vis_params("ne",""));
+tract_layer.setVisParams(get_vis_params("ne"));
 
 function get_square(color) {
   return ui.Panel({
