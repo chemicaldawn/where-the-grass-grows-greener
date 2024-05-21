@@ -46,4 +46,4 @@ exports.data = {
 }
 
 exports.cities = cities;
-
+exports.highlight_city = highlight_city;
