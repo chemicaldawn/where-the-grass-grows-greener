@@ -1,3 +1,5 @@
+var cities = 
+
 exports.data = {
   "Suisun City" : {
     lon: 38.24,
