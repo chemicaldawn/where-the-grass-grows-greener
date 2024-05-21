@@ -52,7 +52,7 @@ function to_dict(palette) {
 }
 
 // Returns a layer with all of the census tracts colored correctly to represent the data.
-function get_vis_params(value, highlighted_tract) {
+function get_vis_params(value) {
   
   var id = tract_data[value].id
   var palette = tract_data[value].palette
@@ -77,6 +77,8 @@ function get_vis_params(value, highlighted_tract) {
     }
   }
 }
+
+function get_highlight()
 
 var tract_data = {
   "Degree of Greenness and Displacement Risk" : {
@@ -110,6 +112,8 @@ var tract_data = {
     info : "Change in average land surface temperature compared to the yearly average increase in housing price (2000 - 2020) at the zip code level."
   }
 }
+
+tract_layer.setVisParams(get_vis_params("ne",""));
 
 function get_square(color) {
   return ui.Panel({
