@@ -1,8 +1,8 @@
 exports.data = {
   "Suisun City" : {
-    lat: -120.91,
-    lon: 37.05,
-    zoom: 7
+    lat: -122.12,
+    lon: 38.03,
+    zoom: 14
   },
   
   "Southwest Santa Rosa" : {
