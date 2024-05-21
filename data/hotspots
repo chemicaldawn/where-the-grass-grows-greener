@@ -1,4 +1,4 @@
-var cities = 
+var cities = ui.Map.FeatureViewLayer("projects/nasa-eej/assets/tract_featureview", null, "Cities", false);
 
 exports.data = {
   "Suisun City" : {
