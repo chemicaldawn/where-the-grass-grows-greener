@@ -1,5 +1,5 @@
 var tracts = ui.Map.FeatureViewLayer("projects/nasa-eej/assets/tract_featureview",null,"Tracts",false);
-var highlighting = ui.Map.FeatureCollection("projects/nasa-eej/assets/tract_for_webtool",null,"Highlighting",false);
+var highlighting = ui.Map.FeatureCollectionLayer("projects/nasa-eej/assets/tract_for_webtool",null,"Highlighting",false);
 
 var legend_style = require("users/dawnschumacher/nasa-eej:style/legend-style")
 
