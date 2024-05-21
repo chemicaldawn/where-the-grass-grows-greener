@@ -1,7 +1,7 @@
 exports.data = {
   "Suisun City" : {
-    x: 1,
-    y: 2,
+    lat: 1,
+    lon: 2,
     zoom: 3
   },
   
