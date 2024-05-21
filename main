@@ -551,9 +551,13 @@ for(var hotspot in hotspot_data) {
   hotspot_select.items().add(hotspot);
 }
 
-hotspot_select.onChange(function (layer) {
+hotspot_select.onChange(function (hotspot) {
   hotspot_button.setDisabled(false);
-  map.setCenter(hotspot_data[layer].lat, hotspot_data[layer].lon, hotspot_data[layer].zoom)
+  map.setCenter(hotspot_data[hotspot].lat, hotspot_data[hotspot].lon, hotspot_data[hotspot].zoom)
+});
+hotspot_button.onClick(function() {
+  print(map.getCenter());
+  print(map.getZoom());
 });
 
 hotspot_inline.add(hotspot_select);
