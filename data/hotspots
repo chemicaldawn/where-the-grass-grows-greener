@@ -1,31 +1,31 @@
 exports.data = {
   "Suisun City" : {
-    lat: -122.04,
     lon: 38.24,
+    lat: -122.04,
     zoom: 14
   },
   
   "Southwest Santa Rosa" : {
-    lat: 38.41,
-    lon:  122.75,
+    lon: 38.41,
+    lat:  -122.75,
     zoom: 14
   },
   
   "North Richmond" : {
-    lat: 37.95,
-    lon: -122.37,
+    lon: 37.95,
+    lat: -122.37,
     zoom: 14
   },
   
   "Newark" : {
-    lat: 37.53,
-    lon: 122.04,
+    lon: 37.53,
+    lat: -122.04,
     zoom: 14
   },
   
   "Gilroy" : {
-    lat: 37.00,
-    lon: -121.56,
+    lon: 37.00,
+    lat: -121.56,
     zoom: 14
   }
 }
