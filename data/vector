@@ -214,6 +214,10 @@ function get_bin_grid(var1, var2, categories) {
     
     // Cross
     if(i % 2 === 0) {
+      
+      bin_grid.add(ui.Panel({
+        style: bin_style.horizontal_cross
+      }))
     }
     
     // Squares
