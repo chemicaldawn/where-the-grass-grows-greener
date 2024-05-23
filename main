@@ -564,7 +564,7 @@ explore.add(ui.Label({
 explore.add(ui.Panel({
   style: sidebar_style.hotspotbox
 })
-.add(ui.Panel({
+.add(ui.Label({
   value: '"The Bay Area Resilience Hotspots initiative is a blueprint for where we must protect communities that stand to lose the most in the face of climate change in ways that co-benefit habitats, open spaces, biodiversity, recreation, and more."',
   style: sidebar_style.hotspotlabel
 }))
