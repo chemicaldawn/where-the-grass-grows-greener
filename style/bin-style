@@ -5,6 +5,12 @@ var padding = 4;
 var pip = (size + padding) / 4;
 var cross = size * 3 + padding * 3 + stroke * 4;
 
-exports.square = {
-  
+exports.get_square = function(color) {
+  return {
+    backgroundColor: color,
+    
+    width: size.toString() + "px",
+    height: size.toString() + "px",
+    margin: padding.toString() + "px"
+  }
 }
