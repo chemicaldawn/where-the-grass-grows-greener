@@ -91,32 +91,32 @@ var tract_data = {
   "Degree of Greenness and Displacement Risk" : {
     id : "ne",
     palette: color_pal,
-    info : "Degree of greenness compared to level of displacement risk in 2019 (from Estimated Displacement Risk model) at the census tract level."
+    info : "Degree of greenness compared to level of displacement risk in 2019 (from Estimated Displacement Risk model) at the census tract level. Degree of greenness is defined using the median normalized difference vegetation index (NDVI; source: Landsat). NDVI is a unitless measure of vegetation health between -1 and 1."
   },
   "Degree of Greenness and Social Vulnerability" : {
     id : "ns",
     palette: color_pal,
-    info : "Degree of greenness compared to the CDC's 2018 Social Vulnerability Index at the census tract level."
+    info : "Degree of greenness in 2019 compared to CDC's 2018 Social Vulnerability Index at the census tract level. Degree of greenness is defined using the median normalized difference vegetation index (NDVI; source: Landsat). NDVI is a unitless measure of vegetation health between -1 and 1."
   },
   "Degree of Greenness and Housing Price Trend" : {
     id : "nshp",
     palette: color_pal,
-    info : "Degree of greenness compared to the yearly average increase in housing price (2000 - 2020) at the zip code level."
+    info : "Rate of change in greenness (1990 - 2019) & percent change in yearly average housing price (2000 - 2020) at the zip code level. Degree of greenness is defined using the median normalized difference vegetation index (NDVI; source: Landsat). NDVI is a unitless measure of vegetation health between -1 and 1. Only zip codes with statistically significant (p < 0.05) greenness trends are shown."
   },
   "Land Surface Temperature and Displacement Risk" : {
     id : "le",
     palette: color_pal,
-    info : "Change in average land surface temperature compared to level of displacement risk in 2019 (from Estimated Displacement Risk model) at the census tract level."
+    info : "Median land surface temperature (LST; source: Landsat) compared to displacement risk in 2019 (from Estimated Displacement Risk model) at the census tract level."
   },
   "Land Surface Temperature and Social Vulnerability" : {
     id : "ls",
     palette: color_pal,
-    info : "Change in average land surface temperature compared to the CDC's 2018 Social Vulnerability Index at the census tract level."
+    info : "Median land surface temperature (LST; source: Landsat) in 2019 compared to CDC's 2018 Social Vulnerability Index at the census tract level."
   },
   "Land Surface Temperature and Housing Price Trend" : {
     id : "lshp",
     palette: color_pal,
-    info : "Change in average land surface temperature compared to the yearly average increase in housing price (2000 - 2020) at the zip code level."
+    info : "Rate of change in land surface temperature (LST; source: Landsat) from 1990 to 2019 compared to percent change in yearly average housing price from 2000 to 2020 at the zip code level. Only zip codes with statistically significant (p < 0.05) land surface temperature trends are shown."
   }
 }
 
