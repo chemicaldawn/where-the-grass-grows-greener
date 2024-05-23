@@ -55,7 +55,7 @@ exports.threshold_title = {
 
 exports.threshold_label = {
   
-  margin: "4px 0px 0px 0px",
+  margin: "8px 0px 0px 0px",
   
   backgroundColor: exports.threshold_box.backgroundColor
 }
