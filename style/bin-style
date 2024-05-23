@@ -9,13 +9,13 @@ var cross_color = "#ebebeb";
 var pip_color = "#b5b5b5";
 
 exports.get_square = function(color) {
-  return {
+  return ui.Panel({
     backgroundColor: color,
     
     width: size.toString() + "px",
     height: size.toString() + "px",
     margin: padding.toString() + "px"
-  }
+  })
 }
 
 exports.grid = {
