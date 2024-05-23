@@ -38,3 +38,19 @@ exports.vertical_cross = {
   width: stroke.toString() + "px",
   height: (size + 2*padding).toString() + "px"
 }
+
+exports.threshold_box = {
+  
+}
+
+exports.threshold_title = {
+
+}
+
+exports.threshold_label = {
+  
+}
+
+exports.threshold_bins = {
+  
+}
