@@ -236,7 +236,7 @@ function get_bin_grid(var1, var2, categories) {
         
         // Square
         else {
-          bin_grid.add(bin_grid.get_square("#4de84d"));
+          bin_grid.add(bin_style.get_square("#4de84d"));
         }
       }
     }
