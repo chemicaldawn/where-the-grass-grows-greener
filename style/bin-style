@@ -1,6 +1,6 @@
 var size = 36;
 var stroke = 2;
-var padding = 8;
+var padding = 4;
 
 var pip = (size + padding) / 4;
 var cross = size * 3 + padding * 3 + stroke * 4;
