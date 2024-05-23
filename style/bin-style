@@ -43,17 +43,25 @@ exports.threshold_box = {
   padding: "4px",
   
   backgroundColor: "#dbd9d9",
-  border: "1px solid #919191",
+  border: "1px solid #919191"
 }
 
 exports.threshold_title = {
-
+  
+  fontWeight: "700",
+  
+  backgroundColor: exports.threshold_box.backgroundColor
 }
 
 exports.threshold_label = {
   
+  margin: "4px 0px 0px 0px",
+  
+  backgroundColor: exports.threshold_box.backgroundColor
 }
 
 exports.threshold_bins = {
+  margin: "0px",
   
+  backgroundColor: exports.threshold_box.backgroundColor
 }
