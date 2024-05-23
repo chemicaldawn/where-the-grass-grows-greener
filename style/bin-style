@@ -10,11 +10,13 @@ var pip_color = "#b5b5b5";
 
 exports.get_square = function(color) {
   return ui.Panel({
-    backgroundColor: color,
-    
-    width: size.toString() + "px",
-    height: size.toString() + "px",
-    margin: padding.toString() + "px"
+    style: {
+      backgroundColor: color,
+      
+      width: size.toString() + "px",
+      height: size.toString() + "px",
+      margin: padding.toString() + "px"
+    }
   })
 }
 
