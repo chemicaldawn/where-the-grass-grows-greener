@@ -1,5 +1,5 @@
 var size = 12;
-var stroke = 1;
+var stroke = 2;
 var padding = 4;
 
 var pip = (size + padding) / 4;
