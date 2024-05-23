@@ -536,9 +536,11 @@ layers.add(ui.Panel({
 }))
 
 layers.add(ui.Label({
-  value: "Additional notes on methodology...",
+  value: "Notes on geospatial methods",
 }).setUrl("https://github.com/erthromero/EEJWebApp/blob/main/Documentation/GeospatialMethods.pdf"))
-
+layers.add(ui.Label({
+  value: "Webtool variable documentation",
+}).setUrl("https://github.com/erthromero/EEJWebApp/blob/main/Documentation/Webtool%20documentation.pdf"))
 
 /*
   Explore
