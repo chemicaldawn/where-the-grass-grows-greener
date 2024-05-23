@@ -19,7 +19,7 @@ exports.panel = {
   position: 'bottom-left',
   padding: "12px",
   
-  width: "28%"
+  width: "32%"
 }
 
 exports.tract_panel = {
