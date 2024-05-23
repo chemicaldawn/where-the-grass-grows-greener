@@ -36,5 +36,5 @@ exports.vertical_cross = {
   backgroundColor: cross_color,
   
   width: stroke.toString() + "px",
-  height: size.toString() + "px"
+  height: (size + 2*padding).toString() + "px"
 }
