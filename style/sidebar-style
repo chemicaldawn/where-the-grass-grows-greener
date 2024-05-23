@@ -38,6 +38,12 @@ exports.p = {
   margin: "16px 0px 0px 0px"
 }
 
+exports.a = {
+  fontSize: "14px",
+  fontWeight: "400",
+  margin: "0px 0px 4px 0px"
+}
+
 exports.navbar = {
   width: '100%'
 }
