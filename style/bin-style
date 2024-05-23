@@ -5,8 +5,8 @@ var padding = 4;
 var pip = (size + padding) / 4;
 var cross = size * 3 + padding * 3 + stroke * 4;
 
-var cross_color = ""
-var pip_color = ""
+var cross_color = "#ebebeb";
+var pip_color = "#b5b5b5";
 
 exports.get_square = function(color) {
   return {
