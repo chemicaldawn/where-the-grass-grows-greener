@@ -225,6 +225,8 @@ function get_bin_grid(var1, var2, categories) {
       
     }
   }
+  
+  return bin_grid
 }
 
 exports.tracts = tracts
