@@ -40,14 +40,16 @@ exports.vertical_cross = {
 }
 
 exports.threshold_box = {
-  padding: "4px",
+  padding: "8px",
+  width: "60%",
   
-  backgroundColor: "#dbd9d9",
+  backgroundColor: "#ebe8e8",
   border: "1px solid #919191"
 }
 
 exports.threshold_title = {
   
+  margin: "0px",
   fontWeight: "700",
   
   backgroundColor: exports.threshold_box.backgroundColor
