@@ -571,7 +571,8 @@ explore.add(ui.Panel({
 .add(ui.Label({
   value: "- From Greenbelt Alliance's webpage, accessed 22 May 2024.",
   style: sidebar_style.hotspotlabel
-})));
+}))
+.setUrl("https://www.greenbelt.org/hotspots/#about"));
 
 explore.add(ui.Label({
   value: "",
