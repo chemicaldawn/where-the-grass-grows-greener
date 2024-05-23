@@ -206,14 +206,13 @@ function get_matrix(var1, var2, categories) {
 function get_bin_grid(var1, var2, categories) {
   
   var bin_grid = ui.Panel({
-    
+    style: bin_style.grid
   })
   
   for(var i = 0; i < 7; i++) {
     
     // Cross
     if(i % 2 === 0) {
-      
     }
     
     // Squares
