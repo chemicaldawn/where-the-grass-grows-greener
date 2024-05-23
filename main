@@ -598,7 +598,8 @@ hotspot_select.onChange(function (hotspot) {
   cities.setVisParams(hotspots.highlight_city(hotspot));
   
   hotspot.info.add(ui.Label({
-    "More information on " + hotspot + " from Greenbelt Alliance..."
+    value: "More information on " + hotspot + " from Greenbelt Alliance...",
+    style: sidebar_style.p
   }).setUrl(hotspot_data[hotspot].url));
 });
 hotspot_button.onClick(function() {
