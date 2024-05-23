@@ -560,9 +560,18 @@ explore.add(ui.Label({
   value: "Bay Area Resilience Hotspots",
   style: sidebar_style.h2
 }));
+
 explore.add(ui.Panel({
-  style: sidebar_style.br
-}));
+  style: sidebar_style.hotspotbox
+})
+.add(ui.Panel({
+  value: '"The Bay Area Resilience Hotspots initiative is a blueprint for where we must protect communities that stand to lose the most in the face of climate change in ways that co-benefit habitats, open spaces, biodiversity, recreation, and more."',
+  style: sidebar_style.hotspotlabel
+}))
+.add(ui.Label({
+  value: "- From Greenbelt Alliance's webpage, accessed 22 May 2024."
+  style: sidebar_style.hotspotlabel
+})));
 
 explore.add(ui.Label({
   value: "",
