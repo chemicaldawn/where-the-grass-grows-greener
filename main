@@ -575,7 +575,7 @@ var hotspot_inline = ui.Panel({
 hotspot_inline.setLayout(ui.Panel.Layout.flow("horizontal", false));
 
 var hotspot_select = ui.Select({
-  placeholder: "Select a resilience hotspot...",
+  placeholder: "Select a Resilience Hotspot...",
   style: sidebar_style.hotspot_select
 });
 var hotspot_button = ui.Button({
