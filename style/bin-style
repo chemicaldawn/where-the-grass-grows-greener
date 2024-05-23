@@ -1,8 +1,10 @@
-var size = 16;
+var size = 12;
 var stroke = 1;
 var padding = 4;
 
-var pip = size / 4;
-var cross = size * 3 + stroke * 4;
+var pip = (size + padding) / 4;
+var cross = size * 3 + padding * 3 + stroke * 4;
 
-exports
+exports.square = {
+  
+}
