@@ -126,12 +126,13 @@ exports.vectorbox = {
 }
 
 exports.hotspotlabel = {
-  margin: exports.rasterlabel.margin,
-  fontWeight: exports.rasterlabel.fontWeight,
+  margin: "0px 0px 4px 0px",
+  fontWeight: "400",
   backgroundColor: "#eeffdb"
 }
 
 exports.hotspotbox = {
+  margin: "12px 0px 0px 0px",
   padding: "8px",
   
   border: "1px solid #a8d179",
