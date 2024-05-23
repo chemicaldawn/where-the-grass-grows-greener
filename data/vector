@@ -2,6 +2,7 @@ var tracts = ee.FeatureCollection("projects/nasa-eej/assets/tract_for_webtool");
 var tract_layer = ui.Map.FeatureViewLayer("projects/nasa-eej/assets/tract_featureview",null,"Tracts",false);
 var highlight_layer = ui.Map.FeatureViewLayer("projects/nasa-eej/assets/tract_featureview",null,"Highlighting",false);
 
+var bin_style = require("users/dawnschumacher/nasa-eej:style/bin-style")
 var legend_style = require("users/dawnschumacher/nasa-eej:style/legend-style")
 
 var var1 = ["None", "Degree of Greenness", "Land Surface Temperature"]
@@ -204,6 +205,22 @@ function get_matrix(var1, var2, categories) {
 
 function get_bin_grid(var1, var2, categories) {
   
+  var bin_grid = ui.Panel({
+    
+  })
+  
+  for(var i = 0; i < 7; i++) {
+    
+    // Cross
+    if(i % 2 === 0) {
+      
+    }
+    
+    // Squares
+    else {
+      
+    }
+  }
 }
 
 exports.tracts = tracts
