@@ -394,6 +394,10 @@ function set_vector_layer() {
       style: sidebar_style.p
     }));
     
+    vector_infobox.add(
+      vector.get_bin_grid(var1, var2, vector_data[vector_layer].palette)
+    )
+    
     // Build the label for the legend entry.
     var legend_label = vector_layer;
     
