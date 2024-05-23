@@ -18,6 +18,10 @@ exports.get_square = function(color) {
   }
 }
 
+exports.grid= {
+  width: (cross + pip).toString() + "px"
+}
+
 exports.horizontal_cross = {
   backgroundColor: cross_color,
   
