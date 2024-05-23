@@ -26,7 +26,7 @@ var background_data = {
     },
     layer: ee.Image('projects/nasa-eej/assets/NDVI1yrTimeSeries1990to2020LinearTrendStats').select('b3'),
     type: "univariate",
-    info: "Statistic describing an increasing or decreasing trend in greenness defined using the normalized difference vegetation index between 1990 and 2020. NDVI is a unitless measure of vegetation health between -1 and 1.",
+    info: "Statistic describing an increasing or decreasing trend in greenness defined using the normalized difference vegetation index (NDVI; source: Landsat) between 1990 and 2020. NDVI is a unitless measure of vegetation health between -1 and 1.",
     unit: "NDVI"
   },
   "Trend in Land Surface Temperature" : {
@@ -38,7 +38,7 @@ var background_data = {
     },
     type: "univariate",
     layer: ee.Image('projects/nasa-eej/assets/LST1yrTimeSeries1990to2020LinearTrendStats').select('b3'),
-    info: "Statistic describing an increasing or decreasing trend in land surface temperature between 1990 and 2020. LST is measured in °C.",
+    info: "Statistic describing an increasing or decreasing trend in land surface temperature (LST; source: Landsat) between 1990 and 2020. LST is measured in °C.",
     unit: "°C"
   }
 }
