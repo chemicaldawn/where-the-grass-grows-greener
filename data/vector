@@ -269,9 +269,7 @@ function get_bin_thresholds(var1, var2) {
   var bin_labels = tract_data[var1 + " and " + var2].bin_labels
   var bins = tract_data[var1 + " and " + var2].bins
   
-  return ui.Panel({
-    
-  })
+  return ui.Panel()
   .add(ui.Label({
     value: "Bin Thresholds"
   }))
@@ -281,7 +279,6 @@ function get_bin_thresholds(var1, var2) {
   .add(ui.Label({
     value: bins[0]
   })).add(ui.Label({
-    
     value: bin_labels[1] + ":"
   }))
   .add(ui.Label({
