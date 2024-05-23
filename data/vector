@@ -239,6 +239,7 @@ exports.data = tract_data
 exports.get_vis_params = get_vis_params
 exports.get_highlight = get_highlight
 exports.get_matrix = get_matrix
+exports.get_bin_grid = get_bin_grid
 
 exports.var1 = var1
 exports.var2 = var2
