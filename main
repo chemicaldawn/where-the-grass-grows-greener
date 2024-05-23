@@ -569,7 +569,7 @@ explore.add(ui.Panel({
   style: sidebar_style.hotspotlabel
 }))
 .add(ui.Label({
-  value: "- From Greenbelt Alliance's webpage, accessed 22 May 2024."
+  value: "- From Greenbelt Alliance's webpage, accessed 22 May 2024.",
   style: sidebar_style.hotspotlabel
 })));
 
