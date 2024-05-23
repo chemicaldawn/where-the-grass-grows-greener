@@ -25,7 +25,7 @@ exports.data = {
     lon: 38.41,
     lat:  -122.76,
     zoom: 13,
-    url: ""
+    url: "https://www.greenbelt.org/hotspots/southwest-santa-rosa/"
   },
   
   "North Richmond" : {
@@ -38,13 +38,15 @@ exports.data = {
   "Newark" : {
     lon: 37.52,
     lat: -122.03,
-    zoom: 13
+    zoom: 13,
+    url: "https://www.greenbelt.org/hotspots/newark/"
   },
   
   "Gilroy" : {
     lon: 37.00,
     lat: -121.58,
-    zoom: 13
+    zoom: 13,
+    url: "https://www.greenbelt.org/hotspots/gilroy/"
   }
 }
 
