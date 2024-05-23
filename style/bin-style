@@ -5,6 +5,9 @@ var padding = 4;
 var pip = (size + padding) / 4;
 var cross = size * 3 + padding * 3 + stroke * 4;
 
+var cross_color = ""
+var pip_color = ""
+
 exports.get_square = function(color) {
   return {
     backgroundColor: color,
@@ -13,4 +16,18 @@ exports.get_square = function(color) {
     height: size.toString() + "px",
     margin: padding.toString() + "px"
   }
+}
+
+exports.horizontal_cross = {
+  backgroundColor: cross_color,
+  
+  width: cross.toString() + "px",
+  height: stroke.toString() + "px"
+}
+
+exports.vertical_cross = {
+  backgroundColor: cross_color,
+  
+  width: stroke.toString() + "px",
+  height: size.toString() + "px"
 }
