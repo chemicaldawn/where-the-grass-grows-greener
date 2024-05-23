@@ -202,6 +202,10 @@ function get_matrix(var1, var2, categories) {
   });
 }
 
+function get_bin_grid(var1, var2, categories) {
+  
+}
+
 exports.tracts = tracts
 exports.tract_layer = tract_layer
 exports.highlight_layer = highlight_layer
