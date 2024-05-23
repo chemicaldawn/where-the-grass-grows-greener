@@ -125,6 +125,19 @@ exports.vectorbox = {
   backgroundColor: exports.vectorlabel.backgroundColor
 }
 
+exports.hotspotlabel = {
+  margin: exports.rasterlabel.margin,
+  fontWeight: exports.rasterlabel.fontWeight,
+  backgroundColor: "#eeffdb"
+}
+
+exports.hotspotbox = {
+  padding: "8px",
+  
+  border: "1px solid #a8d179",
+  backgroundColor: exports.hotspotlabel.backgroundColor
+}
+
 exports.hotspot_inline = {
   width: "100%"
 }
