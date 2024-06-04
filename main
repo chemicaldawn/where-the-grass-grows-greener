@@ -638,7 +638,7 @@ map.onClick(function(location) {
   var new_tract = filtered.first();
   print(new_tract);
   
-  if(new_tract == null) {
+  if(new_tract === null) {
     selected_tract = "";
     map.remove(tract_data);
     
