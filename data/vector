@@ -11,7 +11,7 @@ var var2 = ["None", "Displacement Risk", "Social Vulnerability", "Average Housin
 var blugrn_color_pal = [
   ['1_3', '#578CAB'],
   ['2_3', '#A0BCC9'],
-  ['3_3', '#403593'],
+  ['3_3', '#E2E5E3'],
   ['1_2', '#f78fb6'],
   ['2_2', '#a58fb6'],
   ['3_2', '#408fa7'],
