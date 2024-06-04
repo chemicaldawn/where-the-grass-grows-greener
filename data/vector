@@ -167,7 +167,7 @@ function get_highlight(highlighted_tract) {
 var tract_data = {
   "Degree of Greenness and Displacement Risk" : {
     id : "ne",
-    palette: pnkgrn_color_pal,
+    palette: purgrn_color_pal,
     info : "Degree of greenness compared to level of displacement risk in 2019 (from Estimated Displacement Risk model) at the census tract level. Degree of greenness is defined using the median normalized difference vegetation index (NDVI; source: Landsat). NDVI is a unitless measure of vegetation health between -1 and 1.",
     
     bin_labels : ["Degree of Greenness", "Displacement Risk"],
@@ -192,7 +192,7 @@ var tract_data = {
   },
   "Land Surface Temperature and Displacement Risk" : {
     id : "le",
-    palette: pnkorn_color_pal,
+    palette: purorn_color_pal,
     info : "Median land surface temperature (LST; source: Landsat) compared to displacement risk in 2019 (from Estimated Displacement Risk model) at the census tract level.",
     
     bin_labels : ["Land Surface Temperature", "Displacement Risk"],
