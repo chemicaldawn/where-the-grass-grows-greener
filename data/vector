@@ -80,6 +80,7 @@ function get_vis_params(value) {
       categories: palette
     },
     
+    stroke: 0,
     polygonStrokeWidth: 0.5,
     
     opacity: {
