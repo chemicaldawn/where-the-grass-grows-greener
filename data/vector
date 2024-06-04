@@ -68,7 +68,7 @@ var purorn_color_pal = [
   ['3_NA', '#FFFFFF']
 ];
 
-var pnkgrn = [
+var pnkgrn_color_pal = [
   ['1_3', '#C983B7'],
   ['2_3', '#865D89'],
   ['3_3', '#634B4D'],
