@@ -24,15 +24,15 @@ var blugrn_color_pal = [
 ];
 
 var bluorn_color_pal = [
-  ['1_3', '#f73593'],
+  ['1_3', '#578CAB'],
   ['2_3', '#556F70'],
   ['3_3', '#4D4836'],
-  ['1_2', '#f78fb6'],
-  ['2_2', '#a58fb6'],
-  ['3_2', '#408fa7'],
-  ['1_1', '#f7fcf5'],
-  ['2_1', '#a5e8cd'],
-  ['3_1', '#40dba7'],
+  ['1_2', '#A0BCC9'],
+  ['2_2', '#9D9684'],
+  ['3_2', '#8E613F'],
+  ['1_1', '#E2E5E3'],
+  ['2_1', '#DEB695'],
+  ['3_1', '#C97747'],
   ['1_NA', '#FFFFFF'],
   ['2_NA', '#FFFFFF'],
   ['3_NA', '#FFFFFF']
@@ -131,7 +131,7 @@ var tract_data = {
   },
   "Land Surface Temperature and Displacement Risk" : {
     id : "le",
-    palette: blugrn_color_pal,
+    palette: bluorn_color_pal,
     info : "Median land surface temperature (LST; source: Landsat) compared to displacement risk in 2019 (from Estimated Displacement Risk model) at the census tract level.",
     
     bin_labels : ["Land Surface Temperature", "Displacement Risk"],
@@ -139,7 +139,7 @@ var tract_data = {
   },
   "Land Surface Temperature and Social Vulnerability" : {
     id : "ls",
-    palette: blugrn_color_pal,
+    palette: bluorn_color_pal,
     info : "Median land surface temperature (LST; source: Landsat) in 2019 compared to CDC's 2018 Social Vulnerability Index at the census tract level.",
     
     bin_labels : ["Land Surface Temperature", "Social Vulnerability Index"],
@@ -147,7 +147,7 @@ var tract_data = {
   },
   "Land Surface Temperature and Average Housing Price Increase" : {
     id : "lshp",
-    palette: blugrn_color_pal,
+    palette: bluorn_color_pal,
     info : "Rate of change in land surface temperature (LST; source: Landsat) from 1990 to 2019 compared to percent change in yearly average housing price from 2000 to 2020 at the zip code level. Only zip codes with statistically significant (p < 0.05) land surface temperature trends are shown.",
     
     bin_labels : ["Rate of Change of Land Surface Temperature", "Housing Price Increase"],
