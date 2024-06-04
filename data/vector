@@ -176,7 +176,7 @@ var tract_data = {
   },
   "Degree of Greenness and Social Vulnerability" : {
     id : "ns",
-    palette: purgrn_color_pal,
+    palette: pnkgrn_color_pal,
     info : "Degree of greenness in 2019 compared to CDC's 2018 Social Vulnerability Index at the census tract level. Degree of greenness is defined using the median normalized difference vegetation index (NDVI; source: Landsat). NDVI is a unitless measure of vegetation health between -1 and 1.",
     
     bin_labels : ["Degree of Greenness", "Social Vulnerability Index"],
@@ -200,7 +200,7 @@ var tract_data = {
   },
   "Land Surface Temperature and Social Vulnerability" : {
     id : "ls",
-    palette: purorn_color_pal,
+    palette: pnkorn_color_pal,
     info : "Median land surface temperature (LST; source: Landsat) in 2019 compared to CDC's 2018 Social Vulnerability Index at the census tract level.",
     
     bin_labels : ["Land Surface Temperature", "Social Vulnerability Index"],
