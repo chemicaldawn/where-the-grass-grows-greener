@@ -184,7 +184,7 @@ var tract_data = {
   },
   "Degree of Greenness and Average Housing Price Increase" : {
     id : "nshp",
-    palette: blugrn_color_pal,
+    palette: pnkgrn_color_pal,
     info : "Rate of change in greenness (1990 - 2019) & percent change in yearly average housing price (2000 - 2020) at the zip code level. Degree of greenness is defined using the median normalized difference vegetation index (NDVI; source: Landsat). NDVI is a unitless measure of vegetation health between -1 and 1. Only zip codes with statistically significant (p < 0.05) greenness trends are shown.",
     
     bin_labels : ["Trend in Degree of Greenness", "Housing Price Increase"],
@@ -208,7 +208,7 @@ var tract_data = {
   },
   "Land Surface Temperature and Average Housing Price Increase" : {
     id : "lshp",
-    palette: bluorn_color_pal,
+    palette: pnkorn_color_pal,
     info : "Rate of change in land surface temperature (LST; source: Landsat) from 1990 to 2019 compared to percent change in yearly average housing price from 2000 to 2020 at the zip code level. Only zip codes with statistically significant (p < 0.05) land surface temperature trends are shown.",
     
     bin_labels : ["Rate of Change of Land Surface Temperature", "Housing Price Increase"],
