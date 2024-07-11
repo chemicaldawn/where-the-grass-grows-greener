@@ -348,8 +348,10 @@ function get_bin_row(row_number, categories) {
     else {
       
       var index = row_number.toString() + "_" + (i / 2).toString();
+      print(index);
+      
       bin_row.add(
-        bin_style.get_square(categories[])
+        bin_style.get_square(categories[index])
       );
     }
   }
