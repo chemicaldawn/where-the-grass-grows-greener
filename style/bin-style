@@ -69,10 +69,8 @@ exports.threshold_title = {
 }
 
 exports.threshold_label = {
-  
-  margin: "8px 0px 0px 0px",
-  
-  backgroundColor: exports.threshold_box.backgroundColor
+  height: (size + stroke).toString() + "px",  
+  padding: "2px"
 }
 
 exports.threshold_bins = {
