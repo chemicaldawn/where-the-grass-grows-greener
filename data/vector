@@ -308,7 +308,7 @@ function get_bin_grid(var1, var2, categories) {
   for(var i = 0; i < 7; i++) {
     
     if (i % 2 === 0) {
-      bin_grid.add(get_bin_spacing_row);
+      bin_grid.add(get_bin_spacing_row());
     }
     
     else {
