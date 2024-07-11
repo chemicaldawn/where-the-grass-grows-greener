@@ -395,7 +395,7 @@ function set_vector_layer() {
     }));
     
     vector_infobox.add(
-      vector.get_bin_thresholds(var1, var2)
+      vector.get_bin_categories(var1, var2)
     )
     
     // Build the label for the legend entry.
