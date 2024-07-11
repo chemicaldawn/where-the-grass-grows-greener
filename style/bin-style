@@ -50,10 +50,8 @@ exports.threshold_box = {
 
 exports.threshold_title = {
   
-  margin: "0px",
-  fontWeight: "700",
-  
-  backgroundColor: exports.threshold_box.backgroundColor
+  margin: "0px 0px 4px 0px",
+  fontWeight: "700"
 }
 
 exports.threshold_label = {
