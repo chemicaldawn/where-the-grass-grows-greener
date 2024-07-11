@@ -300,7 +300,7 @@ function get_matrix(var1, var2, categories) {
 
 function get_bin_grid(var1, var2, categories) {
   
-  var category_dict = to_dict(categories);
+  //var category_dict = to_dict(categories);
   
   var bin_grid = ui.Panel({
     style: bin_style.grid
