@@ -302,7 +302,13 @@ function get_bin_grid(var1, var2, categories) {
   
   var category_dict = to_dict(categories);
   
-  var container = ui.Panel();
+  var container = ui.Panel({
+    padding: "0px 12px 0px 0px";
+  });
+  container.add(ui.Label({
+    value: "Bin Thresholds",
+    style: bin-style.
+  }))
   
   var bin_grid = ui.Panel();
   bin_grid.setLayout(ui.Panel.Layout.flow("vertical", true));
