@@ -70,7 +70,8 @@ exports.threshold_title = {
 
 exports.threshold_label = {
   height: (size + stroke).toString() + "px",  
-  padding: "2px"
+  padding: "2px",
+  margin: "0px"
 }
 
 exports.threshold_bins = {
