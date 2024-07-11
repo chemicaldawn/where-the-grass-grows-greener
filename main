@@ -150,8 +150,7 @@ navbar.add(nav_highlight);
 
 // Changes the visible section by stretching or shrinking the margin of the blue highlight UI panel.
 function change_highlight(section_index) {
-  print(section_index);
-  
+
   nav_highlight.style().set({
     margin: "0% 0% 0% " + (33.3 * section_index).toString() + "%"
   });
