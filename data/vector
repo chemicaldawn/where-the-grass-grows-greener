@@ -190,7 +190,7 @@ var tract_data = {
     info : "Rate of change in greenness (1990 - 2019) & percent change in yearly average housing price (2000 - 2020) at the zip code level. Degree of greenness is defined using the median normalized difference vegetation index (NDVI; source: Landsat). NDVI is a unitless measure of vegetation health between -1 and 1. Only zip codes with statistically significant (p < 0.05) greenness trends are shown.",
     
     bin_labels : ["Trend in Degree of Greenness", "Housing Price Increase"],
-    bins_x : ["0.0004", "0.0018", "0.0027", "0.0076"]
+    bins_x : ["0.0004", "0.0018", "0.0027", "0.0076"],
     bins_y : ["89%", "143%", "177%", "506%"]
   },
   "Land Surface Temperature and Displacement Risk" : {
@@ -199,7 +199,7 @@ var tract_data = {
     info : "Median land surface temperature (LST; source: Landsat) compared to displacement risk in 2019 (from Estimated Displacement Risk model) at the census tract level.",
     
     bin_labels : ["Land Surface Temperature", "Displacement Risk"],
-    bins_x : ["17.78 °C", "34.5 °C", "37.17 °C", "43.47 °C"]
+    bins_x : ["17.78 °C", "34.5 °C", "37.17 °C", "43.47 °C"],
     bins_y : ["See methodology...", "", "", ""]
   },
   "Land Surface Temperature and Social Vulnerability" : {
@@ -308,6 +308,9 @@ function get_bin_grid(var1, var2, categories) {
   
   var category_dict = to_dict(categories);
   var var_name = var1 + " and " + var2;
+  
+  var bins_x = tract_data[var_name].bins_x;
+  var bins_y = tract_data[var_name].bins_y;
   
   var container = ui.Panel({
     style: {
