@@ -312,14 +312,14 @@ function get_bin_grid(var1, var2, categories) {
     }
     
     else {
-      bin_grid.add(get_bin_row(i / 2, categories));
+      bin_grid.add(get_bin_row(i / 2, category_dict));
     }
   }  
   
   return bin_grid
 }
 
-function get_bin_spacing_row(row_number, categories) {
+function get_bin_spacing_row() {
   
   var bin_row = ui.Panel();
   bin_row.setLayout(ui.Panel.Layout.flow("horizontal"));
@@ -331,7 +331,7 @@ function get_bin_spacing_row(row_number, categories) {
   return bin_row;
 }
 
-function get_bin_row() {
+function get_bin_row(row_number, categories) {
   
   var bin_row = ui.Panel();
   bin_row.setLayout(ui.Panel.Layout.flow("horizontal"));
