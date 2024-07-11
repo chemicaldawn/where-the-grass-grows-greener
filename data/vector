@@ -339,6 +339,9 @@ function get_bin_spacing_row() {
   bin_row.add(ui.Panel({
     style: bin_style.horizontal_cross
   }));
+  bin_row.add(ui.Panel({
+    style: bin_style.horizontal_pip
+  }))
   
   return bin_row;
 }
