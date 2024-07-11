@@ -336,9 +336,9 @@ function get_bin_row() {
     }
     // Squares
     else {
-      bin_row.add(ui.Panel({
-        style: bin_style.get_square("#4de84d")
-      }));
+      bin_row.add(
+        bin_style.get_square("#4de84d")
+      );
     }
     
     return bin_row;
