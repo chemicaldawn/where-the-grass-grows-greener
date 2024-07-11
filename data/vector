@@ -310,8 +310,8 @@ function get_bin_grid(var1, var2, categories) {
   
   container.add(ui.Label({
     value: "Bin Thresholds",
-    style: bin-style.threshold_title
-  }))
+    style: bin_style.threshold_title
+  }));
   
   var bin_grid = ui.Panel();
   bin_grid.setLayout(ui.Panel.Layout.flow("vertical", true));
