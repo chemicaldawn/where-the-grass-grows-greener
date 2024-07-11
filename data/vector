@@ -357,7 +357,7 @@ function get_vertical_bins(bins) {
     horizontal_group.add(ui.Panel({
       style: bin_style.horizontal_pip
     }))
-    bin_row.add(ui.Label({
+    horizontal_group.add(ui.Label({
       value: bins[i]
     }))
     
