@@ -324,6 +324,8 @@ function get_bin_spacing_row() {
   var bin_row = ui.Panel();
   bin_row.setLayout(ui.Panel.Layout.flow("horizontal"));
   
+  print("E")
+  
   bin_row.add(ui.Panel({
     style: bin_style.cross
   }));
@@ -340,14 +342,12 @@ function get_bin_row() {
     
     // Vertical Cross-bars
     if (i % 2 === 0) {
-      print(i)
       bin_row.add(ui.Panel({
         style: bin_style.vertical_cross
       }));
     }
     // Squares
     else {
-      print("E")
       bin_row.add(
         bin_style.get_square("#4de84d")
       );
