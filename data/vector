@@ -334,6 +334,7 @@ function get_bin_row() {
     }
     // Squares
     else {
+      print("E")
       bin_row.add(
         bin_style.get_square("#4de84d")
       );
