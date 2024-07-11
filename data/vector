@@ -332,7 +332,7 @@ function get_bin_grid(var1, var2, categories) {
   for(var i = 0; i < 7; i++) {
     
     if (i % 2 == 0) {
-      bin_grid.add(get_bin_spacing_row(bins_x[i / 2]));
+      bin_grid.add(get_bin_spacing_row());
     }
     
     else {
@@ -342,10 +342,32 @@ function get_bin_grid(var1, var2, categories) {
   
   section.add(horizontal_group)
   horizontal_group.add(bin_grid);
+  horizontal_group.add(get_vertical_bins(bins_y));
   return section;
 }
 
-function get_bin_spacing_row(bin) {
+function get_vertical_bins(bins) {
+  var vertical_group = ui.Panel()
+  vertical_group.setLayout(ui.Panel.Layout.flow("vertical", true));
+  
+  for(var i = 0; i < 4; i++) {
+    var horizontal_group = ui.Panel()
+    horizontal_group.setLayout(ui.Panel.Layout.flow("horizontal", true));
+
+    horizontal_group.add(ui.Panel({
+      style: bin_style.horizontal_pip
+    }))
+    bin_row.add(ui.Label({
+      value: bins[i]
+    }))
+    
+    vertical_group.add(horizontal_group);
+  }
+  
+  return vertical_group;
+}
+
+function get_bin_spacing_row() {
   
   var bin_row = ui.Panel();
   bin_row.setLayout(ui.Panel.Layout.flow("horizontal"));
@@ -353,12 +375,6 @@ function get_bin_spacing_row(bin) {
   bin_row.add(ui.Panel({
     style: bin_style.horizontal_cross
   }));
-  bin_row.add(ui.Panel({
-    style: bin_style.horizontal_pip
-  }))
-  bin_row.add(ui.Label({
-    value: bin
-  }))
   
   return bin_row;
 }
