@@ -305,37 +305,6 @@ function get_bin_grid(var1, var2, categories) {
   var bin_grid = ui.Panel({
     style: bin_style.grid
   })
-  bin_grid.setLayout(ui.Panel.Layout.flow("horizontal", true));
-  
-  for(var i = 0; i < 7; i++) {
-    
-    // Horizontal Crosses
-    if(i % 2 === 0) {
-      
-      bin_grid.add(ui.Panel({
-        style: bin_style.horizontal_cross
-      }))
-    }
-    
-    // Squares and Vertical Crosses
-    else {
-      
-      for(var j = 0; j < 7; j++) {
-       
-        // Vertical Cross
-        if(j % 2 === 0) {
-          bin_grid.add(ui.Panel({
-            style: bin_style.vertical_cross
-          }))
-        }
-        
-        // Square
-        else {
-          bin_grid.add(bin_style.get_square("#4de84d"));
-        }
-      }
-    }
-  }
   
   return bin_grid
 }
