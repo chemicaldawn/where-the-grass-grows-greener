@@ -347,7 +347,7 @@ function get_bin_row(row_number, categories) {
     // Squares
     else {
       
-      var index = row_number.toString() + "_" + ((i - 1) / 2 + 1).toString();
+      var index = row_number.toString() + "_" + (4 - ((i - 1) / 2 + 1)).toString();
       print(index);
       
       bin_row.add(
