@@ -319,6 +319,18 @@ function get_bin_grid(var1, var2, categories) {
   return bin_grid
 }
 
+function get_bin_spacing_row() {
+  
+  var bin_row = ui.Panel();
+  bin_row.setLayout(ui.Panel.Layout.flow("horizontal"));
+  
+  bin_row.add(ui.Panel({
+    style: bin_style.cross
+  }));
+  
+  return bin_row;
+}
+
 function get_bin_row() {
   
   var bin_row = ui.Panel();
