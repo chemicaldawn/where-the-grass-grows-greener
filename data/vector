@@ -312,19 +312,17 @@ function get_bin_grid(var1, var2, categories) {
     }
     
     else {
-      bin_grid.add(get_bin_row());
+      bin_grid.add(get_bin_row(i / 2, categories));
     }
   }  
   
   return bin_grid
 }
 
-function get_bin_spacing_row() {
+function get_bin_spacing_row(row_number, categories) {
   
   var bin_row = ui.Panel();
   bin_row.setLayout(ui.Panel.Layout.flow("horizontal"));
-  
-  print("E")
   
   bin_row.add(ui.Panel({
     style: bin_style.horizontal_cross
@@ -349,7 +347,7 @@ function get_bin_row() {
     // Squares
     else {
       bin_row.add(
-        bin_style.get_square("#4de84d")
+        bin_style.get_square(categories(row_number.toString() + "_" + (i / 2).toString()))
       );
     }
   }
