@@ -303,8 +303,8 @@ function get_bin_grid(var1, var2, categories) {
   var category_dict = to_dict(categories);
   
   var container = ui.Panel({
-    style : {
-      padding: "0px 12px 0px 0px";
+    style: {
+      padding: "0px 12px 0px 0px"
     }
   });
   
