@@ -327,7 +327,7 @@ function get_bin_row() {
   for (var i = 0; i < 7; i++) {
     
     // Vertical Cross-bars
-    if (i % 2 === 0) {
+    if (i % 2 == 0) {
       bin_row.add(ui.Panel({
         style: bin_style.vertical_cross
       }));
