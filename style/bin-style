@@ -32,11 +32,25 @@ exports.horizontal_cross = {
   height: stroke.toString() + "px"
 }
 
+exports.horizontal_pip = {
+  backgroundColor: pip_color,
+  
+  width: pip.toString() + "px",
+  height: stroke.toString() + "px"
+}
+
 exports.vertical_cross = {
   backgroundColor: cross_color,
   
   width: stroke.toString() + "px",
   height: (size + 2*padding).toString() + "px"
+}
+
+exports.vertical_pip = {
+  backgroundColor: pip_color,
+  
+  width: stroke.toString() + "px",
+  height: pip.toString() + "px"
 }
 
 exports.threshold_box = {
