@@ -340,9 +340,9 @@ function get_bin_row() {
         bin_style.get_square("#4de84d")
       );
     }
-    
-    return bin_row;
   }
+  
+  return bin_row;
 }
 
 function get_spacing_row() {
