@@ -305,8 +305,45 @@ function get_bin_grid(var1, var2, categories) {
   var bin_grid = ui.Panel({
     style: bin_style.grid
   })
+  bin_grid.setLayout(ui.Panel.Layout.flow("vertical", true));
+  
+  for(var i = 0; i < 7; i++) {
+    
+    if (i % 2 === 0) {
+      
+    }
+    
+    else {
+      bin_grid.add(get_bin_row());
+    }
+  }  
   
   return bin_grid
+}
+
+function get_bin_row() {
+  
+  var bin_row = ui.Panel({
+  })
+  bin_row.setLayout(ui.Panel.Layout.flow("horizontal"));
+  
+  for (var i = 0; i < 7; i++) {
+    
+    // Vertical Cross-bars
+    if (i % 2 === 0) {
+      bin_row.add(ui.Panel({
+        style: bin_style.vertical_cross
+      }));
+    }
+    // Squares
+    else {
+      bin_row.add(ui.Panel({
+        style: bin_style.get_square("#4de84d")
+      }));
+    }
+    
+    return bin_row;
+  }
 }
 
 function get_bin_thresholds(var1, var2) {
