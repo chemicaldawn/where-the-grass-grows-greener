@@ -359,9 +359,7 @@ function get_vertical_bins(bins) {
     }))
     horizontal_group.add(ui.Label({
       value: bins[i],
-      style : {
-        padding : "2px"
-      }
+      style : bin_style.threshold_label
     }))
     
     vertical_group.add(horizontal_group);
