@@ -390,10 +390,6 @@ function get_bin_row(row_number, categories) {
   return bin_row;
 }
 
-function get_spacing_row() {
-  
-}
-
 function get_bin_thresholds(var1, var2) {
   
   var bin_labels = tract_data[var1 + " and " + var2].bin_labels
