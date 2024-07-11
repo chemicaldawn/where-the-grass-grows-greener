@@ -312,13 +312,16 @@ function get_bin_grid(var1, var2, categories) {
   var bins_x = tract_data[var_name].bins_x;
   var bins_y = tract_data[var_name].bins_y;
   
-  var container = ui.Panel({
+  var section = ui.Panel({
     style: {
       padding: "12px 0px 0px 0px"
     }
-  });
+  })
+  var horizontal_group = ui.Panel()
+  horizontal_group.setLayout(ui.Panel.Layout.flow("horizontal", true));
+
   
-  container.add(ui.Label({
+  section.add(ui.Label({
     value: "Bin Thresholds",
     style: bin_style.threshold_title
   }));
@@ -337,8 +340,9 @@ function get_bin_grid(var1, var2, categories) {
     }
   }  
   
-  container.add(bin_grid);
-  return container
+  section.add(horizontal_group)
+  horizontal_group.add(bin_grid);
+  return section;
 }
 
 function get_bin_spacing_row(bin) {
