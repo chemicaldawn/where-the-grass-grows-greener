@@ -302,9 +302,7 @@ function get_bin_grid(var1, var2, categories) {
   
   var category_dict = to_dict(categories);
   
-  var bin_grid = ui.Panel({
-    style: bin_style.grid
-  })
+  var bin_grid = ui.Panel();
   bin_grid.setLayout(ui.Panel.Layout.flow("vertical", true));
   
   for(var i = 0; i < 7; i++) {
