@@ -324,10 +324,10 @@ function get_bin_row() {
   var bin_row = ui.Panel();
   bin_row.setLayout(ui.Panel.Layout.flow("horizontal"));
   
-  for (var i = 0; i < 7; i++) {
+  for(var i = 0; i < 7; i++) {
     
     // Vertical Cross-bars
-    if (i % 2 == 0) {
+    if (i % 2 === 0) {
       print(i)
       bin_row.add(ui.Panel({
         style: bin_style.vertical_cross
