@@ -329,7 +329,7 @@ function get_bin_grid(var1, var2, categories) {
   for(var i = 0; i < 7; i++) {
     
     if (i % 2 == 0) {
-      bin_grid.add(get_bin_spacing_row());
+      bin_grid.add(get_bin_spacing_row(bins_x[i / 2]));
     }
     
     else {
@@ -341,7 +341,7 @@ function get_bin_grid(var1, var2, categories) {
   return container
 }
 
-function get_bin_spacing_row() {
+function get_bin_spacing_row(bin) {
   
   var bin_row = ui.Panel();
   bin_row.setLayout(ui.Panel.Layout.flow("horizontal"));
@@ -351,6 +351,9 @@ function get_bin_spacing_row() {
   }));
   bin_row.add(ui.Panel({
     style: bin_style.horizontal_pip
+  }))
+  bin_row.add(ui.Label({
+    value: bin
   }))
   
   return bin_row;
