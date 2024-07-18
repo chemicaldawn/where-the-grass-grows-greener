@@ -1,6 +1,8 @@
 /*
   Main
   
+  TEST LINE
+
   Contains all logic for reactive UI elements. Unfortunately, due to how Earth Engine Apps works
   internally, we have to do this all in one file. Subsections are defined by additional block comments
   to try and organize this massive file.
@@ -15,6 +17,7 @@ var sidebar = ui.Panel({
   style: sidebar_style.legend
 });
 
+var bruh = "bruh";
 var legend_style = require("users/dawnschumacher/nasa-eej:style/legend-style");
 
 // Data Imports
