@@ -17,7 +17,6 @@ var sidebar = ui.Panel({
   style: sidebar_style.legend
 });
 
-var bruh = "bruh";
 var legend_style = require("users/dawnschumacher/nasa-eej:style/legend-style");
 
 // Data Imports
