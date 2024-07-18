@@ -1,4 +1,4 @@
-var style = [  
+exports.style = [  
   {
       "featureType": "water",
       "elementType": "geometry",
@@ -174,5 +174,3 @@ var style = [
       ]
   }
 ]
-
-exports.style = style

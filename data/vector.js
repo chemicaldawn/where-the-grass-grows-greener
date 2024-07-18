@@ -5,117 +5,68 @@ var highlight_layer = ui.Map.FeatureViewLayer("projects/nasa-eej/assets/tract_fe
 var bin_style = require("users/dawnschumacher/nasa-eej:style/bin-style")
 var legend_style = require("users/dawnschumacher/nasa-eej:style/legend-style")
 
+var palettes = require("users/dawnschumacher/nasa-eej:data/palettes")
+
 var var1 = ["None", "Degree of Greenness", "Land Surface Temperature"]
 var var2 = ["None", "Displacement Risk", "Social Vulnerability", "Average Housing Price Increase"]
 
-var blugrn_color_pal = [
-  ['1_3', '#578CAB'],
-  ['2_3', '#42767C'],
-  ['3_3', '#275449'],
-  ['1_2', '#A0BCC9'],
-  ['2_2', '#739386'],
-  ['3_2', '#4B7D52'],
-  ['1_1', '#E2E5E3'],
-  ['2_1', '#AEC5A8'],
-  ['3_1', '#80A86F'],
-  ['1_NA', '#FFFFFF'],
-  ['2_NA', '#FFFFFF'],
-  ['3_NA', '#FFFFFF']
-];
-
-var bluorn_color_pal = [
-  ['1_3', '#578CAB'],
-  ['2_3', '#556F70'],
-  ['3_3', '#4D4836'],
-  ['1_2', '#A0BCC9'],
-  ['2_2', '#9D9684'],
-  ['3_2', '#8E613F'],
-  ['1_1', '#E2E5E3'],
-  ['2_1', '#DEB695'],
-  ['3_1', '#C97747'],
-  ['1_NA', '#FFFFFF'],
-  ['2_NA', '#FFFFFF'],
-  ['3_NA', '#FFFFFF']
-];
-
-var purgrn_color_pal = [
-  ['1_3', '#8774B3'],
-  ['2_3', '#605989'],
-  ['3_3', '#3C5056'],
-  ['1_2', '#B7AFCE'],
-  ['2_2', '#8D9798'],
-  ['3_2', '#647F71'],
-  ['1_1', '#ECEAED'],
-  ['2_1', '#AEC5A8'],
-  ['3_1', '#80A86F'],
-  ['1_NA', '#FFFFFF'],
-  ['2_NA', '#FFFFFF'],
-  ['3_NA', '#FFFFFF']
-];
-
-var purorn_color_pal = [
-  ['1_3', '#9879B4'],
-  ['2_3', '#855C75'],
-  ['3_3', '#783C37'],
-  ['1_2', '#CFB6D0'],
-  ['2_2', '#B48B87'],
-  ['3_2', '#A35A40'],
-  ['1_1', '#FFEEE5'],
-  ['2_1', '#DEB695'],
-  ['3_1', '#C97747'],
-  ['1_NA', '#FFFFFF'],
-  ['2_NA', '#FFFFFF'],
-  ['3_NA', '#FFFFFF']
-];
-
-var pnkgrn_color_pal = [
-  ['1_3', '#CF70DC'],
-  ['2_3', '#AA7B8A'],
-  ['3_3', '#746834'],
-  ['1_2', '#E0B2E5'],
-  ['2_2', '#B8AF98'],
-  ['3_2', '#85AC44'],
-  ['1_1', '#EFEFEF'],
-  ['2_1', '#C4E49F'],
-  ['3_1', '#93D751'],
-  ['1_NA', '#FFFFFF'],
-  ['2_NA', '#FFFFFF'],
-  ['3_NA', '#FFFFFF']
-];
-
-var pnkorn_color_pal = [
-  ['1_3', '#C983B7'],
-  ['2_3', '#A45F7C'],
-  ['3_3', '#953F40'],
-  ['1_2', '#E2BBCA'],
-  ['2_2', '#C58F83'],
-  ['3_2', '#B25D3E'],
-  ['1_1', '#FFEEE5'],
-  ['2_1', '#DEB695'],
-  ['3_1', '#C97747'],
-  ['1_NA', '#FFFFFF'],
-  ['2_NA', '#FFFFFF'],
-  ['3_NA', '#FFFFFF']
-];
-
-var opacity_pal = [
-  ['1_3', 1],
-  ['2_3', 1],
-  ['3_3', 1],
-  ['1_2', 1],
-  ['2_2', 1],
-  ['3_2', 1],
-  ['1_1', 1],
-  ['2_1', 1],
-  ['3_1', 1],
-  ['1_NA', 0],
-  ['2_NA', 0],
-  ['3_NA', 0],
-  ['NA_1', 0],
-  ['NA_2', 0],
-  ['NA_3', 0],
-  ['NA_NA', 0]
-];
+var tract_data = {
+  "Degree of Greenness and Displacement Risk" : {
+    id : "ne",
+    palette: palettes.purgrn,
+    info : "Degree of greenness compared to level of displacement risk in 2019 (from Estimated Displacement Risk model) at the census tract level. Degree of greenness is defined using the median normalized difference vegetation index (NDVI; source: Landsat). NDVI is a unitless measure of vegetation health between -1 and 1.",
+    
+    bin_labels : ["Degree of Greenness", "Displacement Risk"],
+    bins_x : ["-0.1", "0.26", "0.34", "0.82"], 
+    bins_y : ["See methodology...", "", "", ""]
+    
+  },
+  "Degree of Greenness and Social Vulnerability" : {
+    id : "ns",
+    palette: palettes.pnkgrn,
+    info : "Degree of greenness in 2019 compared to CDC's 2018 Social Vulnerability Index at the census tract level. Degree of greenness is defined using the median normalized difference vegetation index (NDVI; source: Landsat). NDVI is a unitless measure of vegetation health between -1 and 1.",
+    
+    bin_labels : ["Degree of Greenness", "Social Vulnerability Index"],
+    bins_x : ["-0.1", "0.26", "0.34", "0.82"], 
+    bins_y : ["0", "0.21", "0.48", "1"]
+  },
+  "Degree of Greenness and Average Housing Price Increase" : {
+    id : "nshp",
+    palette: palettes.blugrn,
+    info : "Rate of change in greenness (1990 - 2019) & percent change in yearly average housing price (2000 - 2020) at the zip code level. Degree of greenness is defined using the median normalized difference vegetation index (NDVI; source: Landsat). NDVI is a unitless measure of vegetation health between -1 and 1. Only zip codes with statistically significant (p < 0.05) greenness trends are shown.",
+    
+    bin_labels : ["Trend in Degree of Greenness", "Housing Price Increase"],
+    bins_x : ["0.0004", "0.0018", "0.0027", "0.0076"],
+    bins_y : ["89%", "143%", "177%", "506%"]
+  },
+  "Land Surface Temperature and Displacement Risk" : {
+    id : "le",
+    palette: palettes.purorn,
+    info : "Median land surface temperature (LST; source: Landsat) compared to displacement risk in 2019 (from Estimated Displacement Risk model) at the census tract level.",
+    
+    bin_labels : ["Land Surface Temperature", "Displacement Risk"],
+    bins_x : ["17.78 °C", "34.5 °C", "37.17 °C", "43.47 °C"],
+    bins_y : ["See methodology...", "", "", ""]
+  },
+  "Land Surface Temperature and Social Vulnerability" : {
+    id : "ls",
+    palette: palettes.pnkorn,
+    info : "Median land surface temperature (LST; source: Landsat) in 2019 compared to CDC's 2018 Social Vulnerability Index at the census tract level.",
+    
+    bin_labels : ["Land Surface Temperature", "Social Vulnerability Index"],
+    bins_x : ["17.78 °C", "34.5 °C", "37.17 °C", "43.47 °C"],
+    bins_y : ["0", "0.21", "0.48", "1"]
+  },
+  "Land Surface Temperature and Average Housing Price Increase" : {
+    id : "lshp",
+    palette: palettes.bluorn,
+    info : "Rate of change in land surface temperature (LST; source: Landsat) from 1990 to 2019 compared to percent change in yearly average housing price from 2000 to 2020 at the zip code level. Only zip codes with statistically significant (p < 0.05) land surface temperature trends are shown.",
+    
+    bin_labels : ["Rate of Change of Land Surface Temperature", "Housing Price Increase"],
+    bins_x : ["0.11", "0.26", "0.32", "0.47"],
+    bins_y: ["89%", "143%", "177%", "506%"]
+  }
+}
 
 function to_dict(palette) {
   var dict = {};
@@ -152,7 +103,6 @@ function get_vis_params(value) {
 }
 
 function get_highlight(highlighted_tract) {
-  
   return {
     polygonFillOpacity: 0,
     
@@ -161,64 +111,6 @@ function get_highlight(highlighted_tract) {
       defaultValue: 0,
       categories: [[highlighted_tract, 2]]
     }
-  }
-}
-
-var tract_data = {
-  "Degree of Greenness and Displacement Risk" : {
-    id : "ne",
-    palette: purgrn_color_pal,
-    info : "Degree of greenness compared to level of displacement risk in 2019 (from Estimated Displacement Risk model) at the census tract level. Degree of greenness is defined using the median normalized difference vegetation index (NDVI; source: Landsat). NDVI is a unitless measure of vegetation health between -1 and 1.",
-    
-    bin_labels : ["Degree of Greenness", "Displacement Risk"],
-    bins_x : ["-0.1", "0.26", "0.34", "0.82"], 
-    bins_y : ["See methodology...", "", "", ""]
-    
-  },
-  "Degree of Greenness and Social Vulnerability" : {
-    id : "ns",
-    palette: pnkgrn_color_pal,
-    info : "Degree of greenness in 2019 compared to CDC's 2018 Social Vulnerability Index at the census tract level. Degree of greenness is defined using the median normalized difference vegetation index (NDVI; source: Landsat). NDVI is a unitless measure of vegetation health between -1 and 1.",
-    
-    bin_labels : ["Degree of Greenness", "Social Vulnerability Index"],
-    bins_x : ["-0.1", "0.26", "0.34", "0.82"], 
-    bins_y : ["0", "0.21", "0.48", "1"]
-  },
-  "Degree of Greenness and Average Housing Price Increase" : {
-    id : "nshp",
-    palette: pnkgrn_color_pal,
-    info : "Rate of change in greenness (1990 - 2019) & percent change in yearly average housing price (2000 - 2020) at the zip code level. Degree of greenness is defined using the median normalized difference vegetation index (NDVI; source: Landsat). NDVI is a unitless measure of vegetation health between -1 and 1. Only zip codes with statistically significant (p < 0.05) greenness trends are shown.",
-    
-    bin_labels : ["Trend in Degree of Greenness", "Housing Price Increase"],
-    bins_x : ["0.0004", "0.0018", "0.0027", "0.0076"],
-    bins_y : ["89%", "143%", "177%", "506%"]
-  },
-  "Land Surface Temperature and Displacement Risk" : {
-    id : "le",
-    palette: purorn_color_pal,
-    info : "Median land surface temperature (LST; source: Landsat) compared to displacement risk in 2019 (from Estimated Displacement Risk model) at the census tract level.",
-    
-    bin_labels : ["Land Surface Temperature", "Displacement Risk"],
-    bins_x : ["17.78 °C", "34.5 °C", "37.17 °C", "43.47 °C"],
-    bins_y : ["See methodology...", "", "", ""]
-  },
-  "Land Surface Temperature and Social Vulnerability" : {
-    id : "ls",
-    palette: pnkorn_color_pal,
-    info : "Median land surface temperature (LST; source: Landsat) in 2019 compared to CDC's 2018 Social Vulnerability Index at the census tract level.",
-    
-    bin_labels : ["Land Surface Temperature", "Social Vulnerability Index"],
-    bins_x : ["17.78 °C", "34.5 °C", "37.17 °C", "43.47 °C"],
-    bins_y : ["0", "0.21", "0.48", "1"]
-  },
-  "Land Surface Temperature and Average Housing Price Increase" : {
-    id : "lshp",
-    palette: pnkorn_color_pal,
-    info : "Rate of change in land surface temperature (LST; source: Landsat) from 1990 to 2019 compared to percent change in yearly average housing price from 2000 to 2020 at the zip code level. Only zip codes with statistically significant (p < 0.05) land surface temperature trends are shown.",
-    
-    bin_labels : ["Rate of Change of Land Surface Temperature", "Housing Price Increase"],
-    bins_x : ["0.11", "0.26", "0.32", "0.47"],
-    bins_y: ["89%", "143%", "177%", "506%"]
   }
 }
 
