@@ -88,6 +88,7 @@ exports.rasterslider = {
 
 exports.rasterbox = {
   padding: "8px",
+  margin: "0px 0px 12px 0px",
   
   border: "1px solid #79ab7b",
   backgroundColor: exports.rasterlabel.backgroundColor
@@ -125,6 +126,13 @@ exports.vectorbox = {
   backgroundColor: exports.vectorlabel.backgroundColor
 }
 
+exports.infobox = {
+  padding: "8px",
+  margin: "8px 0px 4px 0px",
+
+  border: "1px solid #a8a8a8"
+}
+
 exports.hotspotlabel = {
   margin: "0px 0px 4px 0px",
   fontWeight: "400",
@@ -153,7 +161,7 @@ exports.hotspot_button = {
 
 exports.infolabel = {
   fontSize: "14px",
-  margin: "16px 0px 12px 0px",
+  margin: "0px 0px 0px 0px",
   fontWeight: "400"
 }
 
