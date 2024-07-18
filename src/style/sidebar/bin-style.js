@@ -1,3 +1,4 @@
+var label_padding = 8;
 var size = 36;
 var stroke = 1;
 var padding = 2;
@@ -37,6 +38,17 @@ exports.horizontal_pip = {
   
   width: pip.toString() + "px",
   height: stroke.toString() + "px"
+}
+
+exports.horizontal_label = {
+  height: "14px",
+  padding: (label_padding).toString() + "px 0px " + (size + stroke + 2*padding - label_padding).toString() + "px 2px",
+  margin: "0px"
+}
+
+exports.horizontal_label_container = {
+  padding: "0px",
+  margin: "0px"
 }
 
 exports.vertical_cross = {

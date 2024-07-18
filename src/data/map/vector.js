@@ -1,11 +1,11 @@
 var tracts = ee.FeatureCollection("projects/nasa-eej/assets/tract_for_webtool");
-var tract_layer = ui.Map.FeatureViewLayer("projects/nasa-eej/assets/tract_featureview",null,"Tracts",false);
-var highlight_layer = ui.Map.FeatureViewLayer("projects/nasa-eej/assets/tract_featureview",null,"Highlighting",false);
+var tract_layer = ui.Map.FeatureViewLayer("projects/nasa-eej/assets/tract_featureview", null, "Tracts", false);
+var highlight_layer = ui.Map.FeatureViewLayer("projects/nasa-eej/assets/tract_featureview", null, "Highlighting", false);
 
-var bin_style = require("users/dawnschumacher/nasa-eej:src/style/bin-style")
-var legend_style = require("users/dawnschumacher/nasa-eej:src/style/legend-style")
+var bin_style = require("users/dawnschumacher/nasa-eej:style/sidebar/bin-style.js")
+var legend_style = require("users/dawnschumacher/nasa-eej:style/legend/legend-style.js")
 
-var palettes = require("users/dawnschumacher/nasa-eej:src/data/palettes")
+var palettes = require("users/dawnschumacher/nasa-eej:data/palettes/palettes.js")
 
 var var1 = ["None", "Degree of Greenness", "Land Surface Temperature"]
 var var2 = ["None", "Displacement Risk", "Social Vulnerability", "Average Housing Price Increase"]
@@ -97,7 +97,7 @@ function get_vis_params(value) {
     opacity: {
       property: id,
       defaultValue: 0.7,
-      categories: opacity_pal
+      categories: palettes.opacity
     }
   }
 }
@@ -249,11 +249,17 @@ function get_vertical_bins(bins) {
     horizontal_group.add(ui.Panel({
       style: bin_style.horizontal_pip
     }))
-    horizontal_group.add(ui.Label({
-      value: bins[i],
-      style : bin_style.threshold_label
-    }))
-    
+
+    var label_panel = ui.Panel({
+      style : bin_style.horizontal_label_panel
+    });
+    label_panel.add(ui.Label({
+      value: bins[3 - i],
+      style : bin_style.horizontal_label
+    }));
+    label_panel.setLayout(ui.Panel.Layout.flow("vertical", false));
+
+    horizontal_group.add(label_panel);    
     vertical_group.add(horizontal_group);
   }
   
