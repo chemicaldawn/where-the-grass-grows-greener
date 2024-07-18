@@ -9,33 +9,33 @@
 */
 
 // Style Imports
-var map_style = require("users/dawnschumacher/nasa-eej:style/map-style").style;
+var map_style = require("users/dawnschumacher/nasa-eej:src/style/map-style").style;
 var map = ui.Map();
 
-var sidebar_style = require("users/dawnschumacher/nasa-eej:style/sidebar-style");
+var sidebar_style = require("users/dawnschumacher/nasa-eej:src/style/sidebar-style");
 var sidebar = ui.Panel({
   style: sidebar_style.legend
 });
 
-var legend_style = require("users/dawnschumacher/nasa-eej:style/legend-style");
+var legend_style = require("users/dawnschumacher/nasa-eej:src/style/legend-style");
 
 // Data Imports
-var raster = require("users/dawnschumacher/nasa-eej:data/raster");
-var raster_data = require("users/dawnschumacher/nasa-eej:data/raster").data;
+var raster = require("users/dawnschumacher/nasa-eej:src/data/raster");
+var raster_data = require("users/dawnschumacher/nasa-eej:src/data/raster").data;
 
-var vector = require("users/dawnschumacher/nasa-eej:data/vector");
-var vector_data = require("users/dawnschumacher/nasa-eej:data/vector").data;
+var vector = require("users/dawnschumacher/nasa-eej:src/data/vector");
+var vector_data = require("users/dawnschumacher/nasa-eej:src/data/vector").data;
 
-var hotspots = require("users/dawnschumacher/nasa-eej:data/hotspots");
-var hotspot_data = require("users/dawnschumacher/nasa-eej:data/hotspots").data;
+var hotspots = require("users/dawnschumacher/nasa-eej:src/data/hotspots");
+var hotspot_data = require("users/dawnschumacher/nasa-eej:src/data/hotspots").data;
 
 /*
   Data Processing
 */
 
 var raster_layer_list = ["None"];
-var vector_layer_list_1 = require("users/dawnschumacher/nasa-eej:data/vector").var1;
-var vector_layer_list_2 = require("users/dawnschumacher/nasa-eej:data/vector").var2;
+var vector_layer_list_1 = require("users/dawnschumacher/nasa-eej:src/data/vector").var1;
+var vector_layer_list_2 = require("users/dawnschumacher/nasa-eej:src/data/vector").var2;
 
 // Iterates over all listed layers, adds them to the map object, and compiles them into a list for use in the UI dropdown element.
 for(var layer in raster_data) {
