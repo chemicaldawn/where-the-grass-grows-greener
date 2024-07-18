@@ -1,41 +1,39 @@
 /*
   Main
   
-  TEST LINE
-
   Contains all logic for reactive UI elements. Unfortunately, due to how Earth Engine Apps works
   internally, we have to do this all in one file. Subsections are defined by additional block comments
   to try and organize this massive file.
 */
 
 // Style Imports
-var map_style = require("users/dawnschumacher/nasa-eej:src/style/map-style").style;
+var map_style = require("users/dawnschumacher/nasa-eej:src/style/map/map-style.js").style;
 var map = ui.Map();
 
-var sidebar_style = require("users/dawnschumacher/nasa-eej:src/style/sidebar-style");
+var sidebar_style = require("users/dawnschumacher/nasa-eej:src/style/sidebar/sidebar-style.js");
 var sidebar = ui.Panel({
   style: sidebar_style.legend
 });
 
-var legend_style = require("users/dawnschumacher/nasa-eej:src/style/legend-style");
+var legend_style = require("users/dawnschumacher/nasa-eej:src/style/legend/legend-style.js");
 
 // Data Imports
-var raster = require("users/dawnschumacher/nasa-eej:src/data/raster");
-var raster_data = require("users/dawnschumacher/nasa-eej:src/data/raster").data;
+var raster = require("users/dawnschumacher/nasa-eej:src/data/map/raster.js");
+var raster_data = require("users/dawnschumacher/nasa-eej:src/data/map/raster.js").data;
 
-var vector = require("users/dawnschumacher/nasa-eej:src/data/vector");
-var vector_data = require("users/dawnschumacher/nasa-eej:src/data/vector").data;
+var vector = require("users/dawnschumacher/nasa-eej:src/data/map/vector.js");
+var vector_data = require("users/dawnschumacher/nasa-eej:src/data/map/vector.js").data;
 
-var hotspots = require("users/dawnschumacher/nasa-eej:src/data/hotspots");
-var hotspot_data = require("users/dawnschumacher/nasa-eej:src/data/hotspots").data;
+var hotspots = require("users/dawnschumacher/nasa-eej:src/data/map/hotspots.js");
+var hotspot_data = require("users/dawnschumacher/nasa-eej:src/data/map/hotspots.js").data;
 
 /*
   Data Processing
 */
 
 var raster_layer_list = ["None"];
-var vector_layer_list_1 = require("users/dawnschumacher/nasa-eej:src/data/vector").var1;
-var vector_layer_list_2 = require("users/dawnschumacher/nasa-eej:src/data/vector").var2;
+var vector_layer_list_1 = require("users/dawnschumacher/nasa-eej:src/data/map/vector.js").var1;
+var vector_layer_list_2 = require("users/dawnschumacher/nasa-eej:src/data/map/vector.js").var2;
 
 // Iterates over all listed layers, adds them to the map object, and compiles them into a list for use in the UI dropdown element.
 for(var layer in raster_data) {
@@ -392,7 +390,7 @@ function set_vector_layer() {
     vector_infobox.clear();
     vector_infobox.add(ui.Label({
       value: vector_data[vector_layer]["info"],
-      style: sidebar_style.p
+      style: sidebar_style.infolabel
     }));
     
     vector_infobox.add(
@@ -462,10 +460,12 @@ var raster_slider = ui.Slider({
 raster_slider.onSlide(set_opacity);
 raster_slider_container.add(raster_slider);
 
-var raster_infobox = ui.Panel();
+var raster_infobox = ui.Panel({
+  style: sidebar_style.infobox
+});
 raster_infobox.add(ui.Label({
   value: "Select a background layer to display additonal info...",
-  style: sidebar_style.p
+  style: sidebar_style.infolabel
 }))
 
 // Vector Layerbox
@@ -513,26 +513,25 @@ var vector_slider = ui.Slider({
 vector_slider.onSlide(set_opacity);
 vector_slider_container.add(vector_slider);
 
-var vector_infobox = ui.Panel();
+var vector_infobox = ui.Panel({
+  style: sidebar_style.infobox
+});
 vector_infobox.add(ui.Label({
   value: "Select two variables to display additional info...",
-  style: sidebar_style.p
+  style: sidebar_style.infolabel
 }));
 
+raster_layerbox.add(raster_infobox);
 raster_layerbox.add(raster_select);
 raster_layerbox.add(raster_slider_container);
 
+vector_layerbox.add(vector_infobox);
 vector_layerbox.add(vector_select_1);
 vector_layerbox.add(vector_select_2);
 vector_layerbox.add(vector_slider_container);
 
 layers.add(raster_layerbox);
-layers.add(raster_infobox);
-layers.add(ui.Panel({
-  style: sidebar_style.hr
-}))
 layers.add(vector_layerbox);
-layers.add(vector_infobox);
 
 sidebar.add(navbar);
 sidebar.add(content);
@@ -551,8 +550,6 @@ layers.add(ui.Label({
 
 /*
   Explore
-  
-  
 */
 
 var explore = ui.Panel();

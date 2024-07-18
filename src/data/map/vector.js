@@ -2,10 +2,10 @@ var tracts = ee.FeatureCollection("projects/nasa-eej/assets/tract_for_webtool");
 var tract_layer = ui.Map.FeatureViewLayer("projects/nasa-eej/assets/tract_featureview", null, "Tracts", false);
 var highlight_layer = ui.Map.FeatureViewLayer("projects/nasa-eej/assets/tract_featureview", null, "Highlighting", false);
 
-var bin_style = require("users/dawnschumacher/nasa-eej:style/sidebar/bin-style.js")
-var legend_style = require("users/dawnschumacher/nasa-eej:style/legend/legend-style.js")
+var bin_style = require("users/dawnschumacher/nasa-eej:src/style/sidebar/bin-style.js")
+var legend_style = require("users/dawnschumacher/nasa-eej:src/style/legend/legend-style.js")
 
-var palettes = require("users/dawnschumacher/nasa-eej:data/palettes/palettes.js")
+var palettes = require("users/dawnschumacher/nasa-eej:src/data/palettes/palettes.js")
 
 var var1 = ["None", "Degree of Greenness", "Land Surface Temperature"]
 var var2 = ["None", "Displacement Risk", "Social Vulnerability", "Average Housing Price Increase"]

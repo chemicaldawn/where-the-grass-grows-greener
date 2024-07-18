@@ -1,7 +1,6 @@
-var legend_style = require("users/dawnschumacher/nasa-eej:src/style/legend-style")
+var legend_style = require("users/dawnschumacher/nasa-eej:src/style/legend-style.js")
 
 var green_space_classification = ee.Image('projects/nasa-eej/assets/EEJGreenSpaceClassificationR2')
-
 
 var background_data = {
   "Green Space Classification" : {
