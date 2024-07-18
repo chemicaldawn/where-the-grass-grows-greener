@@ -13,7 +13,7 @@ var background_data = {
       },
     layer: green_space_classification.subtract(ee.Image.constant(1)).not().selfMask(),
     type: "categorical",
-    info: "Areas classified as green space, water, or urban areas in 2020 using machine learning.",
+    info: "Areas classified as green space, water, or urban areas in 2020 using machine learning classification",
     unit: ""
   },
   "Trend in Degree of Greenness" : {
