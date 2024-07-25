@@ -78,7 +78,7 @@ exports.vertical_label_container = {
 
 exports.up_label = {
   padding: "4px",
-  margin: "0px " + (3 * size / 2) + "px 0px 0px"
+  margin: "0px " + (3 * size / 2).toString() + "px 0px 0px"
 }
 
 exports.right_label = {

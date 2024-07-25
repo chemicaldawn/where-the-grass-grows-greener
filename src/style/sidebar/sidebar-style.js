@@ -1,5 +1,5 @@
 exports.legend = {
-  width: '37.5%'
+  width: '35%'
 }
 
 exports.panel = {
