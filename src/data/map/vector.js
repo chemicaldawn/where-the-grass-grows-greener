@@ -231,7 +231,7 @@ function get_bin_grid(var1, var2, categories) {
       bin_grid.add(get_bin_row(4 - ((i - 1) / 2 + 1), category_dict));
     }
   }  
-  
+
   horizontal_group.add(bin_grid);
   horizontal_group.add(get_vertical_bins(bins_y));
   section.add(horizontal_group)
@@ -271,6 +271,17 @@ function get_vertical_bins(bins) {
 function get_horizontal_bins(bins) {
   var horizontal_group = ui.Panel();
   horizontal_group.setLayout(ui.Panel.Layout.flow("horizontal", true));
+
+  for(var i = 0; i < 4; i++) {
+    var vertical_group = ui.Panel()
+    vertical_group.setLayout(ui.Panel.Layout.flow("vertical", true));
+
+    vertical_group.add(ui.Panel({
+      style: bin_style.vertical_pip
+    }))
+
+    horizontal_group.add(vertical_group);
+  }
 
   return horizontal_group;
 }

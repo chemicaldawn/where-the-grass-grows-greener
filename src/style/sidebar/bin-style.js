@@ -1,5 +1,5 @@
 var label_padding = 8;
-var size = 36;
+var size = 48;
 var stroke = 1;
 var padding = 2;
 
@@ -62,7 +62,8 @@ exports.vertical_pip = {
   backgroundColor: pip_color,
   
   width: stroke.toString() + "px",
-  height: pip.toString() + "px"
+  height: pip.toString() + "px",
+  padding: "0px " + (size + stroke + 2*padding).toString() + "px 0px 0px";
 }
 
 exports.threshold_box = {
