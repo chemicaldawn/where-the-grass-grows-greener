@@ -63,7 +63,7 @@ exports.vertical_pip = {
   
   width: stroke.toString() + "px",
   height: pip.toString() + "px",
-  padding: "0px " + (size + stroke + 2*padding).toString() + "px 0px 0px";
+  padding: "0px " + (size + stroke + 2*padding).toString() + "px 0px 0px"
 }
 
 exports.threshold_box = {
