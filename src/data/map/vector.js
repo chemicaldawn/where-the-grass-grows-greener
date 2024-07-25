@@ -228,7 +228,7 @@ function get_bin_grid(var1, var2, categories) {
     }
     
     else {
-      bin_grid.add(get_bin_row((i - 1) / 2 + 1, category_dict));
+      bin_grid.add(get_bin_row(((i - 1) / 2 + 1), category_dict));
     }
   }  
 
@@ -314,7 +314,7 @@ function get_bin_row(row_number, categories) {
     // Squares
     else {
       
-      var index = row_number.toString() + "_" + ((i - 1) / 2 + 1).toString();
+      var index = ((i - 1) / 2 + 1).toString() + "_" + row_number.toString();
 
       bin_row.add(
         bin_style.get_square(categories[index])
