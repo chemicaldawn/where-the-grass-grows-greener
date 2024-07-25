@@ -232,10 +232,10 @@ function get_bin_grid(var1, var2, categories) {
     }
   }  
 
+  section.add(get_horizontal_bins(bins_x));
   horizontal_group.add(bin_grid);
   horizontal_group.add(get_vertical_bins(bins_y));
   section.add(horizontal_group)
-  section.add(get_horizontal_bins(bins_x));
 
   return section;
 }
@@ -276,14 +276,14 @@ function get_horizontal_bins(bins) {
     var vertical_group = ui.Panel()
     vertical_group.setLayout(ui.Panel.Layout.flow("vertical", true));
 
-    vertical_group.add(ui.Panel({
-      style: bin_style.vertical_pip
-    }))
     vertical_group.add(ui.Label({
       value: bins[i],
       style : bin_style.verical_label
     }));
-
+    vertical_group.add(ui.Panel({
+      style: bin_style.vertical_pip
+    }))
+    
     horizontal_group.add(vertical_group);
   }
 
