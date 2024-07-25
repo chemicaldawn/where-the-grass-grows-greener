@@ -63,7 +63,7 @@ exports.vertical_pip = {
   
   width: stroke.toString() + "px",
   height: pip.toString() + "px",
-  margin: "0px " + (size + stroke + 2*padding).toString() + "px 0px 0px"
+  margin: "0px " + (size + 2*padding).toString() + "px 0px 0px"
 }
 
 exports.vertical_label = {
