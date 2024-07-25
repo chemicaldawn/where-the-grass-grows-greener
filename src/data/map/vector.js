@@ -232,9 +232,11 @@ function get_bin_grid(var1, var2, categories) {
     }
   }  
   
-  section.add(horizontal_group)
   horizontal_group.add(bin_grid);
   horizontal_group.add(get_vertical_bins(bins_y));
+  section.add(horizontal_group)
+  section.add(get_horizontal_bins(bins_x));
+
   return section;
 }
 
@@ -264,6 +266,13 @@ function get_vertical_bins(bins) {
   }
   
   return vertical_group;
+}
+
+function get_horizontal_bins(bins) {
+  var horizontal_group = ui.Panel();
+  horizontal_group.setLayout(ui.Panel.Layout.flow("horizontal", true));
+
+  return horizontal_group;
 }
 
 function get_bin_spacing_row() {
