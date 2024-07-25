@@ -232,10 +232,19 @@ function get_bin_grid(var1, var2, categories) {
     }
   }  
 
+  var up_label = ui.Label({
+    value : "↑ " + var2
+  });
+  var right_label = ui.Label({
+    value: "→ " + var1
+  })
+
   section.add(get_horizontal_bins(bins_x));
   horizontal_group.add(bin_grid);
   horizontal_group.add(get_vertical_bins(bins_y));
-  section.add(horizontal_group)
+  horizontal_group.add(up_label);
+  section.add(horizontal_group);
+  section.add(right_label);
 
   return section;
 }
