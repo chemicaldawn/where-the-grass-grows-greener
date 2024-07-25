@@ -276,10 +276,15 @@ function get_horizontal_bins(bins) {
     var vertical_group = ui.Panel()
     vertical_group.setLayout(ui.Panel.Layout.flow("vertical", true));
 
-    vertical_group.add(ui.Label({
+    var label_panel = ui.Panel({
+      style : bin_style.horizontal_label_panel
+    });    
+    label_panel.add(ui.Label({
       value: bins[i],
       style : bin_style.verical_label
     }));
+    vertical_group.add(label_panel)
+
     vertical_group.add(ui.Panel({
       style: bin_style.vertical_pip
     }))

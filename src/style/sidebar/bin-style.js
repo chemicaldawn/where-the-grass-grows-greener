@@ -67,7 +67,12 @@ exports.vertical_pip = {
 }
 
 exports.vertical_label = {
-  padding: "0px 2px 0px 0px",
+  padding: "0px 0px 0px 0px",
+  margin: "0px 0px 0px 2px"
+}
+
+exports.vertical_label_container = {
+  padding: "0px",
   margin: "0px"
 }
 
