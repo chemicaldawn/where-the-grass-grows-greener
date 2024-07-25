@@ -228,7 +228,7 @@ function get_bin_grid(var1, var2, categories) {
     }
     
     else {
-      bin_grid.add(get_bin_row(4 - ((i - 1) / 2 + 1), category_dict));
+      bin_grid.add(get_bin_row((i - 1) / 2 + 1, category_dict));
     }
   }  
 
