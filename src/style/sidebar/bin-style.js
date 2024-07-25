@@ -66,6 +66,11 @@ exports.vertical_pip = {
   margin: "0px " + (size + stroke + 2*padding).toString() + "px 0px 0px"
 }
 
+exports.vertical_label = {
+  padding: "0px 2px 0px 0px",
+  margin: "0px"
+}
+
 exports.threshold_box = {
   margin: "12px 0px 0px 0px",
   padding: "8px",

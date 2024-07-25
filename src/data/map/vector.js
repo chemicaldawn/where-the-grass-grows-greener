@@ -279,6 +279,10 @@ function get_horizontal_bins(bins) {
     vertical_group.add(ui.Panel({
       style: bin_style.vertical_pip
     }))
+    vertical_group.add(ui.Label({
+      value: bins[i],
+      style : bin_style.verical_label
+    }));
 
     horizontal_group.add(vertical_group);
   }
