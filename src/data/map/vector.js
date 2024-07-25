@@ -233,10 +233,12 @@ function get_bin_grid(var1, var2, categories) {
   }  
 
   var up_label = ui.Label({
-    value : "↑ " + var2
+    value : "↑ " + var2,
+    style: bin_style.up_label
   });
   var right_label = ui.Label({
-    value: "→ " + var1
+    value: "→ " + var1,
+    style: bin_style.right_label
   })
 
   section.add(get_horizontal_bins(bins_x));

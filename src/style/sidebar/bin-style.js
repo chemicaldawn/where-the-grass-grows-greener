@@ -76,6 +76,15 @@ exports.vertical_label_container = {
   margin: "0px"
 }
 
+exports.up_label = {
+  padding: "4px",
+  margin: "0px " + (3 * size / 2) + "px 0px 0px"
+}
+
+exports.right_label = {
+  padding: "4px"
+}
+
 exports.threshold_box = {
   margin: "12px 0px 0px 0px",
   padding: "8px",
