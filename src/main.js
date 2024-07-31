@@ -27,6 +27,8 @@ var vector_data = require("users/dawnschumacher/nasa-eej:src/data/map/vector.js"
 var hotspots = require("users/dawnschumacher/nasa-eej:src/data/map/hotspots.js");
 var hotspot_data = require("users/dawnschumacher/nasa-eej:src/data/map/hotspots.js").data;
 
+var palettes = require("users/dawnschumacher/nasa-eej:src/data/palettes/palettes.js");
+
 /*
   Data Processing
 */
@@ -421,12 +423,19 @@ function highlight_tract() {
 function set_vector_layer() {
   var var1 = vector_select_1.getValue();
   var var2 = vector_select_2.getValue();
+  var palette;
   
   if(var1 != "None" && var2 != "None") {
     vector_layer = var1 + " and " + var2;
     
     // Find the tracts layer and set the colors corresponding to the given data set.
     color_vector_layer();
+
+    if (!accessibility_checkbox.getValue()) {
+      palette = vector_data[vector_layer].palette;
+    } else {
+      palette = palettes.bluorn;
+    }
 
     vector_infobox.clear();
     vector_infobox.add(ui.Label({
@@ -435,7 +444,7 @@ function set_vector_layer() {
     }));
     
     vector_infobox.add(
-      vector.get_bin_grid(var1, var2, vector_data[vector_layer].palette)
+      vector.get_bin_grid(var1, var2, palette)
     )
     
     // Build the label for the legend entry.
@@ -563,7 +572,7 @@ var accessibility_checkbox = ui.Checkbox({
   }
 })
 accessibility_checkbox.onChange(function () {
-  color_vector_layer();
+  set_vector_layer();
 });
 
 
