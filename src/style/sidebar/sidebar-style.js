@@ -35,7 +35,13 @@ exports.h2 = {
 exports.p = {
   fontSize: "14px",
   fontWeight: "400",
-  margin: "16px 0px 0px 0px"
+  margin: "12px 0px 0px 0px"
+}
+
+exports.p = {
+  fontSize: "14px",
+  fontWeight: "700",
+  margin: "12px 0px 0px 0px"
 }
 
 exports.a = {

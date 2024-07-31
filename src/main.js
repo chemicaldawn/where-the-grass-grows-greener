@@ -130,7 +130,7 @@ var layer_select_button = ui.Button({
 });
 
 var resources_button = ui.Button({
-  label: "Additional Resources",
+  label: "Resource Guide",
   style: sidebar_style.navbar_button
 });
 
@@ -208,6 +208,19 @@ about.add(ui.Label({
 
 about.add(ui.Label({
   value: "This webtool shows trends in urban greenery and land surface temperature in the San Francisco Bay Area between 1990 and 2020. It also illustrates spatial relationships with socioeconomic indicators such as housing prices and displacement risk. Note that the vector layers include only census tracts or zip codes that are located in areas designated as 'urban'.",
+  style: sidebar_style.p
+}));
+
+about.add(ui.Panel({
+  style: sidebar_style.hr
+}));
+
+about.add(ui.Label({
+  value: "Using This Tool",
+  style: sidebar_style.b
+}));
+about.add(ui.Label({
+  value: "Above this sidebar, there is a navigation bar with four buttons. Each accesses a unique section",
   style: sidebar_style.p
 }));
 
