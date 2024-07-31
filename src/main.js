@@ -138,6 +138,7 @@ var resources_button = ui.Button({
 button_row.add(about_button);
 button_row.add(layer_select_button);
 button_row.add(explore_button);
+button_row.add(resources_button);
 
 about_button.onClick(function() {
   change_section(0)
@@ -160,7 +161,7 @@ navbar.add(nav_highlight);
 function change_highlight(section_index) {
 
   nav_highlight.style().set({
-    margin: "0% 0% 0% " + (33.3 * section_index).toString() + "%"
+    margin: "0% 0% 0% " + (25 * section_index).toString() + "%"
   });
 }
 

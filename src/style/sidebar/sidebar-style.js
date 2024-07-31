@@ -56,9 +56,9 @@ exports.navbar_button = {
 }
 
 exports.nav_highlight = {
-  backgroundColor: 'blue',
+  backgroundColor: '#54aff0',
   height: '3px',
-  width: '33.3%'
+  width: '25%'
 }
 
 exports.rasterlabel = {
