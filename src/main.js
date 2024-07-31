@@ -539,6 +539,7 @@ var vector_slider_container = ui.Panel({
     backgroundColor: sidebar_style.vectorlabel.backgroundColor
   }
 });
+
 vector_slider_container.add(ui.Label({
   value: "Opacity",
   style: sidebar_style.vectoropacity
@@ -553,6 +554,15 @@ var vector_slider = ui.Slider({
 });
 vector_slider.onSlide(set_opacity);
 vector_slider_container.add(vector_slider);
+
+var accessibility_checkbox = ui.Checkbox({
+  label : "Use Higher-Contrast Palette",
+  value: false,
+  style: {
+    backgroundColor: sidebar_style.vectorlabel.backgroundColor
+  }
+})
+
 
 var vector_infobox = ui.Panel({
   style: sidebar_style.infobox
@@ -570,6 +580,7 @@ vector_layerbox.add(vector_infobox);
 vector_layerbox.add(vector_select_1);
 vector_layerbox.add(vector_select_2);
 vector_layerbox.add(vector_slider_container);
+vector_layerbox.add(accessibility_checkbox);
 
 layers.add(raster_layerbox);
 layers.add(vector_layerbox);
