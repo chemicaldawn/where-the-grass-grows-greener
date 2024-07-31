@@ -405,7 +405,7 @@ function set_raster_layer(name) {
 function color_vector_layer() {
   map.layers().forEach(function(element, index) {
     if(element.getName() == "Tracts") {
-      element.setVisParams(vector.get_vis_params(vector_layer))
+      element.setVisParams(vector.get_vis_params(vector_layer, accessibility_checkbox.getValue()))
     }
   })
 }
@@ -562,6 +562,9 @@ var accessibility_checkbox = ui.Checkbox({
     backgroundColor: sidebar_style.vectorlabel.backgroundColor
   }
 })
+accessibility_checkbox.onChange(function () {
+  color_vector_layer();
+});
 
 
 var vector_infobox = ui.Panel({
@@ -580,7 +583,7 @@ vector_layerbox.add(vector_infobox);
 vector_layerbox.add(vector_select_1);
 vector_layerbox.add(vector_select_2);
 vector_layerbox.add(vector_slider_container);
-vector_layerbox.add(accessibility_checkbox);
+vector_layerbox.add(vector_slider_container);
 
 layers.add(raster_layerbox);
 layers.add(vector_layerbox);

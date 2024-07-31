@@ -79,10 +79,16 @@ function to_dict(palette) {
 }
 
 // Returns a layer with all of the census tracts colored correctly to represent the data.
-function get_vis_params(value) {
+function get_vis_params(value, accessible) {
   
-  var id = tract_data[value].id
-  var palette = tract_data[value].palette
+  var id = tract_data[value].id;
+  var palette;
+
+  if (!accessible) {
+    palette = tract_data[value].palette
+  } else {
+    palette = palettes.bluorn
+  }
   
   return {
     polygonFillColor: {
