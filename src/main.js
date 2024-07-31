@@ -434,7 +434,7 @@ function set_vector_layer() {
     if (!accessibility_checkbox.getValue()) {
       palette = vector_data[vector_layer].palette;
     } else {
-      palette = palettes.bluorn;
+      palette = palettes.highcontrast;
     }
 
     vector_infobox.clear();
@@ -460,7 +460,7 @@ function set_vector_layer() {
     )
     
     legend_vector.add(
-      vector.get_matrix(var1, var2, vector_data[vector_layer].palette)
+      vector.get_matrix(var1, var2, palette)
     )
   }
   else {

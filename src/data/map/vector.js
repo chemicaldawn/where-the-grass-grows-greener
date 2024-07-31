@@ -87,7 +87,7 @@ function get_vis_params(value, accessible) {
   if (!accessible) {
     palette = tract_data[value].palette
   } else {
-    palette = palettes.bluorn
+    palette = palettes.highcontrast
   }
   
   return {
