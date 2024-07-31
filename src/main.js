@@ -129,6 +129,11 @@ var layer_select_button = ui.Button({
   style: sidebar_style.navbar_button
 });
 
+var resources_button = ui.Button({
+  label: "Additional Resources",
+  style: sidebar_style.navbar_button
+});
+
 // Add the navbar buttons to the navigation panel.
 button_row.add(about_button);
 button_row.add(layer_select_button);
@@ -142,6 +147,9 @@ layer_select_button.onClick(function() {
 });
 explore_button.onClick(function() {
   change_section(2)
+});
+resources_button.onClick(function() {
+  change_section(3)
 });
 
 // Construct the final navbar object.
@@ -172,6 +180,9 @@ function change_section(section_index) {
       break;
     case 2:
       content.add(explore);
+      break;
+    case 3:
+      content.add(resources);
       break;
   }
 }
@@ -624,6 +635,11 @@ hotspot_inline.add(hotspot_select);
 hotspot_inline.add(hotspot_button);
 explore.add(hotspot_inline);
 explore.add(hotspot_info);
+
+/*
+  Resources
+*/
+var resources = ui.Panel();
 
 /*
   Click Handling
