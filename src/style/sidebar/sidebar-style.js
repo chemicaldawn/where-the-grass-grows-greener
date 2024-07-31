@@ -41,7 +41,7 @@ exports.p = {
 exports.b = {
   fontSize: "14px",
   fontWeight: "700",
-  margin: "12px 0px 0px 0px"
+  margin: "0px 0px 0px 0px"
 }
 
 exports.a = {

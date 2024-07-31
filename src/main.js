@@ -220,7 +220,19 @@ about.add(ui.Label({
   style: sidebar_style.b
 }));
 about.add(ui.Label({
-  value: "Above this sidebar, there is a navigation bar with four buttons. Each accesses a unique section",
+  value: "Above this sidebar, there is a navigation bar with four buttons, each associated with a unique page. Clicking on them will bring you to the associated page.",
+  style: sidebar_style.p
+}));
+about.add(ui.Label({
+  value: "The Layer Select section houses most of this tool's primary functionality. An interface is provided to view a variety of raster and vector data layers pertaining to urban greenness, heat, and socioeconomic data. Raster and vector layers may be rendered on top of one another.",
+  style: sidebar_style.p
+}));
+about.add(ui.Label({
+  value: "The Explore section allows you to focus in on specific communities, named by the Greenbelt Alliance as Resilience Hotspots, where interesting trends in the data may be visible. ",
+  style: sidebar_style.p
+}));
+about.add(ui.Label({
+  value: "Finally, the Resource Guide section provides links to other resources that may be helpful in analyzing the Bay Area's climate and socioeconomic geograpy.",
   style: sidebar_style.p
 }));
 
