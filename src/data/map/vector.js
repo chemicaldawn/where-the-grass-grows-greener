@@ -120,7 +120,7 @@ function get_highlight(highlighted_tract) {
   }
 }
 
-tract_layer.setVisParams(get_vis_params("Degree of Greenness and Displacement Risk"));
+tract_layer.setVisParams(get_vis_params("Degree of Greenness and Displacement Risk", false));
 highlight_layer.setVisParams(get_highlight(""));
 
 function get_square(color) {
