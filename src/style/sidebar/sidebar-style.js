@@ -154,7 +154,8 @@ exports.hotspotbox = {
 }
 
 exports.hotspot_inline = {
-  width: "100%"
+  width: "100%",
+  margin: "12px 0px 0px 0px"
 }
 exports.hotspot_select = {
   width: "75%",
