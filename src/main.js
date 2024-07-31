@@ -117,15 +117,15 @@ var nav_highlight = ui.Panel({
 var about_button = ui.Button({
   label: "About",
   style: sidebar_style.navbar_button
-})
-
-var explore_button = ui.Button({
-  label: "Explore",
-  style: sidebar_style.navbar_button
 });
 
 var layer_select_button = ui.Button({
-  label: "Layer Select",
+  label: "View the Data",
+  style: sidebar_style.navbar_button
+});
+
+var explore_button = ui.Button({
+  label: "Resilience Hotspots",
   style: sidebar_style.navbar_button
 });
 
@@ -224,11 +224,11 @@ about.add(ui.Label({
   style: sidebar_style.p
 }));
 about.add(ui.Label({
-  value: "The Layer Select section houses most of this tool's primary functionality. An interface is provided to view a variety of raster and vector data layers pertaining to urban greenness, heat, and socioeconomic data. Raster and vector layers may be rendered on top of one another.",
+  value: "The View the Data section houses most of this tool's primary functionality. An interface is provided to view a variety of raster and vector data layers pertaining to urban greenness, heat, and socioeconomic data. Raster and vector layers may be rendered on top of one another.",
   style: sidebar_style.p
 }));
 about.add(ui.Label({
-  value: "The Explore section allows you to focus in on specific communities, named by the Greenbelt Alliance as Resilience Hotspots, where interesting trends in the data may be visible. ",
+  value: "The Resilience Hotspots section allows you to focus in on specific communities, named by the Greenbelt Alliance as Resilience Hotspots, where interesting trends in the data may be visible. ",
   style: sidebar_style.p
 }));
 about.add(ui.Label({
@@ -258,8 +258,12 @@ about.add(ui.Label({
 var layers = ui.Panel();
 
 layers.add(ui.Label({
-  value: "Layer Select",
+  value: "View the Data",
   style: sidebar_style.h1
+}));
+layers.add(ui.Label({
+  value: "Layer Select",
+  style: sidebar_style.h2
 }));
 layers.add(ui.Panel({
   style: sidebar_style.br
@@ -614,7 +618,7 @@ explore.add(ui.Panel({
 .setUrl("https://www.greenbelt.org/hotspots/#about")));
 
 explore.add(ui.Label({
-  value: "",
+  value: "To view the data from a Resilience Hotspot, first, select the hotspot from the drop-down menu below. Then, navigate back to View the Data to change which layers are available and observe trends.",
   style: sidebar_style.p
 }));
 
@@ -666,6 +670,11 @@ explore.add(hotspot_info);
   Resources
 */
 var resources = ui.Panel();
+
+resources.add(ui.Label({
+  value: "Resource Guide",
+  style: sidebar_style.h1
+}));
 
 /*
   Click Handling
