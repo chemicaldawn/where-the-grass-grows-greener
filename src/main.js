@@ -700,7 +700,7 @@ resources_panel.add(ui.Label({
   style: sidebar_style.h1
 }));
 
-resources.forEach(function(resource) {
+resources.forEach(function(resource, index) {
   resources_panel.add(ui.Label({
     value: resource["title"]
   }));
