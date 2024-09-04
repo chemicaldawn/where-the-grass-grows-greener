@@ -702,7 +702,8 @@ resources_panel.add(ui.Label({
 
 resources.forEach(function(resource, index) {
   resources_panel.add(ui.Label({
-    value: resource["title"]
+    value: resource["title"],
+    style: sidebar_style.
   }));
   resources_panel.add(ui.Label({
     value : resource["link"],
