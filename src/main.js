@@ -28,7 +28,7 @@ var hotspots = require("users/dawnschumacher/nasa-eej:src/data/map/hotspots.js")
 var hotspot_data = require("users/dawnschumacher/nasa-eej:src/data/map/hotspots.js").data;
 
 var palettes = require("users/dawnschumacher/nasa-eej:src/data/palettes/palettes.js");
-var resources = require("users/dawnschumacher/nasa-eej:src/data/resources/resources.js");
+var resources = require("users/dawnschumacher/nasa-eej:src/data/resources/resources.js").data;
 
 /*
   Data Processing
