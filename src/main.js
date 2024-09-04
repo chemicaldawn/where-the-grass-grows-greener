@@ -231,7 +231,7 @@ about.add(ui.Label({
   style: sidebar_style.p
 }));
 about.add(ui.Label({
-  value: "The Resilience Hotspots section allows you to focus in on specific communities, named by the Greenbelt Alliance as Resilience Hotspots, where interesting trends in the data may be visible. Before you navigate to this page, you must enable layers under 'View the Data', otherwise nothing but an outline will be visible. Layers selected in 'View the Data' will always persist between tabs."
+  value: "The Resilience Hotspots section allows you to focus in on specific communities, named by the Greenbelt Alliance as Resilience Hotspots, where interesting trends in the data may be visible. Before you navigate to this page, you must enable layers under 'View the Data', otherwise nothing but an outline will be visible. Layers selected in 'View the Data' will always persist between tabs.",
   style: sidebar_style.p
 }));
 about.add(ui.Label({
