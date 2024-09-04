@@ -23,5 +23,10 @@ exports.data = [
     title: "The Nature Conservancy: Resilient Land Mapping",
     link : "https://www.maps.tnc.org/resilientland/#/explore",
     description: "This mapping tool classifies the entire United States' resilience to climate change, including developed land, undeveloped land, and the status of vital tidal habitats."
+  },
+  {
+    title: "EPA EJScreen Mapping Tool",
+    link : "https://ejscreen.epa.gov/mapper/index.html",
+    description: "EJScreen is EPA's environmental justice mapping and screening tool that provides EPA with a nationally consistent dataset and approach for combining environmental and socioeconomic indicators.",
   }
 ]
