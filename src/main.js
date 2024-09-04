@@ -619,7 +619,7 @@ layers.add(ui.Label({
 layers.add(ui.Label({
   value: "Webtool variable documentation...",
   style: sidebar_style.p
-}).setUrl("https://github.com/erthromero/EEJWebApp/blob/main/Documentation/Webtool%20documentation.pdf"))
+}).setUrl("https://github.com/chemicaldawn/where-the-grass-grows-greener/blob/master/docs/web_app_variables.pdf"))
 layers.add(ui.Label({
   value: "The webtool variable documentation outlines how each variable, especially Social Vulnerability and Displacement Risk, were sourced, and how data bins were determined.",
   style: sidebar_style.a
