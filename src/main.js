@@ -705,7 +705,7 @@ resources.forEach(function(resource, index) {
     value: resource["title"]
   }));
   resources_panel.add(ui.Label({
-    value: resource["link"],
+    targetUrl: resource["link"],
     imageUrl: "https://www.urbandisplacement.org/wp-content/uploads/2021/07/cropped-urban-displacement-1.png"
   }));
 });
