@@ -26,10 +26,18 @@ exports.h1 = {
 
 exports.h2 = {
   fontSize: "14px",
-  fontWeight: "400",
+  fontWeight: "700",
   margin: "2px 0px 2px 0px",
   
   color: "#7a7a7a"
+}
+
+exports.h3 = {
+  fontSize: "14px",
+  fontWeight: "400",
+  margin: "8px 0px 0px 0px",
+  
+  color: "#292929"
 }
 
 exports.p = {
