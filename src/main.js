@@ -605,8 +605,8 @@ layers.add(ui.Panel({
 }))
 
 layers.add(ui.Label({
-  value: "Documentation",
-  style: sidebar_style.pa
+  value: "Additional Documentation",
+  style: sidebar_style.h2
 }))
 layers.add(ui.Label({
   value: "Notes on geospatial methods",
