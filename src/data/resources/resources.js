@@ -1,4 +1,3 @@
-
 exports.data = [
   {
     title : "The Urban Displacement Project",
