@@ -227,7 +227,7 @@ about.add(ui.Label({
   style: sidebar_style.p
 }));
 about.add(ui.Label({
-  value: "The View the Data section houses most of this tool's primary functionality. An interface is provided to view a variety of raster and vector data layers pertaining to urban greenness, heat, and socioeconomic data. Raster and vector layers may be rendered on top of one another.",
+  value: "The View the Data section houses most of this tool's primary functionality. An interface is provided to view a variety of raster and vector data layers pertaining to urban greenness, heat, and socioeconomic data. To view a raster layer, click on the dropdown and click the desired layer. To display a vector layer, you must choose two variables, and the layer will automatically render. Raster and vector layers may be rendered on top of one another, and the opacity may be adjusted using a slider at the bottom of each panel.",
   style: sidebar_style.p
 }));
 about.add(ui.Label({
