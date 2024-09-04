@@ -33,7 +33,7 @@ exports.h2 = {
 }
 
 exports.h3 = {
-  fontSize: "14px",
+  fontSize: "20px",
   fontWeight: "400",
   margin: "8px 0px 0px 0px",
   
@@ -44,6 +44,12 @@ exports.p = {
   fontSize: "14px",
   fontWeight: "400",
   margin: "12px 0px 0px 0px"
+}
+
+exports.pa = {
+  fontSize: "14px",
+  fontWeight: "400",
+  margin: "2px 0px 0px 0px"
 }
 
 exports.b = {
