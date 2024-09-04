@@ -68,7 +68,7 @@ exports.vertical_pip = {
 }
 
 exports.vertical_label = {
-  fontSize: "8px",
+  fontSize: "10px",
   padding: "0px 0px 0px 0px",
   margin: "0px 0px 0px 2px"
 }
