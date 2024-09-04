@@ -186,7 +186,7 @@ function change_section(section_index) {
       content.add(explore);
       break;
     case 3:
-      content.add(resources);
+      content.add(resources_panel);
       break;
   }
 }
@@ -693,12 +693,14 @@ explore.add(hotspot_info);
 /*
   Resources
 */
-var resources = ui.Panel();
+var resources_panel = ui.Panel();
 
 resources.add(ui.Label({
   value: "Resource Guide",
   style: sidebar_style.h1
 }));
+
+
 
 /*
   Click Handling
