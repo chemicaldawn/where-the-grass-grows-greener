@@ -695,16 +695,16 @@ explore.add(hotspot_info);
 */
 var resources_panel = ui.Panel();
 
-resources.add(ui.Label({
+resources_panel.add(ui.Label({
   value: "Resource Guide",
   style: sidebar_style.h1
 }));
 
 for (var resource in resources) {
-  resources.add(ui.Label({
+  resources_panel.add(ui.Label({
     value: resource["title"]
   }));
-  resources.add(ui.Label({
+  resources_panel.add(ui.Label({
     value: resource["link"],
     imageUrl: "https://www.urbandisplacement.org/wp-content/uploads/2021/07/cropped-urban-displacement-1.png"
   }));
