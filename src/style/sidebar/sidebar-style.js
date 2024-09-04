@@ -35,7 +35,7 @@ exports.h2 = {
 exports.h3 = {
   fontSize: "20px",
   fontWeight: "400",
-  margin: "16px 0px 0px 0px",
+  margin: "24px 0px 0px 0px",
   
   color: "#292929"
 }
