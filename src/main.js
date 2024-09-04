@@ -700,7 +700,11 @@ resources.add(ui.Label({
   style: sidebar_style.h1
 }));
 
-
+for (var resource in resources) {
+  resources.add(ui.Label({
+    value: resource["title"]
+  }));
+}
 
 /*
   Click Handling
