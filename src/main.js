@@ -605,6 +605,10 @@ layers.add(ui.Panel({
 }))
 
 layers.add(ui.Label({
+  value: "Documentation",
+  style: sidebar_style.pa
+}))
+layers.add(ui.Label({
   value: "Notes on geospatial methods",
   style: sidebar_style.a
 }).setUrl("https://github.com/erthromero/EEJWebApp/blob/main/Documentation/GeospatialMethods.pdf"))
