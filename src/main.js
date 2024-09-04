@@ -609,19 +609,19 @@ layers.add(ui.Label({
   style: sidebar_style.h2
 }))
 layers.add(ui.Label({
-  value: "Notes on geospatial methods",
+  value: "Notes on geospatial methods...",
   style: sidebar_style.p
-}).setUrl("https://github.com/erthromero/EEJWebApp/blob/main/Documentation/GeospatialMethods.pdf"))
+}).setUrl("https://github.com/chemicaldawn/where-the-grass-grows-greener/blob/master/docs/geospatial_methods.pdf"))
 layers.add(ui.Label({
-  value: "Geospatial methods blurb...",
+  value: "This document outlines how the data presented in this tool was processed, detailing specifics about ",
   style: sidebar_style.a
 }))
 layers.add(ui.Label({
-  value: "Webtool variable documentation",
+  value: "Webtool variable documentation...",
   style: sidebar_style.p
 }).setUrl("https://github.com/erthromero/EEJWebApp/blob/main/Documentation/Webtool%20documentation.pdf"))
 layers.add(ui.Label({
-  value: "Webtool documentation blurb...",
+  value: "The webtool variable documentation outlines how each variable, especially Social Vulnerability and Displacement Risk, were sourced, and how data bins were determined.",
   style: sidebar_style.a
 }))
 
