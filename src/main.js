@@ -708,6 +708,9 @@ resources.forEach(function(resource, index) {
     value : resource["link"],
     targetUrl: resource["link"]
   }));
+  resources_panel.add(ui.Label({
+    value : resource["description"]
+  }));
 });
 
 /*
