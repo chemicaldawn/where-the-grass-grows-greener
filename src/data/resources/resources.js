@@ -2,15 +2,13 @@
 
 exports.data = [
   {
-    title : "",
-    link : "",
+    title : "The Urban Displacement Project",
+    link : "https://www.urbandisplacement.org/",
     description: "",
-    thumbnail : ui.Thumbnail()
   },
   {
     title : "",
     link : "",
-    description: "",
-    thumbnail : ui.Thumbnail()
+    description: ""
   } 
 ]
