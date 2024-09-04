@@ -41,6 +41,7 @@ exports.horizontal_pip = {
 }
 
 exports.horizontal_label = {
+  fontSize: "8px",
   height: "14px",
   padding: (label_padding).toString() + "px 0px " + (size + stroke + 2*padding - label_padding).toString() + "px 2px",
   margin: "0px"
@@ -67,6 +68,7 @@ exports.vertical_pip = {
 }
 
 exports.vertical_label = {
+  fontSize: "8px",
   padding: "0px 0px 0px 0px",
   margin: "0px 0px 0px 2px"
 }
