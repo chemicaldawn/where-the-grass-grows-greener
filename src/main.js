@@ -620,7 +620,7 @@ layers.add(ui.Label({
   style: sidebar_style.p
 }).setUrl("https://github.com/erthromero/EEJWebApp/blob/main/Documentation/Webtool%20documentation.pdf"))
 layers.add(ui.Label({
-  value: "Geospatial methods blurb..."
+  value: "Webtool documentation blurb..."
 }))
 
 /*
