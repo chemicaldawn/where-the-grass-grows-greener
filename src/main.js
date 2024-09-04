@@ -703,14 +703,16 @@ resources_panel.add(ui.Label({
 resources.forEach(function(resource, index) {
   resources_panel.add(ui.Label({
     value: resource["title"],
-    style: sidebar_style.
+    style: sidebar_style.h3
   }));
   resources_panel.add(ui.Label({
     value : resource["link"],
-    targetUrl: resource["link"]
+    targetUrl: resource["link"],
+    style: sidebar_style.pa
   }));
   resources_panel.add(ui.Label({
-    value : resource["description"]
+    value : resource["description"],
+    style: sidebar_style.pa
   }));
 });
 
