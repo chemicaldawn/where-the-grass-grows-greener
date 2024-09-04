@@ -613,7 +613,7 @@ layers.add(ui.Label({
   style: sidebar_style.p
 }).setUrl("https://github.com/chemicaldawn/where-the-grass-grows-greener/blob/master/docs/geospatial_methods.pdf"))
 layers.add(ui.Label({
-  value: "This document outlines how the data presented in this tool was processed, detailing specifics about ",
+  value: "This document outlines how the data presented in this tool was processed, detailing specifics about machine learning classification, validation, and how spatiotemporal trends were derived.",
   style: sidebar_style.a
 }))
 layers.add(ui.Label({
