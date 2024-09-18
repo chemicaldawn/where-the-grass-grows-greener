@@ -1,4 +1,4 @@
-export function Bullet(text, style) {
+function Bullet(text, style) {
     var container = ui.Panel()
     container.setLayout(ui.Panel.Layout.flow("horizontal", false))
     container.add(ui.Label({
@@ -11,3 +11,5 @@ export function Bullet(text, style) {
     }))
     return container
 }
+
+exports.Bullet = Bullet
