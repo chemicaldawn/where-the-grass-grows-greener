@@ -9,6 +9,8 @@
 */
 
 // Style Imports
+var uix = require("users/dawnschumacher/nasa-eej:src/uix.js")
+
 var map_style = require("users/dawnschumacher/nasa-eej:src/style/map/map-style.js").style;
 var map = ui.Map();
 
@@ -232,6 +234,10 @@ about.add(ui.Label({
   value: "The View the Data section houses most of this tool's primary functionality. An interface is provided to view a variety of raster and vector data layers pertaining to urban greenness, heat, and socioeconomic data. To view a raster layer, click on the dropdown and click the desired layer. To display a vector layer, you must choose two variables, and the layer will automatically render. Raster and vector layers may be rendered on top of one another, and the opacity may be adjusted using a slider at the bottom of each panel.",
   style: sidebar_style.p
 }));
+about.add(uix.Bullet({
+  value: "test",
+  style: sidebar_style.p
+}))
 about.add(ui.Label({
   value: "The Resilience Hotspots section allows you to focus in on specific communities, named by the Greenbelt Alliance as Resilience Hotspots, where interesting trends in the data may be visible. Before you navigate to this page, you must enable layers under 'View the Data', otherwise nothing but an outline will be visible. Layers selected in 'View the Data' will always persist between tabs.",
   style: sidebar_style.p
