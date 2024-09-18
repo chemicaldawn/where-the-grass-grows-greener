@@ -30,6 +30,7 @@ var hotspots = require("users/dawnschumacher/nasa-eej:src/data/map/hotspots.js")
 var hotspot_data = require("users/dawnschumacher/nasa-eej:src/data/map/hotspots.js").data;
 
 var palettes = require("users/dawnschumacher/nasa-eej:src/data/palettes/palettes.js");
+var resources = require("users/dawnschumacher/nasa-eej:src/data/resources/resources.js").data;
 
 /*
   Data Processing
@@ -187,7 +188,7 @@ function change_section(section_index) {
       content.add(explore);
       break;
     case 3:
-      content.add(resources);
+      content.add(resources_panel);
       break;
   }
 }
@@ -228,11 +229,11 @@ about.add(ui.Label({
   style: sidebar_style.p
 }));
 about.add(ui.Label({
-  value: "The View the Data section houses most of this tool's primary functionality. An interface is provided to view a variety of raster and vector data layers pertaining to urban greenness, heat, and socioeconomic data. Raster and vector layers may be rendered on top of one another.",
+  value: "The View the Data section houses most of this tool's primary functionality. An interface is provided to view a variety of raster and vector data layers pertaining to urban greenness, heat, and socioeconomic data. To view a raster layer, click on the dropdown and click the desired layer. To display a vector layer, you must choose two variables, and the layer will automatically render. Raster and vector layers may be rendered on top of one another, and the opacity may be adjusted using a slider at the bottom of each panel.",
   style: sidebar_style.p
 }));
 about.add(ui.Label({
-  value: "The Resilience Hotspots section allows you to focus in on specific communities, named by the Greenbelt Alliance as Resilience Hotspots, where interesting trends in the data may be visible. ",
+  value: "The Resilience Hotspots section allows you to focus in on specific communities, named by the Greenbelt Alliance as Resilience Hotspots, where interesting trends in the data may be visible. Before you navigate to this page, you must enable layers under 'View the Data', otherwise nothing but an outline will be visible. Layers selected in 'View the Data' will always persist between tabs.",
   style: sidebar_style.p
 }));
 about.add(ui.Label({
@@ -606,13 +607,25 @@ layers.add(ui.Panel({
 }))
 
 layers.add(ui.Label({
-  value: "Notes on geospatial methods",
-  style: sidebar_style.a
-}).setUrl("https://github.com/erthromero/EEJWebApp/blob/main/Documentation/GeospatialMethods.pdf"))
+  value: "Additional Documentation",
+  style: sidebar_style.h2
+}))
 layers.add(ui.Label({
-  value: "Webtool variable documentation",
+  value: "Notes on geospatial methods...",
+  style: sidebar_style.p
+}).setUrl("https://github.com/chemicaldawn/where-the-grass-grows-greener/blob/master/docs/geospatial_methods.pdf"))
+layers.add(ui.Label({
+  value: "This document outlines how the data presented in this tool was processed, detailing specifics about machine learning classification, validation, and how spatiotemporal trends were derived.",
   style: sidebar_style.a
-}).setUrl("https://github.com/erthromero/EEJWebApp/blob/main/Documentation/Webtool%20documentation.pdf"))
+}))
+layers.add(ui.Label({
+  value: "Webtool variable documentation...",
+  style: sidebar_style.p
+}).setUrl("https://github.com/chemicaldawn/where-the-grass-grows-greener/blob/master/docs/web_app_variables.pdf"))
+layers.add(ui.Label({
+  value: "The webtool variable documentation outlines how each variable, especially Social Vulnerability and Displacement Risk, were sourced, and how data bins were determined.",
+  style: sidebar_style.a
+}))
 
 /*
   Explore
@@ -694,12 +707,28 @@ explore.add(hotspot_info);
 /*
   Resources
 */
-var resources = ui.Panel();
+var resources_panel = ui.Panel();
 
-resources.add(ui.Label({
+resources_panel.add(ui.Label({
   value: "Resource Guide",
   style: sidebar_style.h1
 }));
+
+resources.forEach(function(resource, index) {
+  resources_panel.add(ui.Label({
+    value: resource["title"],
+    style: sidebar_style.h3
+  }));
+  resources_panel.add(ui.Label({
+    value : resource["link"],
+    targetUrl: resource["link"],
+    style: sidebar_style.pa
+  }));
+  resources_panel.add(ui.Label({
+    value : resource["description"],
+    style: sidebar_style.pa
+  }));
+});
 
 /*
   Click Handling
